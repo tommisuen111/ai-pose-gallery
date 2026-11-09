@@ -1,0 +1,22 @@
+{
+  // Pure static Workers Assets for ai.myrichmond.ca
+  // No Worker main script, no /api/proxy binding.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ai-pose-gallery",
+  "compatibility_date": "2025-10-01",
+  "workers_dev": true,
+  "preview_urls": true,
+  "routes": [
+    {
+      "pattern": "ai.myrichmond.ca",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
