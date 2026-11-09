@@ -87,13 +87,13 @@ export function AppSidebar() {
           <SidebarMenuItem>
             <SidebarMenuButton size="sm" asChild tooltip="访问 GitHub 仓库">
               <a
-                href="https://github.com/anhao/ai-pose-gallery-zh"
+                href="https://github.com/tommisuen111/ai-pose-gallery"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs text-muted-foreground"
               >
                 <ExternalLinkIcon className="size-3.5" />
-                <span>GitHub · @anhao_ai</span>
+                <span>GitHub · tommisuen111</span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
