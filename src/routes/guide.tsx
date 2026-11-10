@@ -13,7 +13,7 @@ function GuidePage() {
     <>
       <PageHeader title="使用指南与免责声明" />
 
-      <Section title="角色合成流程" className="@lg/section:grid-cols-3">
+      <Section title="角色合成流程" className="@lg/section:grid-cols-2 @2xl/section:grid-cols-4">
         <div className="rounded-2xl bg-background p-4">
           <Badge>1. 人像</Badge>
           <h3 className="mt-2 text-sm font-semibold">人像颜值库 (1,499)</h3>
@@ -35,6 +35,14 @@ function GuidePage() {
           <h3 className="mt-2 text-sm font-semibold">动作姿势库 (1,439)</h3>
           <p className="mt-1 text-xs text-muted-foreground">
             挑选 5 视角 3D 素体白模或深度图（Depth），结合云端 API 或本地 ComfyUI 一键生成角色立绘。
+          </p>
+        </div>
+
+        <div className="rounded-2xl bg-background p-4">
+          <Badge>4. 体型</Badge>
+          <h3 className="mt-2 text-sm font-semibold">身材比例库 (583)</h3>
+          <p className="mt-1 text-xs text-muted-foreground">
+            26 个分类的身高、头身、曲线、肌肉与肤质提示词，中英对照并可一键复制，用于锁定角色的体型与比例。
           </p>
         </div>
       </Section>
@@ -70,6 +78,12 @@ function GuidePage() {
           <p>
             <strong className="text-foreground">• 二次元服装来源：</strong>
             440 套二次元服装源自 <a className="underline hover:text-foreground" href="https://charadb-2fi.pages.dev/" target="_blank" rel="noopener noreferrer">たき AI · CharaDB</a>（标签与名称遵循 CC0，图片从原站在线加载，仅供学习与生图参考，禁止用于真人/未成年人或将原图二次分发，详见 <a className="underline hover:text-foreground" href="https://github.com/taki-ttt/charadb/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">原作者说明</a>）。
+          </p>
+          <p>
+            <strong className="text-foreground">• 体型提示词与例图来源：</strong>
+            身材比例库的分类体系、示例图与英文提示词整理自{' '}
+            <a className="underline hover:text-foreground" href="https://noplog.com/blog/2026/02/10/stable-diffusion-body-type-prompts/" target="_blank" rel="noopener noreferrer">のぷ（noplog）《Stable Diffusion 体型提示词大图鉴》</a>
+            ，中文译名与本仓库的展示代码由本项目维护；示例图版权归原作者，仅作学习参考，禁止打包转售。
           </p>
           <p>
             <strong className="text-foreground">• 使用与分发限制：</strong>

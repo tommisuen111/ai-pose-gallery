@@ -7,10 +7,11 @@ import {
   LayersIcon,
   PersonStandingIcon,
   PlusIcon,
+  RulerIcon,
   ShirtIcon,
   UserRoundIcon,
 } from 'lucide-react'
-import { costumesQuery, portraitsQuery, posesQuery } from '@/api/gallery'
+import { bodyQuery, costumesQuery, portraitsQuery, posesQuery } from '@/api/gallery'
 import { PageHeader } from '@/components/common/PageHeader'
 import { StatCard } from '@/components/common/StatCard'
 import { Badge } from '@/components/ui/badge'
@@ -26,6 +27,7 @@ export const Route = createFileRoute('/')({
       context.queryClient.ensureQueryData(posesQuery),
       context.queryClient.ensureQueryData(costumesQuery),
       context.queryClient.ensureQueryData(portraitsQuery),
+      context.queryClient.ensureQueryData(bodyQuery),
     ]),
   pendingComponent: () => <Skeleton className="h-[520px] rounded-[22px]" />,
   component: DashboardPage,
@@ -35,22 +37,26 @@ function DashboardPage() {
   const { data: posesData } = useSuspenseQuery(posesQuery)
   const { data: costumes } = useSuspenseQuery(costumesQuery)
   const { data: portraits } = useSuspenseQuery(portraitsQuery)
+  const { data: body } = useSuspenseQuery(bodyQuery)
   const { recipe, togglePortrait } = useStudio()
 
   const topPortraits = portraits.filter((p) => p.热门).slice(0, 10)
-  const totalImages = posesData.items.length + costumes.length + portraits.length
+  const bodyCategories = body.体系.flatMap((s) => s.分类)
+  const bodyEntries = bodyCategories.reduce((n, c) => n + c.词条.length, 0)
+  const bodyExamples = bodyCategories.reduce((n, c) => n + c.示例.length, 0)
+  const totalImages = posesData.items.length + costumes.length + portraits.length + bodyExamples
 
   return (
     <>
       <PageHeader title="AI 角色参考库" />
 
       {/* 核心数据指标卡片 */}
-      <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 lg:grid-cols-5">
         <StatCard
           title="总参考图"
           value={totalImages.toLocaleString('zh-CN')}
           icon={<LayersIcon />}
-          desc="11,568 本地高清图"
+          desc="姿势 · 服装 · 人像 · 身材"
         />
         <StatCard
           title="动作姿势 (Pose)"
@@ -70,10 +76,16 @@ function DashboardPage() {
           icon={<UserRoundIcon />}
           desc="CC0 协议 · 51 款发型"
         />
+        <StatCard
+          title="身材提示词 (Body)"
+          value={`${bodyEntries.toLocaleString('zh-CN')} 条`}
+          icon={<RulerIcon />}
+          desc={`${bodyExamples} 张例图 · ${bodyCategories.length} 分类`}
+        />
       </div>
 
-      {/* 三大核心图库入口卡片 */}
-      <div className="grid gap-3 sm:grid-cols-3 sm:gap-4">
+      {/* 四大核心图库入口卡片 */}
+      <div className="grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
         <Link
           to="/poses"
           className="group flex flex-col justify-between rounded-[20px] bg-muted p-4 transition hover:bg-muted/70"
@@ -130,6 +142,27 @@ function DashboardPage() {
                 key={p.id}
                 src={`/${p.缩略图}`}
                 alt={p.标题}
+                loading="lazy"
+                className="aspect-3/4 w-full rounded-lg bg-background object-cover"
+              />
+            ))}
+          </div>
+        </Link>
+
+        <Link
+          to="/body"
+          className="group flex flex-col justify-between rounded-[20px] bg-muted p-4 transition hover:bg-muted/70"
+        >
+          <div className="flex items-center justify-between">
+            <h2 className="text-base font-semibold">📏 身材比例库</h2>
+            <Badge variant="secondary">{bodyEntries.toLocaleString('zh-CN')}</Badge>
+          </div>
+          <div className="mt-3 grid grid-cols-4 gap-1.5">
+            {bodyCategories.flatMap((c) => c.示例.slice(0, 1)).slice(0, 4).map((example) => (
+              <img
+                key={example.原图}
+                src={`/${example.缩略图}`}
+                alt="身材比例例图"
                 loading="lazy"
                 className="aspect-3/4 w-full rounded-lg bg-background object-cover"
               />

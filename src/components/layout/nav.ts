@@ -4,6 +4,7 @@ import {
   KeyRoundIcon,
   LayoutDashboardIcon,
   PersonStandingIcon,
+  RulerIcon,
   ShirtIcon,
   SparklesIcon,
   UserRoundIcon,
@@ -31,11 +32,12 @@ export const navGroups: NavGroup[] = [
     ],
   },
   {
-    label: '三大参考图库',
+    label: '四大参考图库',
     items: [
       { title: '动作姿势库', to: '/poses', icon: PersonStandingIcon, badge: '1,439' },
       { title: '服装穿搭库', to: '/costumes', icon: ShirtIcon, badge: '3,224' },
       { title: '人像颜值库', to: '/portraits', icon: UserRoundIcon, badge: '1,499' },
+      { title: '身材比例库', to: '/body', icon: RulerIcon, badge: '583' },
     ],
   },
   {

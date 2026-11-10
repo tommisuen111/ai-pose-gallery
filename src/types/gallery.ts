@@ -69,6 +69,42 @@ export interface PortraitItem {
   检索: string
 }
 
+export interface BodyExample {
+  提示词: string
+  缩略图: string
+  原图: string
+}
+
+export interface BodyEntry {
+  分组: string
+  提示词: string
+  中文: string
+}
+
+export interface BodyCategory {
+  id: string
+  名称: string
+  简介: string
+  示例: BodyExample[]
+  词条: BodyEntry[]
+}
+
+export interface BodySection {
+  名称: string
+  分类: BodyCategory[]
+}
+
+export interface BodyData {
+  来源: {
+    标题: string
+    网址: string
+    作者: string
+    说明: string
+  }
+  更新: string
+  体系: BodySection[]
+}
+
 export interface ExtraReferenceImage {
   role?: 'character_sheet'
   id: string

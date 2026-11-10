@@ -1,0 +1,4220 @@
+{
+ "来源": {
+  "标题": "AIイラスト Stable Diffusion体型プロンプト大図鑑",
+  "网址": "https://noplog.com/blog/2026/02/10/stable-diffusion-body-type-prompts/",
+  "作者": "のぷ（noplog）",
+  "说明": "体型分类、示例图与提示词整理自该文章，中文翻译与本地镜像由本项目维护。"
+ },
+ "更新": "2026-11-10",
+ "体系": [
+  {
+   "名称": "体型与尺寸基础",
+   "分类": [
+    {
+     "id": "height",
+     "名称": "身高",
+     "简介": "从极矮到高耸的身高提示词，以及对应的头身与轮廓变化。",
+     "示例": [
+      {
+       "提示词": "tiny, petite frame, youthful proportions",
+       "缩略图": "thumbs/body/body-proportion_height-body-type_01_thumb.webp",
+       "原图": "img/body/body-proportion_height-body-type_01_large.webp"
+      },
+      {
+       "提示词": "tiny, extremely small scale, adult proportions",
+       "缩略图": "thumbs/body/body-proportion_height-body-type_02_thumb.webp",
+       "原图": "img/body/body-proportion_height-body-type_02_large.webp"
+      },
+      {
+       "提示词": "short, compact body, low head-to-body ratio",
+       "缩略图": "thumbs/body/body-proportion_height-body-type_03_thumb.webp",
+       "原图": "img/body/body-proportion_height-body-type_03_large.webp"
+      },
+      {
+       "提示词": "medium height, balanced proportions, neutral stance",
+       "缩略图": "thumbs/body/body-proportion_height-body-type_04_thumb.webp",
+       "原图": "img/body/body-proportion_height-body-type_04_large.webp"
+      },
+      {
+       "提示词": "tall, long-legged, slender silhouette",
+       "缩略图": "thumbs/body/body-proportion_height-body-type_05_thumb.webp",
+       "原图": "img/body/body-proportion_height-body-type_05_large.webp"
+      },
+      {
+       "提示词": "very tall, elongated silhouette, high head position",
+       "缩略图": "thumbs/body/body-proportion_height-body-type_06_thumb.webp",
+       "原图": "img/body/body-proportion_height-body-type_06_large.webp"
+      },
+      {
+       "提示词": "towering, dramatic height",
+       "缩略图": "thumbs/body/body-proportion_height-body-type_07_thumb.webp",
+       "原图": "img/body/body-proportion_height-body-type_07_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "tiny",
+       "中文": "非常矮小"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "short",
+       "中文": "身材矮小"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "medium height",
+       "中文": "中等身高"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "tall",
+       "中文": "身材高挑"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "very tall",
+       "中文": "身高很高"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "towering",
+       "中文": "高耸挺拔"
+      },
+      {
+       "分组": "尺寸感",
+       "提示词": "extremely small scale",
+       "中文": "极小尺度"
+      },
+      {
+       "分组": "尺寸感",
+       "提示词": "dramatic height",
+       "中文": "极具冲击的身高"
+      },
+      {
+       "分组": "轮廓",
+       "提示词": "elongated silhouette",
+       "中文": "修长舒展的轮廓"
+      },
+      {
+       "分组": "轮廓",
+       "提示词": "slender silhouette",
+       "中文": "纤细的轮廓"
+      },
+      {
+       "分组": "腿长",
+       "提示词": "long-legged",
+       "中文": "长腿"
+      },
+      {
+       "分组": "骨架·体格",
+       "提示词": "petite frame",
+       "中文": "娇小的骨架"
+      },
+      {
+       "分组": "骨架·体格",
+       "提示词": "compact body",
+       "中文": "紧凑的体型"
+      },
+      {
+       "分组": "头身比",
+       "提示词": "low head-to-body ratio",
+       "中文": "低头身比"
+      },
+      {
+       "分组": "头身比",
+       "提示词": "high head position",
+       "中文": "头部位置偏高（高头身）"
+      },
+      {
+       "分组": "比例",
+       "提示词": "youthful proportions",
+       "中文": "幼态比例"
+      },
+      {
+       "分组": "比例",
+       "提示词": "balanced proportions",
+       "中文": "匀称的比例"
+      },
+      {
+       "分组": "比例",
+       "提示词": "adult proportions",
+       "中文": "成人比例"
+      }
+     ]
+    },
+    {
+     "id": "slim",
+     "名称": "纤细体型",
+     "简介": "瘦、细、苗条到骨感的层层递进，以及细腰与低体脂的描写。",
+     "示例": [
+      {
+       "提示词": "skinny, extremely low body mass, narrow limbs",
+       "缩略图": "thumbs/body/body-proportion_slim-body-type_01_thumb.webp",
+       "原图": "img/body/body-proportion_slim-body-type_01_large.webp"
+      },
+      {
+       "提示词": "skinny, bony structure, prominent collarbones",
+       "缩略图": "thumbs/body/body-proportion_slim-body-type_02_thumb.webp",
+       "原图": "img/body/body-proportion_slim-body-type_02_large.webp"
+      },
+      {
+       "提示词": "thin, lean limbs, minimal body fat",
+       "缩略图": "thumbs/body/body-proportion_slim-body-type_03_thumb.webp",
+       "原图": "img/body/body-proportion_slim-body-type_03_large.webp"
+      },
+      {
+       "提示词": "slim, light definition, balanced silhouette",
+       "缩略图": "thumbs/body/body-proportion_slim-body-type_04_thumb.webp",
+       "原图": "img/body/body-proportion_slim-body-type_04_large.webp"
+      },
+      {
+       "提示词": "slender, elongated lines, graceful proportions",
+       "缩略图": "thumbs/body/body-proportion_slim-body-type_05_thumb.webp",
+       "原图": "img/body/body-proportion_slim-body-type_05_large.webp"
+      },
+      {
+       "提示词": "slender, narrow waist, elegant silhouette",
+       "缩略图": "thumbs/body/body-proportion_slim-body-type_06_thumb.webp",
+       "原图": "img/body/body-proportion_slim-body-type_06_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "skinny",
+       "中文": "骨感消瘦"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "thin",
+       "中文": "纤细"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "slim",
+       "中文": "苗条"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "slender",
+       "中文": "修长纤细"
+      },
+      {
+       "分组": "腰身",
+       "提示词": "narrow waist",
+       "中文": "细腰"
+      },
+      {
+       "分组": "轮廓",
+       "提示词": "elongated lines",
+       "中文": "修长的线条"
+      },
+      {
+       "分组": "轮廓",
+       "提示词": "balanced silhouette",
+       "中文": "匀称的轮廓"
+      },
+      {
+       "分组": "轮廓",
+       "提示词": "elegant silhouette",
+       "中文": "优雅的轮廓"
+      },
+      {
+       "分组": "轮廓",
+       "提示词": "light definition",
+       "中文": "轻微的肌肉线条"
+      },
+      {
+       "分组": "骨架·体格",
+       "提示词": "bony structure",
+       "中文": "骨感骨架"
+      },
+      {
+       "分组": "骨架·体格",
+       "提示词": "prominent collarbones",
+       "中文": "凸起的锁骨"
+      },
+      {
+       "分组": "骨架·体格",
+       "提示词": "minimal body fat",
+       "中文": "极低体脂"
+      },
+      {
+       "分组": "骨架·体格",
+       "提示词": "extremely low body mass",
+       "中文": "极低的体重"
+      },
+      {
+       "分组": "四肢特征",
+       "提示词": "narrow limbs",
+       "中文": "纤细的四肢"
+      },
+      {
+       "分组": "四肢特征",
+       "提示词": "lean limbs",
+       "中文": "紧实的四肢"
+      },
+      {
+       "分组": "比例",
+       "提示词": "graceful proportions",
+       "中文": "轻盈柔韧的比例"
+      }
+     ]
+    },
+    {
+     "id": "standard",
+     "名称": "标准体型",
+     "简介": "不偏不倚的中性体型，适合作为大多数角色的默认身材。",
+     "示例": [
+      {
+       "提示词": "average build, moderate proportions, natural silhouette",
+       "缩略图": "thumbs/body/body-proportion_standard-body-type_01_thumb.webp",
+       "原图": "img/body/body-proportion_standard-body-type_01_large.webp"
+      },
+      {
+       "提示词": "average build, neutral weight, common stature",
+       "缩略图": "thumbs/body/body-proportion_standard-body-type_02_thumb.webp",
+       "原图": "img/body/body-proportion_standard-body-type_02_large.webp"
+      },
+      {
+       "提示词": "proportioned, balanced structure, even body lines",
+       "缩略图": "thumbs/body/body-proportion_standard-body-type_03_thumb.webp",
+       "原图": "img/body/body-proportion_standard-body-type_03_large.webp"
+      },
+      {
+       "提示词": "proportioned, balanced limbs, symmetrical physique",
+       "缩略图": "thumbs/body/body-proportion_standard-body-type_04_thumb.webp",
+       "原图": "img/body/body-proportion_standard-body-type_04_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "average build",
+       "中文": "标准体格"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "proportioned",
+       "中文": "比例匀称"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "natural silhouette",
+       "中文": "自然轮廓"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "even body lines",
+       "中文": "均匀的身形线条"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "balanced structure",
+       "中文": "均衡的骨架"
+      },
+      {
+       "分组": "四肢特征",
+       "提示词": "balanced limbs",
+       "中文": "协调的四肢"
+      },
+      {
+       "分组": "体格·比例",
+       "提示词": "common stature",
+       "中文": "普通身高"
+      },
+      {
+       "分组": "体格·比例",
+       "提示词": "symmetrical physique",
+       "中文": "左右对称的体型"
+      },
+      {
+       "分组": "体格·比例",
+       "提示词": "neutral weight",
+       "中文": "标准体重"
+      },
+      {
+       "分组": "比例",
+       "提示词": "moderate proportions",
+       "中文": "适中的比例"
+      }
+     ]
+    },
+    {
+     "id": "chubby",
+     "名称": "丰腴体型",
+     "简介": "微胖到肥胖的梯度，重点是体积感、肉感与柔软线条。",
+     "示例": [
+      {
+       "提示词": "chubby, fleshy arms",
+       "缩略图": "thumbs/body/body-proportion_plump-body-type_01_thumb.webp",
+       "原图": "img/body/body-proportion_plump-body-type_01_large.webp"
+      },
+      {
+       "提示词": "chubby, noticeable fullness",
+       "缩略图": "thumbs/body/body-proportion_plump-body-type_02_thumb.webp",
+       "原图": "img/body/body-proportion_plump-body-type_02_large.webp"
+      },
+      {
+       "提示词": "overweight, heavier proportions",
+       "缩略图": "thumbs/body/body-proportion_plump-body-type_03_thumb.webp",
+       "原图": "img/body/body-proportion_plump-body-type_03_large.webp"
+      },
+      {
+       "提示词": "plump, soft curves, gentle fullness",
+       "缩略图": "thumbs/body/body-proportion_plump-body-type_04_thumb.webp",
+       "原图": "img/body/body-proportion_plump-body-type_04_large.webp"
+      },
+      {
+       "提示词": "obese, massive volume, skin folds, extreme weight",
+       "缩略图": "thumbs/body/body-proportion_plump-body-type_05_thumb.webp",
+       "原图": "img/body/body-proportion_plump-body-type_05_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "chubby",
+       "中文": "微胖"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "overweight",
+       "中文": "偏胖"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "plump",
+       "中文": "丰满圆润"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "obese",
+       "中文": "肥胖体型"
+      },
+      {
+       "分组": "体重·体积",
+       "提示词": "extreme weight",
+       "中文": "极端的重量感"
+      },
+      {
+       "分组": "体重·体积",
+       "提示词": "massive volume",
+       "中文": "强烈的体积感"
+      },
+      {
+       "分组": "肉感",
+       "提示词": "fleshy arms",
+       "中文": "有肉感的手臂"
+      },
+      {
+       "分组": "肉感",
+       "提示词": "noticeable fullness",
+       "中文": "明显的丰满感"
+      },
+      {
+       "分组": "肉感",
+       "提示词": "gentle fullness",
+       "中文": "柔和的肉感"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "soft curves",
+       "中文": "柔和的曲线"
+      },
+      {
+       "分组": "质感",
+       "提示词": "skin folds",
+       "中文": "皮肤的层叠褶皱"
+      },
+      {
+       "分组": "比例",
+       "提示词": "heavier proportions",
+       "中文": "敦厚的比例"
+      }
+     ]
+    },
+    {
+     "id": "bust-size",
+     "名称": "胸部大小",
+     "简介": "从平胸到极度丰满的尺寸阶梯，配合体积、线条与形状三组词。",
+     "示例": [
+      {
+       "提示词": "flat chest, slender frame, washboard chest",
+       "缩略图": "thumbs/body/body-proportion_bust-size-variation_01_thumb.webp",
+       "原图": "img/body/body-proportion_bust-size-variation_01_large.webp"
+      },
+      {
+       "提示词": "flat chest, minimal volume, smooth chest line",
+       "缩略图": "thumbs/body/body-proportion_bust-size-variation_02_thumb.webp",
+       "原图": "img/body/body-proportion_bust-size-variation_02_large.webp"
+      },
+      {
+       "提示词": "small bust, slight projection, subtle contour",
+       "缩略图": "thumbs/body/body-proportion_bust-size-variation_03_thumb.webp",
+       "原图": "img/body/body-proportion_bust-size-variation_03_large.webp"
+      },
+      {
+       "提示词": "small breasts, gentle curve, modest shape",
+       "缩略图": "thumbs/body/body-proportion_bust-size-variation_04_thumb.webp",
+       "原图": "img/body/body-proportion_bust-size-variation_04_large.webp"
+      },
+      {
+       "提示词": "medium breasts, balanced volume, natural roundness",
+       "缩略图": "thumbs/body/body-proportion_bust-size-variation_05_thumb.webp",
+       "原图": "img/body/body-proportion_bust-size-variation_05_large.webp"
+      },
+      {
+       "提示词": "large bust, fuller shape, noticeable projection",
+       "缩略图": "thumbs/body/body-proportion_bust-size-variation_06_thumb.webp",
+       "原图": "img/body/body-proportion_bust-size-variation_06_large.webp"
+      },
+      {
+       "提示词": "busty figure, prominent chest, rounded fullness",
+       "缩略图": "thumbs/body/body-proportion_bust-size-variation_07_thumb.webp",
+       "原图": "img/body/body-proportion_bust-size-variation_07_large.webp"
+      },
+      {
+       "提示词": "full bust, generous volume, defined curvature",
+       "缩略图": "thumbs/body/body-proportion_bust-size-variation_08_thumb.webp",
+       "原图": "img/body/body-proportion_bust-size-variation_08_large.webp"
+      },
+      {
+       "提示词": "large breasts, heavy bust, deep cleavage line",
+       "缩略图": "thumbs/body/body-proportion_bust-size-variation_09_thumb.webp",
+       "原图": "img/body/body-proportion_bust-size-variation_09_large.webp"
+      },
+      {
+       "提示词": "huge breasts, heavy curvature",
+       "缩略图": "thumbs/body/body-proportion_bust-size-variation_10_thumb.webp",
+       "原图": "img/body/body-proportion_bust-size-variation_10_large.webp"
+      },
+      {
+       "提示词": "enormous breasts, overwhelming volume",
+       "缩略图": "thumbs/body/body-proportion_bust-size-variation_11_thumb.webp",
+       "原图": "img/body/body-proportion_bust-size-variation_11_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "flat chest",
+       "中文": "平胸"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "small bust",
+       "中文": "小胸"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "small breasts",
+       "中文": "小巧的胸部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "medium breasts",
+       "中文": "中等胸部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "large bust",
+       "中文": "丰满的胸部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "busty figure",
+       "中文": "惹火的丰满身材"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "full bust",
+       "中文": "饱满的胸部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "large breasts",
+       "中文": "大胸"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "huge breasts",
+       "中文": "巨大的胸部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "enormous breasts",
+       "中文": "极大的胸部"
+      },
+      {
+       "分组": "体积",
+       "提示词": "minimal volume",
+       "中文": "极小的体积"
+      },
+      {
+       "分组": "体积",
+       "提示词": "balanced volume",
+       "中文": "均衡的体积"
+      },
+      {
+       "分组": "体积",
+       "提示词": "rounded fullness",
+       "中文": "圆润的饱满感"
+      },
+      {
+       "分组": "体积",
+       "提示词": "generous volume",
+       "中文": "充盈的体积"
+      },
+      {
+       "分组": "体积",
+       "提示词": "heavy bust",
+       "中文": "有分量的胸部"
+      },
+      {
+       "分组": "体积",
+       "提示词": "overwhelming volume",
+       "中文": "压倒性的体积"
+      },
+      {
+       "分组": "线条",
+       "提示词": "smooth chest line",
+       "中文": "平滑的胸部线条"
+      },
+      {
+       "分组": "线条",
+       "提示词": "subtle contour",
+       "中文": "含蓄的轮廓"
+      },
+      {
+       "分组": "线条",
+       "提示词": "gentle curve",
+       "中文": "柔和的曲线"
+      },
+      {
+       "分组": "线条",
+       "提示词": "defined curvature",
+       "中文": "清晰的曲线"
+      },
+      {
+       "分组": "线条",
+       "提示词": "deep cleavage line",
+       "中文": "深邃的胸沟"
+      },
+      {
+       "分组": "线条",
+       "提示词": "heavy curvature",
+       "中文": "明显的弧度"
+      },
+      {
+       "分组": "形状",
+       "提示词": "washboard chest",
+       "中文": "平如木板的胸部"
+      },
+      {
+       "分组": "形状",
+       "提示词": "slight projection",
+       "中文": "微微隆起"
+      },
+      {
+       "分组": "形状",
+       "提示词": "modest shape",
+       "中文": "含蓄的形状"
+      },
+      {
+       "分组": "形状",
+       "提示词": "natural roundness",
+       "中文": "自然的圆润"
+      },
+      {
+       "分组": "形状",
+       "提示词": "fuller shape",
+       "中文": "饱满的形状"
+      },
+      {
+       "分组": "形状",
+       "提示词": "noticeable projection",
+       "中文": "明显的隆起"
+      },
+      {
+       "分组": "形状",
+       "提示词": "prominent chest",
+       "中文": "突出的胸部"
+      }
+     ]
+    },
+    {
+     "id": "bust-shape",
+     "名称": "胸部形状",
+     "简介": "圆形、半球、圆锥、钟形、水滴、下垂等形状，以及外扩与基底宽窄。",
+     "示例": [
+      {
+       "提示词": "round breasts, small breasts, evenly rounded contour",
+       "缩略图": "thumbs/body/body-proportion_bust-shape-type_01_thumb.webp",
+       "原图": "img/body/body-proportion_bust-shape-type_01_large.webp"
+      },
+      {
+       "提示词": "hemispherical breast shape, small breasts, balanced upper and lower fullness",
+       "缩略图": "thumbs/body/body-proportion_bust-shape-type_02_thumb.webp",
+       "原图": "img/body/body-proportion_bust-shape-type_02_large.webp"
+      },
+      {
+       "提示词": "shallow breasts, flat chest",
+       "缩略图": "thumbs/body/body-proportion_bust-shape-type_03_thumb.webp",
+       "原图": "img/body/body-proportion_bust-shape-type_03_large.webp"
+      },
+      {
+       "提示词": "plate-shaped breast silhouette, flat chest, flat upper slope",
+       "缩略图": "thumbs/body/body-proportion_bust-shape-type_04_thumb.webp",
+       "原图": "img/body/body-proportion_bust-shape-type_04_large.webp"
+      },
+      {
+       "提示词": "conical breasts, medium breasts, narrow apex and tapered outline",
+       "缩略图": "thumbs/body/body-proportion_bust-shape-type_05_thumb.webp",
+       "原图": "img/body/body-proportion_bust-shape-type_05_large.webp"
+      },
+      {
+       "提示词": "cone-shaped breast silhouette, medium breasts, forward-pointing silhouette",
+       "缩略图": "thumbs/body/body-proportion_bust-shape-type_06_thumb.webp",
+       "原图": "img/body/body-proportion_bust-shape-type_06_large.webp"
+      },
+      {
+       "提示词": "bell-shaped breasts, medium breasts, full lower curve with narrow upper area",
+       "缩略图": "thumbs/body/body-proportion_bust-shape-type_07_thumb.webp",
+       "原图": "img/body/body-proportion_bust-shape-type_07_large.webp"
+      },
+      {
+       "提示词": "narrow upper breast, medium breasts, weight concentrated toward the bottom",
+       "缩略图": "thumbs/body/body-proportion_bust-shape-type_08_thumb.webp",
+       "原图": "img/body/body-proportion_bust-shape-type_08_large.webp"
+      },
+      {
+       "提示词": "east-west breasts, small breasts, outward-oriented nipples",
+       "缩略图": "thumbs/body/body-proportion_bust-shape-type_09_thumb.webp",
+       "原图": "img/body/body-proportion_bust-shape-type_09_large.webp"
+      },
+      {
+       "提示词": "triangle-shaped breast silhouette, medium breasts, wide spacing between breasts",
+       "缩略图": "thumbs/body/body-proportion_bust-shape-type_10_thumb.webp",
+       "原图": "img/body/body-proportion_bust-shape-type_10_large.webp"
+      },
+      {
+       "提示词": "sagging breasts, medium breasts, downward-oriented volume",
+       "缩略图": "thumbs/body/body-proportion_bust-shape-type_11_thumb.webp",
+       "原图": "img/body/body-proportion_bust-shape-type_11_large.webp"
+      },
+      {
+       "提示词": "ptosis breast shape, large breasts, lower-hanging contour",
+       "缩略图": "thumbs/body/body-proportion_bust-shape-type_12_thumb.webp",
+       "原图": "img/body/body-proportion_bust-shape-type_12_large.webp"
+      },
+      {
+       "提示词": "teardrop breasts, medium breasts, rounded lower fullness",
+       "缩略图": "thumbs/body/body-proportion_bust-shape-type_13_thumb.webp",
+       "原图": "img/body/body-proportion_bust-shape-type_13_large.webp"
+      },
+      {
+       "提示词": "gentle slope on top, medium breasts, gentle upper slope",
+       "缩略图": "thumbs/body/body-proportion_bust-shape-type_14_thumb.webp",
+       "原图": "img/body/body-proportion_bust-shape-type_14_large.webp"
+      },
+      {
+       "提示词": "athletic breasts, flat chest, low fat volume and compact shape",
+       "缩略图": "thumbs/body/body-proportion_bust-shape-type_15_thumb.webp",
+       "原图": "img/body/body-proportion_bust-shape-type_15_large.webp"
+      },
+      {
+       "提示词": "slender breasts, flat chest, narrow breast base",
+       "缩略图": "thumbs/body/body-proportion_bust-shape-type_16_thumb.webp",
+       "原图": "img/body/body-proportion_bust-shape-type_16_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "round breasts",
+       "中文": "圆形胸部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "hemispherical breast shape",
+       "中文": "半球形胸型"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "shallow breasts",
+       "中文": "浅碟形胸部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "plate-shaped breast silhouette",
+       "中文": "板状胸型轮廓"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "conical breasts",
+       "中文": "圆锥形胸部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "cone-shaped breast silhouette",
+       "中文": "圆锥形轮廓"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "bell-shaped breasts",
+       "中文": "钟形胸部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "narrow upper breast",
+       "中文": "上部偏窄的胸部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "east-west breasts",
+       "中文": "外扩胸型"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "triangle-shaped breast silhouette",
+       "中文": "三角形轮廓"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "sagging breasts",
+       "中文": "下垂的胸部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "ptosis breast shape",
+       "中文": "下垂型胸型"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "teardrop breasts",
+       "中文": "水滴形胸部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "gentle slope on top",
+       "中文": "顶部平缓的胸部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "athletic breasts",
+       "中文": "运动型胸部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "slender breasts",
+       "中文": "纤瘦的胸部"
+      },
+      {
+       "分组": "大小感",
+       "提示词": "small breasts",
+       "中文": "小巧的胸部"
+      },
+      {
+       "分组": "大小感",
+       "提示词": "flat chest",
+       "中文": "平胸"
+      },
+      {
+       "分组": "大小感",
+       "提示词": "medium breasts",
+       "中文": "中等胸部"
+      },
+      {
+       "分组": "大小感",
+       "提示词": "large breasts",
+       "中文": "大胸"
+      },
+      {
+       "分组": "形状",
+       "提示词": "evenly rounded contour",
+       "中文": "均匀圆润的轮廓"
+      },
+      {
+       "分组": "形状",
+       "提示词": "balanced upper and lower fullness",
+       "中文": "上下饱满均衡"
+      },
+      {
+       "分组": "形状",
+       "提示词": "flat upper slope",
+       "中文": "上部平坦的斜面"
+      },
+      {
+       "分组": "形状",
+       "提示词": "narrow apex and tapered outline",
+       "中文": "顶点收窄、轮廓渐细"
+      },
+      {
+       "分组": "形状",
+       "提示词": "forward-pointing silhouette",
+       "中文": "朝前的轮廓"
+      },
+      {
+       "分组": "形状",
+       "提示词": "full lower curve with narrow upper area",
+       "中文": "下丰上窄的曲线"
+      },
+      {
+       "分组": "形状",
+       "提示词": "weight concentrated toward the bottom",
+       "中文": "重量集中在下部"
+      },
+      {
+       "分组": "形状",
+       "提示词": "downward-oriented volume",
+       "中文": "向下的体积感"
+      },
+      {
+       "分组": "形状",
+       "提示词": "lower-hanging contour",
+       "中文": "低垂的轮廓"
+      },
+      {
+       "分组": "形状",
+       "提示词": "rounded lower fullness",
+       "中文": "下部滚圆饱满"
+      },
+      {
+       "分组": "形状",
+       "提示词": "gentle upper slope",
+       "中文": "上部柔和的坡度"
+      },
+      {
+       "分组": "形状",
+       "提示词": "narrow breast base",
+       "中文": "窄小的胸部基底"
+      },
+      {
+       "分组": "特征",
+       "提示词": "outward-oriented nipples",
+       "中文": "朝向两侧"
+      },
+      {
+       "分组": "特征",
+       "提示词": "wide spacing between breasts",
+       "中文": "两侧间距宽"
+      },
+      {
+       "分组": "特征",
+       "提示词": "low fat volume and compact shape",
+       "中文": "脂肪量低且形状紧凑"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "名称": "骨架与比例",
+   "分类": [
+    {
+     "id": "head-ratio",
+     "名称": "全身头身比",
+     "简介": "二头身 Q 版到十头身超模，用头身数控制整体比例与观感。",
+     "示例": [
+      {
+       "提示词": "chibi style, 2-head tall, oversized head, tiny body",
+       "缩略图": "thumbs/body/body-proportion_head-body-ratio_01_thumb.webp",
+       "原图": "img/body/body-proportion_head-body-ratio_01_large.webp"
+      },
+      {
+       "提示词": "chibi figure, large head proportion, compact tiny body",
+       "缩略图": "thumbs/body/body-proportion_head-body-ratio_02_thumb.webp",
+       "原图": "img/body/body-proportion_head-body-ratio_02_large.webp"
+      },
+      {
+       "提示词": "toddler proportions, very large head, very short limbs",
+       "缩略图": "thumbs/body/body-proportion_head-body-ratio_03_thumb.webp",
+       "原图": "img/body/body-proportion_head-body-ratio_03_large.webp"
+      },
+      {
+       "提示词": "childlike proportions, slightly large head, shorter limbs",
+       "缩略图": "thumbs/body/body-proportion_head-body-ratio_04_thumb.webp",
+       "原图": "img/body/body-proportion_head-body-ratio_04_large.webp"
+      },
+      {
+       "提示词": "5-head tall, shorter body ratio, youthful proportions",
+       "缩略图": "thumbs/body/body-proportion_head-body-ratio_05_thumb.webp",
+       "原图": "img/body/body-proportion_head-body-ratio_05_large.webp"
+      },
+      {
+       "提示词": "low head-to-body ratio, small head scale, extended body length",
+       "缩略图": "thumbs/body/body-proportion_head-body-ratio_06_thumb.webp",
+       "原图": "img/body/body-proportion_head-body-ratio_06_large.webp"
+      },
+      {
+       "提示词": "high head-to-body ratio, emphasized head size, shortened torso, cute proportions",
+       "缩略图": "thumbs/body/body-proportion_head-body-ratio_07_thumb.webp",
+       "原图": "img/body/body-proportion_head-body-ratio_07_large.webp"
+      },
+      {
+       "提示词": "adult proportions, standard limb length, proportional head size",
+       "缩略图": "thumbs/body/body-proportion_head-body-ratio_08_thumb.webp",
+       "原图": "img/body/body-proportion_head-body-ratio_08_large.webp"
+      },
+      {
+       "提示词": "10-head tall, towering height, supermodel proportions",
+       "缩略图": "thumbs/body/body-proportion_head-body-ratio_09_thumb.webp",
+       "原图": "img/body/body-proportion_head-body-ratio_09_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "chibi style",
+       "中文": "Q 版画风"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "chibi figure",
+       "中文": "Q 版体型"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "2-head tall",
+       "中文": "二头身"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "toddler proportions",
+       "中文": "幼儿比例"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "childlike proportions",
+       "中文": "孩童比例"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "5-head tall",
+       "中文": "五头身"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "low head-to-body ratio",
+       "中文": "低头身比"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "high head-to-body ratio",
+       "中文": "高头身比"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "adult proportions",
+       "中文": "成人比例"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "10-head tall",
+       "中文": "十头身"
+      },
+      {
+       "分组": "体格",
+       "提示词": "tiny body",
+       "中文": "极小的身体"
+      },
+      {
+       "分组": "体格",
+       "提示词": "compact tiny body",
+       "中文": "紧凑小巧的身体"
+      },
+      {
+       "分组": "体格",
+       "提示词": "extended body length",
+       "中文": "拉长的躯干"
+      },
+      {
+       "分组": "体格",
+       "提示词": "shortened torso",
+       "中文": "缩短的躯干"
+      },
+      {
+       "分组": "头部",
+       "提示词": "oversized head",
+       "中文": "超大的头"
+      },
+      {
+       "分组": "头部",
+       "提示词": "large head proportion",
+       "中文": "头部占比大"
+      },
+      {
+       "分组": "头部",
+       "提示词": "very large head",
+       "中文": "非常大的头"
+      },
+      {
+       "分组": "头部",
+       "提示词": "slightly large head",
+       "中文": "略大的头"
+      },
+      {
+       "分组": "头部",
+       "提示词": "small head scale",
+       "中文": "头部比例偏小"
+      },
+      {
+       "分组": "头部",
+       "提示词": "emphasized head size",
+       "中文": "强调头部大小"
+      },
+      {
+       "分组": "头部",
+       "提示词": "proportional head size",
+       "中文": "头身比例协调"
+      },
+      {
+       "分组": "四肢特征",
+       "提示词": "very short limbs",
+       "中文": "极短的四肢"
+      },
+      {
+       "分组": "四肢特征",
+       "提示词": "shorter limbs",
+       "中文": "偏短的四肢"
+      },
+      {
+       "分组": "四肢特征",
+       "提示词": "standard limb length",
+       "中文": "标准的四肢长度"
+      },
+      {
+       "分组": "比例",
+       "提示词": "shorter body ratio",
+       "中文": "躯干比例偏短"
+      },
+      {
+       "分组": "比例",
+       "提示词": "youthful proportions",
+       "中文": "年轻化的比例"
+      },
+      {
+       "分组": "比例",
+       "提示词": "cute proportions",
+       "中文": "可爱的比例"
+      },
+      {
+       "分组": "比例",
+       "提示词": "supermodel proportions",
+       "中文": "超模比例"
+      }
+     ]
+    },
+    {
+     "id": "head-neck",
+     "名称": "头颈比例",
+     "简介": "头骨大小、颈部长短与喉线，决定人物是幼态、精致还是冷感。",
+     "示例": [
+      {
+       "提示词": "doll-like head ratio, stylized head scale, petite frame",
+       "缩略图": "thumbs/body/body-proportion_head-neck-balance_01_thumb.webp",
+       "原图": "img/body/body-proportion_head-neck-balance_01_large.webp"
+      },
+      {
+       "提示词": "tiny head proportion, minimal cranial size, elongated silhouette",
+       "缩略图": "thumbs/body/body-proportion_head-neck-balance_02_thumb.webp",
+       "原图": "img/body/body-proportion_head-neck-balance_02_large.webp"
+      },
+      {
+       "提示词": "short neck proportion, reduced neck height, notably short neck",
+       "缩略图": "thumbs/body/body-proportion_head-neck-balance_03_thumb.webp",
+       "原图": "img/body/body-proportion_head-neck-balance_03_large.webp"
+      },
+      {
+       "提示词": "oversized head, big head ratio",
+       "缩略图": "thumbs/body/body-proportion_head-neck-balance_04_thumb.webp",
+       "原图": "img/body/body-proportion_head-neck-balance_04_large.webp"
+      },
+      {
+       "提示词": "reduced head size, compact cranial form",
+       "缩略图": "thumbs/body/body-proportion_head-neck-balance_05_thumb.webp",
+       "原图": "img/body/body-proportion_head-neck-balance_05_large.webp"
+      },
+      {
+       "提示词": "compact neck, shortened cervical span",
+       "缩略图": "thumbs/body/body-proportion_head-neck-balance_06_thumb.webp",
+       "原图": "img/body/body-proportion_head-neck-balance_06_large.webp"
+      },
+      {
+       "提示词": "large head ratio, enhanced head scale, cute proportions, rounded scalp",
+       "缩略图": "thumbs/body/body-proportion_head-neck-balance_07_thumb.webp",
+       "原图": "img/body/body-proportion_head-neck-balance_07_large.webp"
+      },
+      {
+       "提示词": "long neck proportion, extended neck length, refined throat, slender cervical",
+       "缩略图": "thumbs/body/body-proportion_head-neck-balance_08_thumb.webp",
+       "原图": "img/body/body-proportion_head-neck-balance_08_large.webp"
+      },
+      {
+       "提示词": "slender neck proportion, delicate cervical line, narrow throat, elegant silhouette",
+       "缩略图": "thumbs/body/body-proportion_head-neck-balance_09_thumb.webp",
+       "原图": "img/body/body-proportion_head-neck-balance_09_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "doll-like head ratio",
+       "中文": "人偶式头身比"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "tiny head proportion",
+       "中文": "极小的头部比例"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "short neck proportion",
+       "中文": "短颈比例"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "oversized head",
+       "中文": "超大的头"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "reduced head size",
+       "中文": "小脸比例"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "compact neck",
+       "中文": "紧凑的颈部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "large head ratio",
+       "中文": "头部占比大"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "long neck proportion",
+       "中文": "长颈比例"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "slender neck proportion",
+       "中文": "纤细长颈比例"
+      },
+      {
+       "分组": "头部形状·大小",
+       "提示词": "rounded scalp",
+       "中文": "圆润的头型"
+      },
+      {
+       "分组": "头部形状·大小",
+       "提示词": "stylized head scale",
+       "中文": "风格化的头部比例"
+      },
+      {
+       "分组": "头部形状·大小",
+       "提示词": "minimal cranial size",
+       "中文": "最小的头骨尺寸"
+      },
+      {
+       "分组": "头部形状·大小",
+       "提示词": "big head ratio",
+       "中文": "大头的比例"
+      },
+      {
+       "分组": "头部形状·大小",
+       "提示词": "compact cranial form",
+       "中文": "紧凑的头型"
+      },
+      {
+       "分组": "头部形状·大小",
+       "提示词": "enhanced head scale",
+       "中文": "强化的头部比例"
+      },
+      {
+       "分组": "颈部线条",
+       "提示词": "refined throat",
+       "中文": "精致的喉部线条"
+      },
+      {
+       "分组": "颈部线条",
+       "提示词": "delicate cervical line",
+       "中文": "细腻的颈线"
+      },
+      {
+       "分组": "颈部线条",
+       "提示词": "slender cervical",
+       "中文": "纤细的颈部"
+      },
+      {
+       "分组": "颈部线条",
+       "提示词": "narrow throat",
+       "中文": "细窄的喉部"
+      },
+      {
+       "分组": "颈部长度",
+       "提示词": "reduced neck height",
+       "中文": "缩短的颈部高度"
+      },
+      {
+       "分组": "颈部长度",
+       "提示词": "notably short neck",
+       "中文": "明显偏短的颈"
+      },
+      {
+       "分组": "颈部长度",
+       "提示词": "shortened cervical span",
+       "中文": "缩短的颈长"
+      },
+      {
+       "分组": "颈部长度",
+       "提示词": "extended neck length",
+       "中文": "拉长的颈长"
+      },
+      {
+       "分组": "轮廓",
+       "提示词": "elongated silhouette",
+       "中文": "修长的轮廓"
+      },
+      {
+       "分组": "轮廓",
+       "提示词": "elegant silhouette",
+       "中文": "优雅的轮廓"
+      }
+     ]
+    },
+    {
+     "id": "shoulder",
+     "名称": "肩部与胸廓",
+     "简介": "平肩、溜肩、方肩与 V 形躯干，先定肩线再谈体型气质。",
+     "示例": [
+      {
+       "提示词": "horizontal shoulders, level shoulder line",
+       "缩略图": "thumbs/body/body-proportion_shoulder-ribcage-structure_01_thumb.webp",
+       "原图": "img/body/body-proportion_shoulder-ribcage-structure_01_large.webp"
+      },
+      {
+       "提示词": "drooping shoulders, lowered shoulder line",
+       "缩略图": "thumbs/body/body-proportion_shoulder-ribcage-structure_02_thumb.webp",
+       "原图": "img/body/body-proportion_shoulder-ribcage-structure_02_large.webp"
+      },
+      {
+       "提示词": "v-shaped torso, tapered upper width",
+       "缩略图": "thumbs/body/body-proportion_shoulder-ribcage-structure_03_thumb.webp",
+       "原图": "img/body/body-proportion_shoulder-ribcage-structure_03_large.webp"
+      },
+      {
+       "提示词": "angular shoulders, sharp structural edges",
+       "缩略图": "thumbs/body/body-proportion_shoulder-ribcage-structure_04_thumb.webp",
+       "原图": "img/body/body-proportion_shoulder-ribcage-structure_04_large.webp"
+      },
+      {
+       "提示词": "square shoulders, firm angular line",
+       "缩略图": "thumbs/body/body-proportion_shoulder-ribcage-structure_05_thumb.webp",
+       "原图": "img/body/body-proportion_shoulder-ribcage-structure_05_large.webp"
+      },
+      {
+       "提示词": "sloped shoulders, downward shoulder angle",
+       "缩略图": "thumbs/body/body-proportion_shoulder-ribcage-structure_06_thumb.webp",
+       "原图": "img/body/body-proportion_shoulder-ribcage-structure_06_large.webp"
+      },
+      {
+       "提示词": "flat chest cavity, reduced anterior depth",
+       "缩略图": "thumbs/body/body-proportion_shoulder-ribcage-structure_07_thumb.webp",
+       "原图": "img/body/body-proportion_shoulder-ribcage-structure_07_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "horizontal shoulders",
+       "中文": "平肩"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "drooping shoulders",
+       "中文": "溜肩"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "v-shaped torso",
+       "中文": "V 形躯干"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "angular shoulders",
+       "中文": "棱角分明的肩"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "square shoulders",
+       "中文": "方肩"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "sloped shoulders",
+       "中文": "斜肩"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "flat chest cavity",
+       "中文": "平坦的胸廓"
+      },
+      {
+       "分组": "肩线",
+       "提示词": "level shoulder line",
+       "中文": "水平的肩线"
+      },
+      {
+       "分组": "肩线",
+       "提示词": "lowered shoulder line",
+       "中文": "下沉的肩线"
+      },
+      {
+       "分组": "肩线",
+       "提示词": "firm angular line",
+       "中文": "硬朗的棱角线条"
+      },
+      {
+       "分组": "胸廓形状",
+       "提示词": "reduced anterior depth",
+       "中文": "较小的前后厚度"
+      },
+      {
+       "分组": "胸廓形状",
+       "提示词": "tapered upper width",
+       "中文": "上宽渐收"
+      },
+      {
+       "分组": "肩部角度",
+       "提示词": "downward shoulder angle",
+       "中文": "肩部角度下垂"
+      },
+      {
+       "分组": "骨架特征",
+       "提示词": "sharp structural edges",
+       "中文": "锐利的骨架棱角"
+      }
+     ]
+    },
+    {
+     "id": "torso-waist",
+     "名称": "躯干与腰身比",
+     "简介": "躯干长短、腰线高低与收窄程度，决定上半身的重心和气质。",
+     "示例": [
+      {
+       "提示词": "long torso silhouette, elongated midsection, low center of gravity, tall frame",
+       "缩略图": "thumbs/body/body-proportion_torso-waist-ratio_01_thumb.webp",
+       "原图": "img/body/body-proportion_torso-waist-ratio_01_large.webp"
+      },
+      {
+       "提示词": "lean torso, thin waist, flat stomach, slender frame",
+       "缩略图": "thumbs/body/body-proportion_torso-waist-ratio_02_thumb.webp",
+       "原图": "img/body/body-proportion_torso-waist-ratio_02_large.webp"
+      },
+      {
+       "提示词": "elongated torso, exaggerated vertical extension, low-set waist",
+       "缩略图": "thumbs/body/body-proportion_torso-waist-ratio_03_thumb.webp",
+       "原图": "img/body/body-proportion_torso-waist-ratio_03_large.webp"
+      },
+      {
+       "提示词": "tapered waist, gradual upper-to-lower taper, subtle waist curve",
+       "缩略图": "thumbs/body/body-proportion_torso-waist-ratio_04_thumb.webp",
+       "原图": "img/body/body-proportion_torso-waist-ratio_04_large.webp"
+      },
+      {
+       "提示词": "inverted triangle torso, wide upper torso, slim hips emphasis",
+       "缩略图": "thumbs/body/body-proportion_torso-waist-ratio_05_thumb.webp",
+       "原图": "img/body/body-proportion_torso-waist-ratio_05_large.webp"
+      },
+      {
+       "提示词": "short torso, compact ribcage, high center of gravity, petite frame",
+       "缩略图": "thumbs/body/body-proportion_torso-waist-ratio_06_thumb.webp",
+       "原图": "img/body/body-proportion_torso-waist-ratio_06_large.webp"
+      },
+      {
+       "提示词": "shallow torso, moderate depth, lean upper body, streamlined silhouette",
+       "缩略图": "thumbs/body/body-proportion_torso-waist-ratio_07_thumb.webp",
+       "原图": "img/body/body-proportion_torso-waist-ratio_07_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "long torso silhouette",
+       "中文": "长躯干轮廓"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "lean torso",
+       "中文": "紧实的躯干"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "elongated torso",
+       "中文": "纵向拉长的躯干"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "tapered waist",
+       "中文": "收窄的腰"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "inverted triangle torso",
+       "中文": "倒三角躯干"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "short torso",
+       "中文": "短躯干"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "shallow torso",
+       "中文": "单薄的躯干"
+      },
+      {
+       "分组": "腰身",
+       "提示词": "thin waist",
+       "中文": "细腰"
+      },
+      {
+       "分组": "腰身",
+       "提示词": "low-set waist",
+       "中文": "腰线偏低"
+      },
+      {
+       "分组": "腰身",
+       "提示词": "subtle waist curve",
+       "中文": "轻微的腰部曲线"
+      },
+      {
+       "分组": "形状",
+       "提示词": "exaggerated vertical extension",
+       "中文": "夸张的纵向拉伸"
+      },
+      {
+       "分组": "形状",
+       "提示词": "gradual upper-to-lower taper",
+       "中文": "由肩至腰缓缓收窄"
+      },
+      {
+       "分组": "形状",
+       "提示词": "moderate depth",
+       "中文": "适中的厚度"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "tall frame",
+       "中文": "高个子骨架"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "slender frame",
+       "中文": "纤瘦的骨架"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "petite frame",
+       "中文": "娇小的骨架"
+      },
+      {
+       "分组": "轮廓",
+       "提示词": "streamlined silhouette",
+       "中文": "流线型轮廓"
+      },
+      {
+       "分组": "上半身",
+       "提示词": "lean upper body",
+       "中文": "紧实的上半身"
+      },
+      {
+       "分组": "躯干",
+       "提示词": "elongated midsection",
+       "中文": "拉长的中段"
+      },
+      {
+       "分组": "躯干",
+       "提示词": "wide upper torso",
+       "中文": "宽阔的上半身"
+      },
+      {
+       "分组": "躯干",
+       "提示词": "compact ribcage",
+       "中文": "紧凑的胸廓"
+      },
+      {
+       "分组": "躯干",
+       "提示词": "flat stomach",
+       "中文": "平坦的小腹"
+      },
+      {
+       "分组": "臀部",
+       "提示词": "slim hips emphasis",
+       "中文": "强调纤细的臀部"
+      },
+      {
+       "分组": "重心",
+       "提示词": "low center of gravity",
+       "中文": "重心偏低"
+      },
+      {
+       "分组": "重心",
+       "提示词": "high center of gravity",
+       "中文": "重心偏高"
+      }
+     ]
+    },
+    {
+     "id": "hips",
+     "名称": "臀部形态",
+     "简介": "窄臀、宽臀、圆臀与骨盘高低，配合外扩程度塑造下半身轮廓。",
+     "示例": [
+      {
+       "提示词": "low hips, dropped pelvic center, short leg ratio, low gravity silhouette",
+       "缩略图": "thumbs/body/body-proportion_hip-pelvis-shape_01_thumb.webp",
+       "原图": "img/body/body-proportion_hip-pelvis-shape_01_large.webp"
+      },
+      {
+       "提示词": "curvy hips silhouette, gentle flare, smooth arc, feminine lines",
+       "缩略图": "thumbs/body/body-proportion_hip-pelvis-shape_02_thumb.webp",
+       "原图": "img/body/body-proportion_hip-pelvis-shape_02_large.webp"
+      },
+      {
+       "提示词": "narrow hips, slim lower torso, compact pelvic area",
+       "缩略图": "thumbs/body/body-proportion_hip-pelvis-shape_03_thumb.webp",
+       "原图": "img/body/body-proportion_hip-pelvis-shape_03_large.webp"
+      },
+      {
+       "提示词": "boyish hips, linear silhouette, minimal curves, flat contour",
+       "缩略图": "thumbs/body/body-proportion_hip-pelvis-shape_04_thumb.webp",
+       "原图": "img/body/body-proportion_hip-pelvis-shape_04_large.webp"
+      },
+      {
+       "提示词": "straight hips, rectangular frame, vertical lines, no flare",
+       "缩略图": "thumbs/body/body-proportion_hip-pelvis-shape_05_thumb.webp",
+       "原图": "img/body/body-proportion_hip-pelvis-shape_05_large.webp"
+      },
+      {
+       "提示词": "wide hips figure, broad pelvic bone, prominent flare, large lower frame",
+       "缩略图": "thumbs/body/body-proportion_hip-pelvis-shape_06_thumb.webp",
+       "原图": "img/body/body-proportion_hip-pelvis-shape_06_large.webp"
+      },
+      {
+       "提示词": "slender pelvis, delicate frame, narrow bone width, fragile build",
+       "缩略图": "thumbs/body/body-proportion_hip-pelvis-shape_07_thumb.webp",
+       "原图": "img/body/body-proportion_hip-pelvis-shape_07_large.webp"
+      },
+      {
+       "提示词": "round hips, fleshy volume, circular silhouette, soft fleshiness",
+       "缩略图": "thumbs/body/body-proportion_hip-pelvis-shape_08_thumb.webp",
+       "原图": "img/body/body-proportion_hip-pelvis-shape_08_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "low hips",
+       "中文": "臀部位置偏低"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "curvy hips silhouette",
+       "中文": "曲线感臀线"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "narrow hips",
+       "中文": "窄臀"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "boyish hips",
+       "中文": "中性偏男孩的臀部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "straight hips",
+       "中文": "直线型臀部"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "wide hips figure",
+       "中文": "宽臀体型"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "slender pelvis",
+       "中文": "纤细的骨盆"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "round hips",
+       "中文": "圆润的臀部"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "low gravity silhouette",
+       "中文": "低重心轮廓"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "linear silhouette",
+       "中文": "直线型轮廓"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "circular silhouette",
+       "中文": "圆润的轮廓"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "feminine lines",
+       "中文": "女性化线条"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "vertical lines",
+       "中文": "垂直的线条"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "minimal curves",
+       "中文": "极简的弧度"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "flat contour",
+       "中文": "平坦的轮廓"
+      },
+      {
+       "分组": "形状",
+       "提示词": "gentle flare",
+       "中文": "柔和的外扩"
+      },
+      {
+       "分组": "形状",
+       "提示词": "smooth arc",
+       "中文": "平滑的弧线"
+      },
+      {
+       "分组": "形状",
+       "提示词": "no flare",
+       "中文": "不外扩的形状"
+      },
+      {
+       "分组": "形状",
+       "提示词": "prominent flare",
+       "中文": "明显的外扩"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "rectangular frame",
+       "中文": "长方形骨架"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "broad pelvic bone",
+       "中文": "宽大的骨盆"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "large lower frame",
+       "中文": "大号的下半身骨架"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "delicate frame",
+       "中文": "娇柔的骨相"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "narrow bone width",
+       "中文": "骨幅偏窄"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "fragile build",
+       "中文": "纤弱的体格"
+      },
+      {
+       "分组": "骨盆",
+       "提示词": "dropped pelvic center",
+       "中文": "骨盆中心偏低"
+      },
+      {
+       "分组": "骨盆",
+       "提示词": "compact pelvic area",
+       "中文": "紧凑的骨盆区"
+      },
+      {
+       "分组": "肉感",
+       "提示词": "fleshy volume",
+       "中文": "肉感的体积"
+      },
+      {
+       "分组": "肉感",
+       "提示词": "soft fleshiness",
+       "中文": "柔软的肉感"
+      },
+      {
+       "分组": "躯干",
+       "提示词": "slim lower torso",
+       "中文": "纤细的下半身"
+      },
+      {
+       "分组": "比例",
+       "提示词": "short leg ratio",
+       "中文": "短腿比例"
+      }
+     ]
+    },
+    {
+     "id": "legs",
+     "名称": "腿与四肢长度",
+     "简介": "腿长、膝位、踝位与四肢伸展感，是拉开身高印象的最快开关。",
+     "示例": [
+      {
+       "提示词": "very long legs, extreme lower extension, exaggerated length",
+       "缩略图": "thumbs/body/body-proportion_limb-length-variation_01_thumb.webp",
+       "原图": "img/body/body-proportion_limb-length-variation_01_large.webp"
+      },
+      {
+       "提示词": "long limbs, tall limb ratio, extended reach",
+       "缩略图": "thumbs/body/body-proportion_limb-length-variation_02_thumb.webp",
+       "原图": "img/body/body-proportion_limb-length-variation_02_large.webp"
+      },
+      {
+       "提示词": "long inseam, extended leg line, tall lower frame",
+       "缩略图": "thumbs/body/body-proportion_limb-length-variation_03_thumb.webp",
+       "原图": "img/body/body-proportion_limb-length-variation_03_large.webp"
+      },
+      {
+       "提示词": "supermodel proportions, elongated silhouette, long‑leg emphasis",
+       "缩略图": "thumbs/body/body-proportion_limb-length-variation_04_thumb.webp",
+       "原图": "img/body/body-proportion_limb-length-variation_04_large.webp"
+      },
+      {
+       "提示词": "long calves, elongated tibia, slender shins, high ankle position",
+       "缩略图": "thumbs/body/body-proportion_limb-length-variation_05_thumb.webp",
+       "原图": "img/body/body-proportion_limb-length-variation_05_large.webp"
+      },
+      {
+       "提示词": "disproportionately long legs, bird-like frame, spindly legs, extreme ratio",
+       "缩略图": "thumbs/body/body-proportion_limb-length-variation_06_thumb.webp",
+       "原图": "img/body/body-proportion_limb-length-variation_06_large.webp"
+      },
+      {
+       "提示词": "leggy, high leg emphasis, elongated lower frame",
+       "缩略图": "thumbs/body/body-proportion_limb-length-variation_07_thumb.webp",
+       "原图": "img/body/body-proportion_limb-length-variation_07_large.webp"
+      },
+      {
+       "提示词": "high knee position, long lower legs, elevated joint line",
+       "缩略图": "thumbs/body/body-proportion_limb-length-variation_08_thumb.webp",
+       "原图": "img/body/body-proportion_limb-length-variation_08_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "very long legs",
+       "中文": "极长的腿"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "long limbs",
+       "中文": "修长的四肢"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "long inseam",
+       "中文": "长腿内缝"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "supermodel proportions",
+       "中文": "超模比例"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "long calves",
+       "中文": "长小腿"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "disproportionately long legs",
+       "中文": "不成比例的长腿"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "leggy",
+       "中文": "大长腿"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "high knee position",
+       "中文": "膝盖位置偏高"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "elongated silhouette",
+       "中文": "修长的轮廓"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "extended leg line",
+       "中文": "舒展的腿部线条"
+      },
+      {
+       "分组": "形状",
+       "提示词": "extreme lower extension",
+       "中文": "下半身极度拉伸"
+      },
+      {
+       "分组": "形状",
+       "提示词": "elongated tibia",
+       "中文": "拉长的胫骨"
+      },
+      {
+       "分组": "形状",
+       "提示词": "slender shins",
+       "中文": "纤细的小腿"
+      },
+      {
+       "分组": "形状",
+       "提示词": "spindly legs",
+       "中文": "细长腿"
+      },
+      {
+       "分组": "形状",
+       "提示词": "long lower legs",
+       "中文": "长小腿"
+      },
+      {
+       "分组": "形状",
+       "提示词": "exaggerated length",
+       "中文": "夸张的长度"
+      },
+      {
+       "分组": "形状",
+       "提示词": "extended reach",
+       "中文": "舒展的伸展感"
+      },
+      {
+       "分组": "强调",
+       "提示词": "long?leg emphasis",
+       "中文": "强调长腿"
+      },
+      {
+       "分组": "强调",
+       "提示词": "high leg emphasis",
+       "中文": "强调腿部"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "tall lower frame",
+       "中文": "高个的下半身骨架"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "bird-like frame",
+       "中文": "鸟一般的细骨"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "elongated lower frame",
+       "中文": "拉长的下半身"
+      },
+      {
+       "分组": "比例",
+       "提示词": "tall limb ratio",
+       "中文": "四肢占比高"
+      },
+      {
+       "分组": "比例",
+       "提示词": "extreme ratio",
+       "中文": "极端的比例"
+      },
+      {
+       "分组": "四肢位置",
+       "提示词": "high ankle position",
+       "中文": "脚踝位置偏高"
+      },
+      {
+       "分组": "四肢位置",
+       "提示词": "elevated joint line",
+       "中文": "关节线上移"
+      }
+     ]
+    },
+    {
+     "id": "frame",
+     "名称": "骨架厚度",
+     "简介": "体格宽厚与重量感，用于壮硕、厚实或魁梧型角色。",
+     "示例": [
+      {
+       "提示词": "large body, expanded proportions",
+       "缩略图": "thumbs/body/body-proportion_skeletal-thickness_01_thumb.webp",
+       "原图": "img/body/body-proportion_skeletal-thickness_01_large.webp"
+      },
+      {
+       "提示词": "thick body, broad outline, dense physique",
+       "缩略图": "thumbs/body/body-proportion_skeletal-thickness_02_thumb.webp",
+       "原图": "img/body/body-proportion_skeletal-thickness_02_large.webp"
+      },
+      {
+       "提示词": "heavy body, massive mass, thick neck",
+       "缩略图": "thumbs/body/body-proportion_skeletal-thickness_03_thumb.webp",
+       "原图": "img/body/body-proportion_skeletal-thickness_03_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "large body",
+       "中文": "大型体格"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "thick body",
+       "中文": "厚实的体格"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "heavy body",
+       "中文": "有重量感的身材"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "broad outline",
+       "中文": "宽厚的轮廓"
+      },
+      {
+       "分组": "比例",
+       "提示词": "expanded proportions",
+       "中文": "放大的比例"
+      },
+      {
+       "分组": "体格",
+       "提示词": "dense physique",
+       "中文": "结实厚重的体格"
+      },
+      {
+       "分组": "体格",
+       "提示词": "massive mass",
+       "中文": "庞大体积"
+      },
+      {
+       "分组": "部位形状",
+       "提示词": "thick neck",
+       "中文": "粗颈"
+      }
+     ]
+    },
+    {
+     "id": "muscle",
+     "名称": "肌肉量",
+     "简介": "从轻微线条到健美级分离度，可精确定位肌肉的存在感。",
+     "示例": [
+      {
+       "提示词": "toned body, subtle muscle lines",
+       "缩略图": "thumbs/body/body-proportion_muscle-mass-level_01_thumb.webp",
+       "原图": "img/body/body-proportion_muscle-mass-level_01_large.webp"
+      },
+      {
+       "提示词": "toned body, lightly defined shape, six pack abs",
+       "缩略图": "thumbs/body/body-proportion_muscle-mass-level_02_thumb.webp",
+       "原图": "img/body/body-proportion_muscle-mass-level_02_large.webp"
+      },
+      {
+       "提示词": "athletic build, firm muscular structure",
+       "缩略图": "thumbs/body/body-proportion_muscle-mass-level_03_thumb.webp",
+       "原图": "img/body/body-proportion_muscle-mass-level_03_large.webp"
+      },
+      {
+       "提示词": "muscular figure, defined torso muscles",
+       "缩略图": "thumbs/body/body-proportion_muscle-mass-level_04_thumb.webp",
+       "原图": "img/body/body-proportion_muscle-mass-level_04_large.webp"
+      },
+      {
+       "提示词": "ripped physique, high muscle definition",
+       "缩略图": "thumbs/body/body-proportion_muscle-mass-level_05_thumb.webp",
+       "原图": "img/body/body-proportion_muscle-mass-level_05_large.webp"
+      },
+      {
+       "提示词": "shredded physique, striated muscle, extreme definition",
+       "缩略图": "thumbs/body/body-proportion_muscle-mass-level_06_thumb.webp",
+       "原图": "img/body/body-proportion_muscle-mass-level_06_large.webp"
+      },
+      {
+       "提示词": "lean muscular build, slim fit, visible abs, slender strength",
+       "缩略图": "thumbs/body/body-proportion_muscle-mass-level_07_thumb.webp",
+       "原图": "img/body/body-proportion_muscle-mass-level_07_large.webp"
+      },
+      {
+       "提示词": "bodybuilder physique, extreme mass, peaked biceps",
+       "缩略图": "thumbs/body/body-proportion_muscle-mass-level_08_thumb.webp",
+       "原图": "img/body/body-proportion_muscle-mass-level_08_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "toned body",
+       "中文": "紧实有线条的身体"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "athletic build",
+       "中文": "运动型体格"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "muscular figure",
+       "中文": "肌肉型体格"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "ripped physique",
+       "中文": "肌肉分明的体格"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "shredded physique",
+       "中文": "极致精干的体格"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "lean muscular build",
+       "中文": "精瘦肌肉体型"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "bodybuilder physique",
+       "中文": "健美选手体格"
+      },
+      {
+       "分组": "肌肉",
+       "提示词": "subtle muscle lines",
+       "中文": "克制的肌肉线条"
+      },
+      {
+       "分组": "肌肉",
+       "提示词": "firm muscular structure",
+       "中文": "坚实的肌肉结构"
+      },
+      {
+       "分组": "肌肉",
+       "提示词": "defined torso muscles",
+       "中文": "明显的躯干肌肉"
+      },
+      {
+       "分组": "肌肉",
+       "提示词": "high muscle definition",
+       "中文": "高肌肉分离度"
+      },
+      {
+       "分组": "肌肉",
+       "提示词": "striated muscle",
+       "中文": "纹理毕现的肌肉"
+      },
+      {
+       "分组": "形状",
+       "提示词": "lightly defined shape",
+       "中文": "隐约浮现的形状"
+      },
+      {
+       "分组": "形状",
+       "提示词": "extreme definition",
+       "中文": "极致的肌肉分离"
+      },
+      {
+       "分组": "质感",
+       "提示词": "extreme mass",
+       "中文": "极限的肌肉量"
+      },
+      {
+       "分组": "体格",
+       "提示词": "slim fit",
+       "中文": "精瘦紧实"
+      },
+      {
+       "分组": "体格",
+       "提示词": "slender strength",
+       "中文": "柔韧的力量感"
+      },
+      {
+       "分组": "部位肌肉",
+       "提示词": "six pack abs",
+       "中文": "六块腹肌"
+      },
+      {
+       "分组": "部位肌肉",
+       "提示词": "visible abs",
+       "中文": "清晰的腹肌"
+      },
+      {
+       "分组": "部位肌肉",
+       "提示词": "peaked biceps",
+       "中文": "隆起的二头肌"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "名称": "线条与曲线印象",
+   "分类": [
+    {
+     "id": "waistline",
+     "名称": "腰线",
+     "简介": "收腰、直身或箱型，腰线是“有明显曲线”和“干练直线”的分水岭。",
+     "示例": [
+      {
+       "提示词": "tapered silhouette, narrowing upper body, clean vertical line",
+       "缩略图": "thumbs/body/body-proportion_waistline-shape_01_thumb.webp",
+       "原图": "img/body/body-proportion_waistline-shape_01_large.webp"
+      },
+      {
+       "提示词": "sculpted torso, defined musculature lines",
+       "缩略图": "thumbs/body/body-proportion_waistline-shape_02_thumb.webp",
+       "原图": "img/body/body-proportion_waistline-shape_02_large.webp"
+      },
+      {
+       "提示词": "straight silhouette, linear frame, no curves, vertical lines",
+       "缩略图": "thumbs/body/body-proportion_waistline-shape_03_thumb.webp",
+       "原图": "img/body/body-proportion_waistline-shape_03_large.webp"
+      },
+      {
+       "提示词": "minimal torso taper, boxy frame, uniform width, straight torso",
+       "缩略图": "thumbs/body/body-proportion_waistline-shape_04_thumb.webp",
+       "原图": "img/body/body-proportion_waistline-shape_04_large.webp"
+      },
+      {
+       "提示词": "subtle curves, faint outline, soft fleshiness, modest volume",
+       "缩略图": "thumbs/body/body-proportion_waistline-shape_05_thumb.webp",
+       "原图": "img/body/body-proportion_waistline-shape_05_large.webp"
+      },
+      {
+       "提示词": "soft waist curve, rounded hips, feminine flow, smooth transition",
+       "缩略图": "thumbs/body/body-proportion_waistline-shape_06_thumb.webp",
+       "原图": "img/body/body-proportion_waistline-shape_06_large.webp"
+      },
+      {
+       "提示词": "narrow waist, slim midsection, tight frame, slender silhouette",
+       "缩略图": "thumbs/body/body-proportion_waistline-shape_07_thumb.webp",
+       "原图": "img/body/body-proportion_waistline-shape_07_large.webp"
+      },
+      {
+       "提示词": "cinched waist, pulled-in midriff, sharp indentation, emphasized flare",
+       "缩略图": "thumbs/body/body-proportion_waistline-shape_08_thumb.webp",
+       "原图": "img/body/body-proportion_waistline-shape_08_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "tapered silhouette",
+       "中文": "收腰轮廓"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "sculpted torso",
+       "中文": "雕塑感的躯干"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "straight silhouette",
+       "中文": "直身轮廓"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "minimal torso taper",
+       "中文": "几乎不收腰"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "subtle curves",
+       "中文": "轻微的曲线"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "soft waist curve",
+       "中文": "柔和的腰部曲线"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "narrow waist",
+       "中文": "细腰"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "cinched waist",
+       "中文": "掐进去的细腰"
+      },
+      {
+       "分组": "轮廓",
+       "提示词": "slender silhouette",
+       "中文": "纤细的轮廓"
+      },
+      {
+       "分组": "臀部",
+       "提示词": "rounded hips",
+       "中文": "圆润的臀部"
+      },
+      {
+       "分组": "体积",
+       "提示词": "modest volume",
+       "中文": "含蓄的体积"
+      },
+      {
+       "分组": "线条",
+       "提示词": "clean vertical line",
+       "中文": "干净的垂直线条"
+      },
+      {
+       "分组": "线条",
+       "提示词": "vertical lines",
+       "中文": "垂直的线条"
+      },
+      {
+       "分组": "线条",
+       "提示词": "feminine flow",
+       "中文": "女性化的流动感"
+      },
+      {
+       "分组": "线条",
+       "提示词": "no curves",
+       "中文": "没有曲线的形状"
+      },
+      {
+       "分组": "线条",
+       "提示词": "faint outline",
+       "中文": "隐约的轮廓"
+      },
+      {
+       "分组": "肌肉",
+       "提示词": "defined musculature lines",
+       "中文": "分明的肌肉线条"
+      },
+      {
+       "分组": "形状",
+       "提示词": "uniform width",
+       "中文": "均匀的宽度"
+      },
+      {
+       "分组": "形状",
+       "提示词": "smooth transition",
+       "中文": "平滑的过渡"
+      },
+      {
+       "分组": "形状",
+       "提示词": "sharp indentation",
+       "中文": "锋利的收腰"
+      },
+      {
+       "分组": "形状",
+       "提示词": "emphasized flare",
+       "中文": "强调的外扩"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "linear frame",
+       "中文": "直线型骨架"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "boxy frame",
+       "中文": "箱型体格"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "tight frame",
+       "中文": "收紧的骨架"
+      },
+      {
+       "分组": "肉感",
+       "提示词": "soft fleshiness",
+       "中文": "柔软的肉感"
+      },
+      {
+       "分组": "上半身",
+       "提示词": "narrowing upper body",
+       "中文": "收窄的上半身"
+      },
+      {
+       "分组": "腹部·躯干",
+       "提示词": "straight torso",
+       "中文": "笔直的躯干"
+      },
+      {
+       "分组": "腹部·躯干",
+       "提示词": "slim midsection",
+       "中文": "纤细的腰腹"
+      },
+      {
+       "分组": "腹部·躯干",
+       "提示词": "pulled-in midriff",
+       "中文": "收紧的小腹"
+      }
+     ]
+    },
+    {
+     "id": "curve",
+     "名称": "曲线轮廓",
+     "简介": "沙漏、梨形、苹果形等经典体型分类，一条提示词换一个剪影。",
+     "示例": [
+      {
+       "提示词": "hourglass figure, defined waistline, balanced curves",
+       "缩略图": "thumbs/body/body-proportion_curvy-silhouette_01_thumb.webp",
+       "原图": "img/body/body-proportion_curvy-silhouette_01_large.webp"
+      },
+      {
+       "提示词": "hourglass figure, narrow waist, wide hips, sharp silhouette",
+       "缩略图": "thumbs/body/body-proportion_curvy-silhouette_02_thumb.webp",
+       "原图": "img/body/body-proportion_curvy-silhouette_02_large.webp"
+      },
+      {
+       "提示词": "curvy, soft contours",
+       "缩略图": "thumbs/body/body-proportion_curvy-silhouette_03_thumb.webp",
+       "原图": "img/body/body-proportion_curvy-silhouette_03_large.webp"
+      },
+      {
+       "提示词": "pear shaped, fuller hips, lower-body emphasis",
+       "缩略图": "thumbs/body/body-proportion_curvy-silhouette_04_thumb.webp",
+       "原图": "img/body/body-proportion_curvy-silhouette_04_large.webp"
+      },
+      {
+       "提示词": "pear shaped torso silhouette, fuller hips, lower-body emphasis",
+       "缩略图": "thumbs/body/body-proportion_curvy-silhouette_05_thumb.webp",
+       "原图": "img/body/body-proportion_curvy-silhouette_05_large.webp"
+      },
+      {
+       "提示词": "apple shaped body silhouette, broad torso, full bust, slim legs",
+       "缩略图": "thumbs/body/body-proportion_curvy-silhouette_06_thumb.webp",
+       "原图": "img/body/body-proportion_curvy-silhouette_06_large.webp"
+      },
+      {
+       "提示词": "voluptuous body",
+       "缩略图": "thumbs/body/body-proportion_curvy-silhouette_07_thumb.webp",
+       "原图": "img/body/body-proportion_curvy-silhouette_07_large.webp"
+      },
+      {
+       "提示词": "voluptuous body, full figure, ample volume",
+       "缩略图": "thumbs/body/body-proportion_curvy-silhouette_08_thumb.webp",
+       "原图": "img/body/body-proportion_curvy-silhouette_08_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "hourglass figure",
+       "中文": "沙漏型身材"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "curvy",
+       "中文": "曲线型身材"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "pear shaped",
+       "中文": "梨形身材"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "pear shaped torso silhouette",
+       "中文": "梨形躯干轮廓"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "apple shaped body silhouette",
+       "中文": "苹果形身体轮廓"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "voluptuous body",
+       "中文": "丰腴的体态"
+      },
+      {
+       "分组": "轮廓",
+       "提示词": "balanced curves",
+       "中文": "均衡的曲线"
+      },
+      {
+       "分组": "轮廓",
+       "提示词": "sharp silhouette",
+       "中文": "对比鲜明的轮廓"
+      },
+      {
+       "分组": "轮廓",
+       "提示词": "soft contours",
+       "中文": "柔和的轮廓"
+      },
+      {
+       "分组": "胸部",
+       "提示词": "full bust",
+       "中文": "饱满的胸部"
+      },
+      {
+       "分组": "躯干",
+       "提示词": "broad torso",
+       "中文": "宽阔的躯干"
+      },
+      {
+       "分组": "腰身",
+       "提示词": "defined waistline",
+       "中文": "鲜明的腰线"
+      },
+      {
+       "分组": "腰身",
+       "提示词": "narrow waist",
+       "中文": "细腰"
+      },
+      {
+       "分组": "臀部",
+       "提示词": "wide hips",
+       "中文": "宽臀"
+      },
+      {
+       "分组": "臀部",
+       "提示词": "fuller hips",
+       "中文": "丰满的臀部"
+      },
+      {
+       "分组": "腿部",
+       "提示词": "slim legs",
+       "中文": "纤细的腿"
+      },
+      {
+       "分组": "体积",
+       "提示词": "ample volume",
+       "中文": "充沛的体积"
+      },
+      {
+       "分组": "体格",
+       "提示词": "full figure",
+       "中文": "丰满的体格"
+      },
+      {
+       "分组": "强调",
+       "提示词": "lower-body emphasis",
+       "中文": "强调下半身"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "名称": "年龄与性别差异",
+   "分类": [
+    {
+     "id": "gender",
+     "名称": "性别差异",
+     "简介": "男、女、中性到伪娘，骨骼与曲线取向决定性别观感。",
+     "示例": [
+      {
+       "提示词": "boy, youthful male frame, narrow build",
+       "缩略图": "thumbs/body/body-proportion_gender-body-difference_01_thumb.webp",
+       "原图": "img/body/body-proportion_gender-body-difference_01_large.webp"
+      },
+      {
+       "提示词": "girl, petite build, delicate limbs, narrow shoulders",
+       "缩略图": "thumbs/body/body-proportion_gender-body-difference_02_thumb.webp",
+       "原图": "img/body/body-proportion_gender-body-difference_02_large.webp"
+      },
+      {
+       "提示词": "male body, defined male proportions, firm torso",
+       "缩略图": "thumbs/body/body-proportion_gender-body-difference_03_thumb.webp",
+       "原图": "img/body/body-proportion_gender-body-difference_03_large.webp"
+      },
+      {
+       "提示词": "female body, soft curves, wide hips, hourglass silhouette",
+       "缩略图": "thumbs/body/body-proportion_gender-body-difference_04_thumb.webp",
+       "原图": "img/body/body-proportion_gender-body-difference_04_large.webp"
+      },
+      {
+       "提示词": "man, mature male physique, broad frame",
+       "缩略图": "thumbs/body/body-proportion_gender-body-difference_05_thumb.webp",
+       "原图": "img/body/body-proportion_gender-body-difference_05_large.webp"
+      },
+      {
+       "提示词": "woman, mature figure, gentle curves, slender neck",
+       "缩略图": "thumbs/body/body-proportion_gender-body-difference_06_thumb.webp",
+       "原图": "img/body/body-proportion_gender-body-difference_06_large.webp"
+      },
+      {
+       "提示词": "tomboy physique, boyish hips",
+       "缩略图": "thumbs/body/body-proportion_gender-body-difference_07_thumb.webp",
+       "原图": "img/body/body-proportion_gender-body-difference_07_large.webp"
+      },
+      {
+       "提示词": "femboy body, slender male frame, soft curves",
+       "缩略图": "thumbs/body/body-proportion_gender-body-difference_08_thumb.webp",
+       "原图": "img/body/body-proportion_gender-body-difference_08_large.webp"
+      },
+      {
+       "提示词": "unisex body, minimal torso taper, neutral frame",
+       "缩略图": "thumbs/body/body-proportion_gender-body-difference_09_thumb.webp",
+       "原图": "img/body/body-proportion_gender-body-difference_09_large.webp"
+      },
+      {
+       "提示词": "androgynous body, slender build, ambiguous gender cues, sharp jawline",
+       "缩略图": "thumbs/body/body-proportion_gender-body-difference_10_thumb.webp",
+       "原图": "img/body/body-proportion_gender-body-difference_10_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "boy",
+       "中文": "男孩"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "girl",
+       "中文": "女孩"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "male body",
+       "中文": "男性身体"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "female body",
+       "中文": "女性身体"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "man",
+       "中文": "男人"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "woman",
+       "中文": "女人"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "tomboy physique",
+       "中文": "中性偏男孩的体格"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "femboy body",
+       "中文": "伪娘型身体"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "unisex body",
+       "中文": "无性别感的身体"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "androgynous body",
+       "中文": "中性身体"
+      },
+      {
+       "分组": "性别表现",
+       "提示词": "ambiguous gender cues",
+       "中文": "模糊的性别特征"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "narrow shoulders",
+       "中文": "窄肩"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "youthful male frame",
+       "中文": "年轻的男性骨架"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "broad frame",
+       "中文": "结实的骨架"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "slender male frame",
+       "中文": "纤细的男性骨架"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "neutral frame",
+       "中文": "中性的骨架"
+      },
+      {
+       "分组": "体格",
+       "提示词": "narrow build",
+       "中文": "瘦削的体格"
+      },
+      {
+       "分组": "体格",
+       "提示词": "petite build",
+       "中文": "娇小的体格"
+      },
+      {
+       "分组": "体格",
+       "提示词": "mature male physique",
+       "中文": "成熟男性的体格"
+      },
+      {
+       "分组": "体格",
+       "提示词": "mature figure",
+       "中文": "成熟的体格"
+      },
+      {
+       "分组": "体格",
+       "提示词": "slender build",
+       "中文": "纤细的身架"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "hourglass silhouette",
+       "中文": "沙漏型轮廓"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "soft curves",
+       "中文": "柔和的曲线"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "gentle curves",
+       "中文": "平缓的曲线"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "sharp jawline",
+       "中文": "锋利的下颌线"
+      },
+      {
+       "分组": "腰身",
+       "提示词": "minimal torso taper",
+       "中文": "几乎不收腰"
+      },
+      {
+       "分组": "腰身",
+       "提示词": "firm torso",
+       "中文": "紧实的躯干"
+      },
+      {
+       "分组": "臀部",
+       "提示词": "wide hips",
+       "中文": "宽臀"
+      },
+      {
+       "分组": "臀部",
+       "提示词": "boyish hips",
+       "中文": "男孩般的臀部"
+      },
+      {
+       "分组": "比例",
+       "提示词": "defined male proportions",
+       "中文": "鲜明的男性比例"
+      },
+      {
+       "分组": "四肢特征",
+       "提示词": "delicate limbs",
+       "中文": "纤细的四肢"
+      },
+      {
+       "分组": "颈部特征",
+       "提示词": "slender neck",
+       "中文": "纤细的颈部"
+      }
+     ]
+    },
+    {
+     "id": "age",
+     "名称": "年龄变化",
+     "简介": "从新生儿到百岁，肌肉、骨相、姿态与皮肤随年龄的整体变化。",
+     "示例": [
+      {
+       "提示词": "newborn, soft tiny body",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_01_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_01_large.webp"
+      },
+      {
+       "提示词": "toddler, small sturdy proportions",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_02_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_02_large.webp"
+      },
+      {
+       "提示词": "young child, slight early-childhood frame",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_03_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_03_large.webp"
+      },
+      {
+       "提示词": "preschooler, slender build, undeveloped muscles, 4-head tall",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_04_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_04_large.webp"
+      },
+      {
+       "提示词": "school-age child, lean growing body",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_05_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_05_large.webp"
+      },
+      {
+       "提示词": "preteen, early adolescent proportions",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_06_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_06_large.webp"
+      },
+      {
+       "提示词": "young teen, lanky build",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_07_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_07_large.webp"
+      },
+      {
+       "提示词": "adolescent, awkward posture, gangly limbs, lean build",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_08_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_08_large.webp"
+      },
+      {
+       "提示词": "pubescent body, adolescent growth",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_09_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_09_large.webp"
+      },
+      {
+       "提示词": "teenager physique, elongated developing frame",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_10_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_10_large.webp"
+      },
+      {
+       "提示词": "young adult figure, peak physical condition",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_11_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_11_large.webp"
+      },
+      {
+       "提示词": "fully developed body, complete adult structure",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_12_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_12_large.webp"
+      },
+      {
+       "提示词": "adult physique",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_13_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_13_large.webp"
+      },
+      {
+       "提示词": "middle-aged body, softened adult contours",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_14_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_14_large.webp"
+      },
+      {
+       "提示词": "elderly, reduced muscle mass, stooped posture, wrinkled skin",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_15_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_15_large.webp"
+      },
+      {
+       "提示词": "senior figure, prominent age spots, thinning hair, fragile frame",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_16_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_16_large.webp"
+      },
+      {
+       "提示词": "aged, deep wrinkles, bony hands, hollow cheeks",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_17_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_17_large.webp"
+      },
+      {
+       "提示词": "old adult",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_18_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_18_large.webp"
+      },
+      {
+       "提示词": "geriatric body, extreme frailty, brittle bones, dependent posture",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_19_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_19_large.webp"
+      },
+      {
+       "提示词": "centenarian physique, extremely aged proportions",
+       "缩略图": "thumbs/body/body-proportion_age-body-change_20_thumb.webp",
+       "原图": "img/body/body-proportion_age-body-change_20_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "newborn",
+       "中文": "新生儿"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "toddler",
+       "中文": "幼儿"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "young child",
+       "中文": "儿童"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "preschooler",
+       "中文": "学龄前儿童"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "school-age child",
+       "中文": "学龄儿童"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "preteen",
+       "中文": "少年儿童"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "young teen",
+       "中文": "青春期早期"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "adolescent",
+       "中文": "青少年"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "pubescent body",
+       "中文": "青春期的身体"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "teenager physique",
+       "中文": "青少年的体格"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "young adult figure",
+       "中文": "青年身姿"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "fully developed body",
+       "中文": "完全发育的身体"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "adult physique",
+       "中文": "成人体格"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "middle-aged body",
+       "中文": "中年的身体"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "elderly",
+       "中文": "老年人"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "senior figure",
+       "中文": "年长者的身姿"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "aged",
+       "中文": "高龄"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "old adult",
+       "中文": "年长的成人"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "geriatric body",
+       "中文": "老年特有的身体"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "centenarian physique",
+       "中文": "百岁体格"
+      },
+      {
+       "分组": "部位变化",
+       "提示词": "hollow cheeks",
+       "中文": "凹陷的双颊"
+      },
+      {
+       "分组": "部位变化",
+       "提示词": "bony hands",
+       "中文": "骨节突出的手"
+      },
+      {
+       "分组": "成长阶段",
+       "提示词": "complete adult structure",
+       "中文": "发育完全的成人结构"
+      },
+      {
+       "分组": "成长阶段",
+       "提示词": "adolescent growth",
+       "中文": "青春期发育"
+      },
+      {
+       "分组": "发育阶段",
+       "提示词": "undeveloped muscles",
+       "中文": "未发育的肌肉"
+      },
+      {
+       "分组": "发育阶段",
+       "提示词": "reduced muscle mass",
+       "中文": "减少的肌肉量"
+      },
+      {
+       "分组": "发育阶段",
+       "提示词": "slight early-childhood frame",
+       "中文": "幼年期纤细的骨骼"
+      },
+      {
+       "分组": "发育阶段",
+       "提示词": "elongated developing frame",
+       "中文": "成长中拉长的骨骼"
+      },
+      {
+       "分组": "发育阶段",
+       "提示词": "fragile frame",
+       "中文": "脆弱的骨架"
+      },
+      {
+       "分组": "发育阶段",
+       "提示词": "brittle bones",
+       "中文": "易碎的骨头"
+      },
+      {
+       "分组": "姿态",
+       "提示词": "awkward posture",
+       "中文": "笨拙的姿态"
+      },
+      {
+       "分组": "姿态",
+       "提示词": "stooped posture",
+       "中文": "佝偻前倾的姿态"
+      },
+      {
+       "分组": "姿态",
+       "提示词": "dependent posture",
+       "中文": "需要扶持的姿态"
+      },
+      {
+       "分组": "状态",
+       "提示词": "peak physical condition",
+       "中文": "体能的巅峰期"
+      },
+      {
+       "分组": "状态",
+       "提示词": "extreme frailty",
+       "中文": "极度虚弱"
+      },
+      {
+       "分组": "体格",
+       "提示词": "soft tiny body",
+       "中文": "柔软娇小的身体"
+      },
+      {
+       "分组": "体格",
+       "提示词": "slender build",
+       "中文": "纤细的身架"
+      },
+      {
+       "分组": "体格",
+       "提示词": "lean growing body",
+       "中文": "成长期偏瘦的身体"
+      },
+      {
+       "分组": "体格",
+       "提示词": "lanky build",
+       "中文": "瘦长的体格"
+      },
+      {
+       "分组": "体格",
+       "提示词": "lean build",
+       "中文": "清瘦的身架"
+      },
+      {
+       "分组": "比例",
+       "提示词": "small sturdy proportions",
+       "中文": "矮小但结实的比例"
+      },
+      {
+       "分组": "比例",
+       "提示词": "4-head tall",
+       "中文": "四头身"
+      },
+      {
+       "分组": "比例",
+       "提示词": "early adolescent proportions",
+       "中文": "青春期早期的比例"
+      },
+      {
+       "分组": "比例",
+       "提示词": "extremely aged proportions",
+       "中文": "极度衰老的比例"
+      },
+      {
+       "分组": "四肢特征",
+       "提示词": "gangly limbs",
+       "中文": "细长的手脚"
+      },
+      {
+       "分组": "轮廓",
+       "提示词": "softened adult contours",
+       "中文": "柔化的成人轮廓"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "名称": "肌肤与质感",
+   "分类": [
+    {
+     "id": "skin-tone",
+     "名称": "肤色",
+     "简介": "从瓷白到深褐的完整肤色梯度，附光感、明度与色调修饰词。",
+     "示例": [
+      {
+       "提示词": "alabaster skin, ultra-pale, flawless texture",
+       "缩略图": "thumbs/body/body-proportion_skin-tone-variation_01_thumb.webp",
+       "原图": "img/body/body-proportion_skin-tone-variation_01_large.webp"
+      },
+      {
+       "提示词": "porcelain skin, high-gloss finish",
+       "缩略图": "thumbs/body/body-proportion_skin-tone-variation_02_thumb.webp",
+       "原图": "img/body/body-proportion_skin-tone-variation_02_large.webp"
+      },
+      {
+       "提示词": "pale skin, cool-toned, ethereal glow",
+       "缩略图": "thumbs/body/body-proportion_skin-tone-variation_03_thumb.webp",
+       "原图": "img/body/body-proportion_skin-tone-variation_03_large.webp"
+      },
+      {
+       "提示词": "milky skin, creamy, soft-touch",
+       "缩略图": "thumbs/body/body-proportion_skin-tone-variation_04_thumb.webp",
+       "原图": "img/body/body-proportion_skin-tone-variation_04_large.webp"
+      },
+      {
+       "提示词": "fair skin, natural-toned, healthy white",
+       "缩略图": "thumbs/body/body-proportion_skin-tone-variation_05_thumb.webp",
+       "原图": "img/body/body-proportion_skin-tone-variation_05_large.webp"
+      },
+      {
+       "提示词": "honey‑toned skin, warm-glow, sweet-amber",
+       "缩略图": "thumbs/body/body-proportion_skin-tone-variation_06_thumb.webp",
+       "原图": "img/body/body-proportion_skin-tone-variation_06_large.webp"
+      },
+      {
+       "提示词": "sun-kissed skin, light-brown, radiant-hue",
+       "缩略图": "thumbs/body/body-proportion_skin-tone-variation_07_thumb.webp",
+       "原图": "img/body/body-proportion_skin-tone-variation_07_large.webp"
+      },
+      {
+       "提示词": "amber skin, deep-saturation",
+       "缩略图": "thumbs/body/body-proportion_skin-tone-variation_08_thumb.webp",
+       "原图": "img/body/body-proportion_skin-tone-variation_08_large.webp"
+      },
+      {
+       "提示词": "caramel skin, rich-warmth, silky-finish",
+       "缩略图": "thumbs/body/body-proportion_skin-tone-variation_09_thumb.webp",
+       "原图": "img/body/body-proportion_skin-tone-variation_09_large.webp"
+      },
+      {
+       "提示词": "olive skin, greenish-undertone",
+       "缩略图": "thumbs/body/body-proportion_skin-tone-variation_10_thumb.webp",
+       "原图": "img/body/body-proportion_skin-tone-variation_10_large.webp"
+      },
+      {
+       "提示词": "tan skin, deep-bronzed, matte-texture",
+       "缩略图": "thumbs/body/body-proportion_skin-tone-variation_11_thumb.webp",
+       "原图": "img/body/body-proportion_skin-tone-variation_11_large.webp"
+      },
+      {
+       "提示词": "bronze skin, copper-tint",
+       "缩略图": "thumbs/body/body-proportion_skin-tone-variation_12_thumb.webp",
+       "原图": "img/body/body-proportion_skin-tone-variation_12_large.webp"
+      },
+      {
+       "提示词": "mocha skin, dark-roasted",
+       "缩略图": "thumbs/body/body-proportion_skin-tone-variation_13_thumb.webp",
+       "原图": "img/body/body-proportion_skin-tone-variation_13_large.webp"
+      },
+      {
+       "提示词": "brown skin, earthy-tone",
+       "缩略图": "thumbs/body/body-proportion_skin-tone-variation_14_thumb.webp",
+       "原图": "img/body/body-proportion_skin-tone-variation_14_large.webp"
+      },
+      {
+       "提示词": "dark skin, deep-melanin",
+       "缩略图": "thumbs/body/body-proportion_skin-tone-variation_15_thumb.webp",
+       "原图": "img/body/body-proportion_skin-tone-variation_15_large.webp"
+      },
+      {
+       "提示词": "ebony skin, ultra deep",
+       "缩略图": "thumbs/body/body-proportion_skin-tone-variation_16_thumb.webp",
+       "原图": "img/body/body-proportion_skin-tone-variation_16_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "alabaster skin",
+       "中文": "雪花石膏般的白肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "porcelain skin",
+       "中文": "瓷器般的肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "pale skin",
+       "中文": "白皙的皮肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "milky skin",
+       "中文": "乳白色的肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "fair skin",
+       "中文": "洁白透亮的肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "honey?toned skin",
+       "中文": "蜜色肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "sun-kissed skin",
+       "中文": "被阳光亲吻过的小麦色肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "amber skin",
+       "中文": "琥珀色肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "caramel skin",
+       "中文": "焦糖色肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "olive skin",
+       "中文": "橄榄色肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "tan skin",
+       "中文": "晒后的小麦色肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "bronze skin",
+       "中文": "古铜色肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "mocha skin",
+       "中文": "摩卡色肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "brown skin",
+       "中文": "褐色肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "dark skin",
+       "中文": "深色肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "ebony skin",
+       "中文": "乌木般的深色肌肤"
+      },
+      {
+       "分组": "光泽·质感",
+       "提示词": "ethereal glow",
+       "中文": "空灵的光泽"
+      },
+      {
+       "分组": "光泽·质感",
+       "提示词": "warm-glow",
+       "中文": "温暖的辉光"
+      },
+      {
+       "分组": "光泽·质感",
+       "提示词": "high-gloss finish",
+       "中文": "高光泽的妆效"
+      },
+      {
+       "分组": "光泽·质感",
+       "提示词": "silky-finish",
+       "中文": "丝滑的质感"
+      },
+      {
+       "分组": "明度·饱和度",
+       "提示词": "deep-saturation",
+       "中文": "高饱和度"
+      },
+      {
+       "分组": "明度·饱和度",
+       "提示词": "ultra-pale",
+       "中文": "超极白"
+      },
+      {
+       "分组": "明度·饱和度",
+       "提示词": "ultra deep",
+       "中文": "极深的色调"
+      },
+      {
+       "分组": "质感",
+       "提示词": "flawless texture",
+       "中文": "毫无瑕疵的质感"
+      },
+      {
+       "分组": "质感",
+       "提示词": "creamy",
+       "中文": "奶油般的质感"
+      },
+      {
+       "分组": "质感",
+       "提示词": "soft-touch",
+       "中文": "柔软的触感"
+      },
+      {
+       "分组": "质感",
+       "提示词": "rich-warmth",
+       "中文": "浓郁的暖意"
+      },
+      {
+       "分组": "质感",
+       "提示词": "matte-texture",
+       "中文": "哑光的质感"
+      },
+      {
+       "分组": "色彩",
+       "提示词": "healthy white",
+       "中文": "健康的白色"
+      },
+      {
+       "分组": "色彩",
+       "提示词": "sweet-amber",
+       "中文": "甜美的琥珀色"
+      },
+      {
+       "分组": "色彩",
+       "提示词": "light-brown",
+       "中文": "浅棕色"
+      },
+      {
+       "分组": "色彩",
+       "提示词": "radiant-hue",
+       "中文": "有光泽的色调"
+      },
+      {
+       "分组": "色彩",
+       "提示词": "deep-bronzed",
+       "中文": "深古铜色"
+      },
+      {
+       "分组": "色彩",
+       "提示词": "dark-roasted",
+       "中文": "深烘焙般的褐色"
+      },
+      {
+       "分组": "色彩",
+       "提示词": "deep-melanin",
+       "中文": "高黑色素的肤色"
+      },
+      {
+       "分组": "色调",
+       "提示词": "cool-toned",
+       "中文": "冷色调"
+      },
+      {
+       "分组": "色调",
+       "提示词": "natural-toned",
+       "中文": "自然色调"
+      },
+      {
+       "分组": "色调",
+       "提示词": "greenish-undertone",
+       "中文": "带绿调的底色"
+      },
+      {
+       "分组": "色调",
+       "提示词": "copper-tint",
+       "中文": "铜色色调"
+      },
+      {
+       "分组": "色调",
+       "提示词": "earthy-tone",
+       "中文": "大地色系"
+      }
+     ]
+    },
+    {
+     "id": "skin-texture",
+     "名称": "肤质",
+     "简介": "水润、油光、哑光、细纹与日晒损伤，决定皮肤的可信度。",
+     "示例": [
+      {
+       "提示词": "dewy skin",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_01_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_01_large.webp"
+      },
+      {
+       "提示词": "glowing skin",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_02_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_02_large.webp"
+      },
+      {
+       "提示词": "shiny skin, bright sheen",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_03_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_03_large.webp"
+      },
+      {
+       "提示词": "sweaty skin, moist sheen",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_04_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_04_large.webp"
+      },
+      {
+       "提示词": "radiant skin, inner glow",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_05_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_05_large.webp"
+      },
+      {
+       "提示词": "luminous skin",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_06_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_06_large.webp"
+      },
+      {
+       "提示词": "glossy skin, high shine",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_07_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_07_large.webp"
+      },
+      {
+       "提示词": "translucent skin, milky white skin, light diffusion",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_08_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_08_large.webp"
+      },
+      {
+       "提示词": "wet skin",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_09_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_09_large.webp"
+      },
+      {
+       "提示词": "glistening skin, bright reflections",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_10_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_10_large.webp"
+      },
+      {
+       "提示词": "matte skin texture, no oily skin",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_11_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_11_large.webp"
+      },
+      {
+       "提示词": "powdery skin texture, fine dustiness, non oily skin",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_12_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_12_large.webp"
+      },
+      {
+       "提示词": "natural skin texture, soft detail",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_13_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_13_large.webp"
+      },
+      {
+       "提示词": "highly detailed skin texture, micro detail",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_14_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_14_large.webp"
+      },
+      {
+       "提示词": "fine skin texture, delicate grain",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_15_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_15_large.webp"
+      },
+      {
+       "提示词": "smooth skin texture, even surface",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_16_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_16_large.webp"
+      },
+      {
+       "提示词": "porcelain skin texture, uniform smoothness",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_17_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_17_large.webp"
+      },
+      {
+       "提示词": "wrinkled skin texture, deep creases",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_18_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_18_large.webp"
+      },
+      {
+       "提示词": "sun-damaged skin texture, uneven tone",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_19_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_19_large.webp"
+      },
+      {
+       "提示词": "sunburnt skin, reddened patches",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_20_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_20_large.webp"
+      },
+      {
+       "提示词": "freckled skin, light speckles",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_21_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_21_large.webp"
+      },
+      {
+       "提示词": "flushed skin, reddish tint",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_22_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_22_large.webp"
+      },
+      {
+       "提示词": "sallow skin, yellowish tone",
+       "缩略图": "thumbs/body/body-proportion_skin-texture-type_23_thumb.webp",
+       "原图": "img/body/body-proportion_skin-texture-type_23_large.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "基础提示词",
+       "提示词": "dewy skin",
+       "中文": "水润的肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "glowing skin",
+       "中文": "发光的肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "shiny skin",
+       "中文": "泛着油光的肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "sweaty skin",
+       "中文": "微汗的肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "radiant skin",
+       "中文": "散发光彩的肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "luminous skin",
+       "中文": "透光的肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "glossy skin",
+       "中文": "莹亮的肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "translucent skin",
+       "中文": "通透的肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "wet skin",
+       "中文": "湿漉的肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "glistening skin",
+       "中文": "闪亮的肌肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "matte skin texture",
+       "中文": "哑光的肤质"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "powdery skin texture",
+       "中文": "粉雾般的肤质"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "natural skin texture",
+       "中文": "自然的皮肤质感"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "highly detailed skin texture",
+       "中文": "高度细腻的皮肤质感"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "fine skin texture",
+       "中文": "细腻的肤质"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "smooth skin texture",
+       "中文": "光滑的肤质"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "porcelain skin texture",
+       "中文": "瓷一般的肤质"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "wrinkled skin texture",
+       "中文": "皱纹明显的肤质"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "sun-damaged skin texture",
+       "中文": "日晒损伤的肤质"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "sunburnt skin",
+       "中文": "晒伤的皮肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "freckled skin",
+       "中文": "有雀斑的皮肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "flushed skin",
+       "中文": "泛红发热的皮肤"
+      },
+      {
+       "分组": "基础提示词",
+       "提示词": "sallow skin",
+       "中文": "土色的皮肤"
+      },
+      {
+       "分组": "光效",
+       "提示词": "inner glow",
+       "中文": "由内而外的光"
+      },
+      {
+       "分组": "光效",
+       "提示词": "light diffusion",
+       "中文": "光线的散射"
+      },
+      {
+       "分组": "光效",
+       "提示词": "bright reflections",
+       "中文": "明亮的反射"
+      },
+      {
+       "分组": "表面质感",
+       "提示词": "bright sheen",
+       "中文": "明亮的光泽"
+      },
+      {
+       "分组": "表面质感",
+       "提示词": "moist sheen",
+       "中文": "湿润的光泽"
+      },
+      {
+       "分组": "表面质感",
+       "提示词": "high shine",
+       "中文": "强烈的光泽"
+      },
+      {
+       "分组": "表面质感",
+       "提示词": "fine dustiness",
+       "中文": "细腻的粉感"
+      },
+      {
+       "分组": "表面质感",
+       "提示词": "delicate grain",
+       "中文": "细腻的肌理"
+      },
+      {
+       "分组": "表面质感",
+       "提示词": "uniform smoothness",
+       "中文": "均匀的顺滑"
+      },
+      {
+       "分组": "表面质感",
+       "提示词": "even surface",
+       "中文": "均匀的表面"
+      },
+      {
+       "分组": "状态",
+       "提示词": "no oily skin",
+       "中文": "不泛油的肌肤"
+      },
+      {
+       "分组": "状态",
+       "提示词": "non oily skin",
+       "中文": "不油腻的肌肤"
+      },
+      {
+       "分组": "状态",
+       "提示词": "deep creases",
+       "中文": "深深的褶皱"
+      },
+      {
+       "分组": "状态",
+       "提示词": "reddened patches",
+       "中文": "泛红的斑块"
+      },
+      {
+       "分组": "细节表现",
+       "提示词": "soft detail",
+       "中文": "柔和的细节"
+      },
+      {
+       "分组": "细节表现",
+       "提示词": "micro detail",
+       "中文": "微距级的细节"
+      },
+      {
+       "分组": "色彩",
+       "提示词": "milky white skin",
+       "中文": "乳白色的肌肤"
+      },
+      {
+       "分组": "色调",
+       "提示词": "uneven tone",
+       "中文": "不均匀的肤色"
+      },
+      {
+       "分组": "色调",
+       "提示词": "reddish tint",
+       "中文": "偏红的色调"
+      },
+      {
+       "分组": "色调",
+       "提示词": "yellowish tone",
+       "中文": "偏黄的色调"
+      },
+      {
+       "分组": "特征",
+       "提示词": "light speckles",
+       "中文": "淡淡的斑点"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "名称": "实战配方",
+   "分类": [
+    {
+     "id": "preset-natural",
+     "名称": "标准自然系女性",
+     "简介": "均衡、低体积、平坦胸线的日常自然女性配方。",
+     "示例": [
+      {
+       "提示词": "(high resolution:1.2), (detailed:1.2), (best quality:1.2), (white background:1.2), BREAK, 1girl, medium height, balanced proportions, proportioned, balanced structure, even body lines, flat chest, minimal volume, smooth chest line, BREAK, full body shot, from front, contrapposto pose, standing pose, sundress with floral pattern, sandals",
+       "缩略图": "thumbs/body/body-proportion_natural-standard-female_01-300x300.webp",
+       "原图": "img/body/body-proportion_natural-standard-female_01.webp"
+      },
+      {
+       "提示词": "(high resolution:1.2), (detailed:1.2), (best quality:1.2), (white background:1.2), BREAK, 1girl, medium height, balanced proportions, balanced structure, even body lines, adult proportions, standard limb length, proportional head size, flat chest, minimal volume, smooth chest line, BREAK, full body shot, from front, contrapposto pose, standing pose, white t-shirt, skinny jeans",
+       "缩略图": "thumbs/body/body-proportion_natural-standard-female_02-300x300.webp",
+       "原图": "img/body/body-proportion_natural-standard-female_02.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "比例",
+       "提示词": "balanced proportions",
+       "中文": "均衡的比例"
+      },
+      {
+       "分组": "比例",
+       "提示词": "proportioned",
+       "中文": "端正的比例"
+      },
+      {
+       "分组": "比例",
+       "提示词": "adult proportions",
+       "中文": "成人比例"
+      },
+      {
+       "分组": "体积",
+       "提示词": "minimal volume",
+       "中文": "极小的体积"
+      },
+      {
+       "分组": "线条",
+       "提示词": "even body lines",
+       "中文": "均匀的身形线条"
+      },
+      {
+       "分组": "胸部",
+       "提示词": "flat chest",
+       "中文": "平胸"
+      },
+      {
+       "分组": "胸部",
+       "提示词": "smooth chest line",
+       "中文": "平滑的胸部线条"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "balanced structure",
+       "中文": "均衡的体格"
+      },
+      {
+       "分组": "四肢特征",
+       "提示词": "standard limb length",
+       "中文": "标准的四肢长度"
+      },
+      {
+       "分组": "身高",
+       "提示词": "medium height",
+       "中文": "中等身高"
+      },
+      {
+       "分组": "头部",
+       "提示词": "proportional head size",
+       "中文": "协调的头身大小"
+      }
+     ]
+    },
+    {
+     "id": "preset-athlete",
+     "名称": "白皙运动系少女",
+     "简介": "短发少女体型：小胸、结实的肌肉与成长期拉长的骨架。",
+     "示例": [
+      {
+       "提示词": "(high resolution:1.2), (detailed:1.2), (best quality:1.2), (white background:1.2), BREAK, 1girl, milky white skin, tomboy physique, boyish hips, teenager physique, elongated developing frame, high head-to-body ratio, emphasized head size, shortened torso, cute proportions, athletic build, firm muscular structure, small bust, slight projection, subtle contour, BREAK, upper body, three-quarter view, standing pose, sportswear, gym shorts",
+       "缩略图": "thumbs/body/body-proportion_fair-athletic-girl_01-300x300.webp",
+       "原图": "img/body/body-proportion_fair-athletic-girl_01.webp"
+      },
+      {
+       "提示词": "(high resolution:1.2), (detailed:1.2), (best quality:1.2), (white background:1.2), BREAK, 1girl, milky white skin, tomboy physique, boyish hips, pubescent body, adolescent growth, high head-to-body ratio, emphasized head size, shortened torso, cute proportions, athletic build, firm muscular structure, small bust, slight projection, subtle contour, BREAK, upper body, three-quarter view, standing pose, sportswear, gym shorts",
+       "缩略图": "thumbs/body/body-proportion_fair-athletic-girl_02-300x300.webp",
+       "原图": "img/body/body-proportion_fair-athletic-girl_02.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "臀部",
+       "提示词": "boyish hips",
+       "中文": "男孩般的臀部"
+      },
+      {
+       "分组": "胸部",
+       "提示词": "small bust",
+       "中文": "小胸"
+      },
+      {
+       "分组": "肌肉",
+       "提示词": "firm muscular structure",
+       "中文": "坚实的肌肉结构"
+      },
+      {
+       "分组": "形状",
+       "提示词": "slight projection",
+       "中文": "微微隆起"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "elongated developing frame",
+       "中文": "成长中拉长的骨架"
+      },
+      {
+       "分组": "成长",
+       "提示词": "adolescent growth",
+       "中文": "青春期发育"
+      },
+      {
+       "分组": "体格",
+       "提示词": "tomboy physique",
+       "中文": "中性偏男孩的体格"
+      },
+      {
+       "分组": "体格",
+       "提示词": "teenager physique",
+       "中文": "青少年的体格"
+      },
+      {
+       "分组": "体格",
+       "提示词": "athletic build",
+       "中文": "运动型体格"
+      },
+      {
+       "分组": "体格",
+       "提示词": "pubescent body",
+       "中文": "青春期的身体"
+      },
+      {
+       "分组": "头部",
+       "提示词": "emphasized head size",
+       "中文": "突出的头部比例"
+      },
+      {
+       "分组": "躯干",
+       "提示词": "shortened torso",
+       "中文": "缩短的躯干"
+      },
+      {
+       "分组": "肤色",
+       "提示词": "milky white skin",
+       "中文": "乳白色的肌肤"
+      },
+      {
+       "分组": "比例",
+       "提示词": "high head-to-body ratio",
+       "中文": "较高的头身比"
+      },
+      {
+       "分组": "比例",
+       "提示词": "cute proportions",
+       "中文": "可爱的比例"
+      },
+      {
+       "分组": "轮廓",
+       "提示词": "subtle contour",
+       "中文": "含蓄的轮廓"
+      }
+     ]
+    },
+    {
+     "id": "preset-tanned",
+     "名称": "小麦色元气少女",
+     "简介": "低马尾、娇小骨骼、焦糖肤色与青春期早期的元气配方。",
+     "示例": [
+      {
+       "提示词": "(high resolution:1.2), (detailed:1.2), (best quality:1.2), (white background:1.2), BREAK, 1girl, low ponytail, preteen, early adolescent proportions, tiny, petite frame, youthful proportions, caramel skin, rich-warmth, silky-finish, BREAK, upper body, three-quarter view, standing pose, overalls",
+       "缩略图": "thumbs/body/body-proportion_tan-energetic-girl_01-300x300.webp",
+       "原图": "img/body/body-proportion_tan-energetic-girl_01.webp"
+      },
+      {
+       "提示词": "(high resolution:1.2), (detailed:1.2), (best quality:1.2), (white background:1.2), BREAK, 1girl, low ponytail, preteen, early adolescent proportions, tiny, petite frame, youthful proportions, tan skin, rich-warmth, silky-finish, BREAK, upper body, three-quarter view, standing pose, straw hat, overalls, sleeveless top",
+       "缩略图": "thumbs/body/body-proportion_tan-energetic-girl_02-300x300.webp",
+       "原图": "img/body/body-proportion_tan-energetic-girl_02.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "尺寸",
+       "提示词": "tiny",
+       "中文": "非常娇小"
+      },
+      {
+       "分组": "发型",
+       "提示词": "low ponytail",
+       "中文": "低马尾"
+      },
+      {
+       "分组": "骨架",
+       "提示词": "petite frame",
+       "中文": "娇小的骨架"
+      },
+      {
+       "分组": "质感",
+       "提示词": "rich-warmth",
+       "中文": "浓郁的暖意"
+      },
+      {
+       "分组": "质感",
+       "提示词": "silky-finish",
+       "中文": "丝滑的质感"
+      },
+      {
+       "分组": "年龄",
+       "提示词": "preteen",
+       "中文": "少年儿童"
+      },
+      {
+       "分组": "肤色",
+       "提示词": "caramel skin",
+       "中文": "焦糖色肌肤"
+      },
+      {
+       "分组": "肤色",
+       "提示词": "tan skin",
+       "中文": "晒后的小麦色肌肤"
+      },
+      {
+       "分组": "比例",
+       "提示词": "early adolescent proportions",
+       "中文": "青春期早期的比例"
+      },
+      {
+       "分组": "比例",
+       "提示词": "youthful proportions",
+       "中文": "年轻化的比例"
+      }
+     ]
+    },
+    {
+     "id": "preset-senior",
+     "名称": "肌肉型年长男性",
+     "简介": "高龄但仍有肌肉线条的男性：脆骨、深纹与不均肤色并存。",
+     "示例": [
+      {
+       "提示词": "(high resolution:1.2), (detailed:1.2), (best quality:1.2), (white background:1.2), BREAK, man, mature male physique, dense physique, elderly, geriatric body, extreme frailty, brittle bones, dependent posture, lean muscular build, slim fit, visible abs, slender strength, oily skin, (wrinkled skin texture:1.2), deep creases, BREAK, above-the-thigh shot, three-quarter view, standing pose, activewear",
+       "缩略图": "thumbs/body/body-proportion_muscular-senior-male_01-300x300.webp",
+       "原图": "img/body/body-proportion_muscular-senior-male_01.webp"
+      },
+      {
+       "提示词": "(high resolution:1.2), (detailed:1.2), (best quality:1.2), (white background:1.2), BREAK, man, mature male physique, dense physique, elderly, geriatric body, extreme frailty, brittle bones, dependent posture, lean muscular build, slim fit, visible abs, slender strength, oily skin, (wrinkled skin texture:1.2), sun-damaged skin texture, uneven tone, deep creases, BREAK, above-the-thigh shot, three-quarter view, standing pose, activewear",
+       "缩略图": "thumbs/body/body-proportion_muscular-senior-male_02-300x300.webp",
+       "原图": "img/body/body-proportion_muscular-senior-male_02.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "骨架·体格",
+       "提示词": "brittle bones",
+       "中文": "易碎的骨头"
+      },
+      {
+       "分组": "骨架·体格",
+       "提示词": "mature male physique",
+       "中文": "成熟男性的体格"
+      },
+      {
+       "分组": "骨架·体格",
+       "提示词": "dense physique",
+       "中文": "结实厚重的体格"
+      },
+      {
+       "分组": "骨架·体格",
+       "提示词": "lean muscular build",
+       "中文": "精瘦肌肉体型"
+      },
+      {
+       "分组": "骨架·体格",
+       "提示词": "slim fit",
+       "中文": "精瘦紧实"
+      },
+      {
+       "分组": "骨架·体格",
+       "提示词": "slender strength",
+       "中文": "柔韧的力量感"
+      },
+      {
+       "分组": "姿态",
+       "提示词": "dependent posture",
+       "中文": "需要扶持的姿态"
+      },
+      {
+       "分组": "状态",
+       "提示词": "extreme frailty",
+       "中文": "极度虚弱"
+      },
+      {
+       "分组": "状态",
+       "提示词": "deep creases",
+       "中文": "深深的褶皱"
+      },
+      {
+       "分组": "色调",
+       "提示词": "uneven tone",
+       "中文": "不均匀的肤色"
+      },
+      {
+       "分组": "年龄",
+       "提示词": "elderly",
+       "中文": "老年人"
+      },
+      {
+       "分组": "年龄",
+       "提示词": "geriatric body",
+       "中文": "老年特有的身体"
+      },
+      {
+       "分组": "肤质",
+       "提示词": "oily skin",
+       "中文": "油性肌肤"
+      },
+      {
+       "分组": "肤质",
+       "提示词": "wrinkled skin texture",
+       "中文": "皱纹明显的肤质"
+      },
+      {
+       "分组": "肤质",
+       "提示词": "sun-damaged skin texture",
+       "中文": "日晒损伤的肤质"
+      },
+      {
+       "分组": "部位肌肉",
+       "提示词": "visible abs",
+       "中文": "清晰的腹肌"
+      }
+     ]
+    },
+    {
+     "id": "preset-bell",
+     "名称": "纤细钟形轮廓女性",
+     "简介": "极低体重的纤细身材，配钟形胸部与柔和女性线条。",
+     "示例": [
+      {
+       "提示词": "(high resolution:1.2), (detailed:1.2), (best quality:1.2), (white background:1.2), BREAK, 1girl, A girl wearing an extra-long solid cream ribbed knit turtleneck sweater, the hem of the sweater covers most of the gingham check pleated mini skirt, (subtle smile:0.8), above-the-thigh shot, three-quarter view, standing pose, BREAK, skinny, extremely low body mass, narrow limbs, bell-shaped breasts, medium breasts, full lower curve with narrow upper area, curvy, soft contours, curvy hips silhouette, gentle flare, smooth arc, feminine lines",
+       "缩略图": "thumbs/body/body-proportion_slim-bellshape-female_02-300x300.webp",
+       "原图": "img/body/body-proportion_slim-bellshape-female_02.webp"
+      },
+      {
+       "提示词": "(high resolution:1.2), (detailed:1.2), (best quality:1.2), (white background:1.2), BREAK, 1girl, A girl wearing an extra-long solid cream ribbed knit turtleneck sweater, the hem of the sweater covers most of the gingham check pleated mini skirt, (subtle smile:0.8), above-the-thigh shot, three-quarter view, standing pose, high fashion pose, BREAK, skinny, extremely low body mass, narrow limbs, bell-shaped breasts, medium breasts, full lower curve with narrow upper area, curvy, soft contours, curvy hips silhouette, gentle flare, smooth arc, feminine lines",
+       "缩略图": "thumbs/body/body-proportion_slim-bellshape-female_01-300x300.webp",
+       "原图": "img/body/body-proportion_slim-bellshape-female_01.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "身体线条",
+       "提示词": "curvy",
+       "中文": "曲线型身材"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "smooth arc",
+       "中文": "平滑的弧线"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "feminine lines",
+       "中文": "女性化线条"
+      },
+      {
+       "分组": "身体线条",
+       "提示词": "soft contours",
+       "中文": "柔和的轮廓"
+      },
+      {
+       "分组": "胸部",
+       "提示词": "bell-shaped breasts",
+       "中文": "钟形胸部"
+      },
+      {
+       "分组": "胸部",
+       "提示词": "medium breasts",
+       "中文": "中等胸部"
+      },
+      {
+       "分组": "胸部",
+       "提示词": "full lower curve with narrow upper area",
+       "中文": "下丰上窄的钟形曲线"
+      },
+      {
+       "分组": "臀部",
+       "提示词": "curvy hips silhouette",
+       "中文": "曲线感臀线"
+      },
+      {
+       "分组": "形状",
+       "提示词": "gentle flare",
+       "中文": "柔和的外扩"
+      },
+      {
+       "分组": "四肢特征",
+       "提示词": "narrow limbs",
+       "中文": "纤细的四肢"
+      },
+      {
+       "分组": "体格",
+       "提示词": "skinny",
+       "中文": "骨感消瘦"
+      },
+      {
+       "分组": "体型构成",
+       "提示词": "extremely low body mass",
+       "中文": "极低的体重"
+      }
+     ]
+    },
+    {
+     "id": "preset-chibi",
+     "名称": "二头身Q版角色",
+     "简介": "大头小身、双马尾与高饱和发色的 Q 版角色配方。",
+     "示例": [
+      {
+       "提示词": "(high resolution:1.2), (detailed:1.2), (best quality:1.2), (white background:1.2), BREAK, 1girl, sea-green eyes, blue to pink gradient hair, chibi figure, large head proportion, compact tiny body, 2-head tall, oversized head, BREAK, full body shot, three-quarter view, standing pose, gothic lolita outfit, deep burgundy velvet, lace headpiece",
+       "缩略图": "thumbs/body/body-proportion_chibi-twohead-outfits_01-300x300.webp",
+       "原图": "img/body/body-proportion_chibi-twohead-outfits_01.webp"
+      },
+      {
+       "提示词": "(high resolution:1.2), (detailed:1.2), (best quality:1.2), (white background:1.2), BREAK, 1girl, sapphire eyes, bright pupils, rainbow-colored hair, chibi figure, large head proportion, compact tiny body, 2-head tall, oversized head, BREAK, full body shot, three-quarter view, standing pose, wedding dress, mini dress, pure white dress, lace headpiece, holding a wedding bouquet in both hands",
+       "缩略图": "thumbs/body/body-proportion_chibi-twohead-outfits_02-300x300.webp",
+       "原图": "img/body/body-proportion_chibi-twohead-outfits_02.webp"
+      },
+      {
+       "提示词": "(high resolution:1.2), (detailed:1.2), (best quality:1.2), (white background:1.2), BREAK, 1girl, high twintails, sapphire eyes, bright pupils, rainbow-colored hair, chibi figure, large head proportion, compact tiny body, 2-head tall, oversized head, BREAK, full body shot, three-quarter view, standing pose, bunny girl outfit, corset bodysuit, strapless leotard, bunny ears headband, bow tie, cuffs, black tights, high heels, clean design",
+       "缩略图": "thumbs/body/body-proportion_chibi-twohead-outfits_03-300x300.webp",
+       "原图": "img/body/body-proportion_chibi-twohead-outfits_03.webp"
+      }
+     ],
+     "词条": [
+      {
+       "分组": "比例",
+       "提示词": "large head proportion",
+       "中文": "头部占比大"
+      },
+      {
+       "分组": "比例",
+       "提示词": "2-head tall",
+       "中文": "二头身"
+      },
+      {
+       "分组": "比例",
+       "提示词": "oversized head",
+       "中文": "超大的头"
+      },
+      {
+       "分组": "体格",
+       "提示词": "chibi figure",
+       "中文": "Q 版体型"
+      },
+      {
+       "分组": "体格",
+       "提示词": "compact tiny body",
+       "中文": "紧凑小巧的身体"
+      },
+      {
+       "分组": "发型",
+       "提示词": "high twintails",
+       "中文": "高双马尾"
+      },
+      {
+       "分组": "眼睛",
+       "提示词": "bright pupils",
+       "中文": "明亮的瞳孔"
+      },
+      {
+       "分组": "瞳色",
+       "提示词": "sea-green eyes",
+       "中文": "海绿色的眼睛"
+      },
+      {
+       "分组": "瞳色",
+       "提示词": "sapphire eyes",
+       "中文": "蓝宝石色的眼睛"
+      },
+      {
+       "分组": "发色",
+       "提示词": "blue to pink gradient hair",
+       "中文": "蓝到粉的渐变发色"
+      },
+      {
+       "分组": "发色",
+       "提示词": "rainbow-colored hair",
+       "中文": "彩虹色头发"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
