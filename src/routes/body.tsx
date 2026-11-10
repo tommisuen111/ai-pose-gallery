@@ -153,6 +153,7 @@ function BodyPage() {
                   <BodyCard
                     key={c.id}
                     category={c}
+                    systemName={s.名称}
                     onOpen={(example) => setViewer({ example, title: c.名称 })}
                   />
                 ))}
@@ -207,9 +208,11 @@ function BodyPage() {
   )
 }
 
-function BodyCard({ category, onOpen }: { category: BodyCategory; onOpen: (example: BodyExample) => void }) {
+function BodyCard({ category, onOpen, systemName }: { category: BodyCategory; onOpen: (example: BodyExample) => void; systemName: string }) {
   const groups = groupEntries(category.词条)
   const { addBodyTags } = useStudio()
+  const isPracticalRecipe = systemName === '实战配方'
+  
   const copyAll = () => void copyText(category.词条.map((e) => e.提示词).join(', '), `已复制「${category.名称}」全部提示词`)
   const addAllToRecipe = () => {
     const tags = category.词条.map((e) => e.提示词)
@@ -221,6 +224,9 @@ function BodyCard({ category, onOpen }: { category: BodyCategory; onOpen: (examp
   }
   const addSingleToRecipe = (entry: BodyEntry) => {
     addBodyTags([entry.提示词])
+  }
+  const addExampleToRecipe = (example: BodyExample) => {
+    addBodyTags([example.提示词])
   }
 
   return (
@@ -235,35 +241,53 @@ function BodyCard({ category, onOpen }: { category: BodyCategory; onOpen: (examp
           </h3>
           <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{category.简介}</p>
         </div>
-        <div className="flex items-center gap-1.5 shrink-0">
-          <Button variant="ghost" size="sm" onClick={copyAll} className="shrink-0">
-            <CopyIcon className="size-3.5" />
-            全部复制
-          </Button>
-          <Button variant="outline" size="sm" onClick={addAllToRecipe} className="shrink-0">
-            <PlusIcon className="size-3.5" />
-            全部加入配方
-          </Button>
-        </div>
+        {isPracticalRecipe && (
+          <div className="flex items-center gap-1.5 shrink-0">
+            <Button variant="ghost" size="sm" onClick={copyAll} className="shrink-0">
+              <CopyIcon className="size-3.5" />
+              全部复制
+            </Button>
+            <Button variant="outline" size="sm" onClick={addAllToRecipe} className="shrink-0">
+              <PlusIcon className="size-3.5" />
+              全部加入配方
+            </Button>
+          </div>
+        )}
       </div>
 
       {category.示例.length > 0 && (
         <div className="flex gap-2 overflow-x-auto px-4 py-3">
           {category.示例.map((example, i) => (
-            <button
+            <div
               key={example.原图}
-              type="button"
-              onClick={() => onOpen(example)}
-              className="group relative shrink-0 cursor-zoom-in overflow-hidden rounded-xl bg-background"
-              title={example.提示词}
+              className="group relative shrink-0 flex flex-col"
             >
-              <img
-                src={`/${example.缩略图}`}
-                alt={`${category.名称} 例图 ${i + 1}`}
-                loading="lazy"
-                className="h-28 w-[84px] object-cover object-top transition group-hover:scale-105"
-              />
-            </button>
+              <button
+                type="button"
+                onClick={() => onOpen(example)}
+                className="cursor-zoom-in overflow-hidden rounded-xl bg-background"
+                title={example.提示词}
+              >
+                <img
+                  src={`/${example.缩略图}`}
+                  alt={`${category.名称} 例图 ${i + 1}`}
+                  loading="lazy"
+                  className="h-28 w-[84px] object-cover object-top transition group-hover:scale-105"
+                />
+              </button>
+              <Button
+                variant="outline"
+                size="sm"
+                className="mt-1.5 w-[84px] shrink-0 text-[10px]"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  addExampleToRecipe(example)
+                }}
+              >
+                <PlusIcon className="size-3" />
+                加入配方
+              </Button>
+            </div>
           ))}
         </div>
       )}
@@ -284,15 +308,17 @@ function BodyCard({ category, onOpen }: { category: BodyCategory; onOpen: (examp
                 >
                   <CopyIcon className="size-3" />
                 </button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="h-6 px-2 text-[11px] shrink-0"
-                  onClick={() => addGroupToRecipe(group.items)}
-                >
-                  <PlusIcon className="size-3" />
-                  加入配方
-                </Button>
+                {isPracticalRecipe && (
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="h-6 px-2 text-[11px] shrink-0"
+                    onClick={() => addGroupToRecipe(group.items)}
+                  >
+                    <PlusIcon className="size-3" />
+                    加入配方
+                  </Button>
+                )}
               </div>
             </div>
             {group.items.map((entry) => (
