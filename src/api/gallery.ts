@@ -1,5 +1,5 @@
 import { queryOptions } from '@tanstack/react-query'
-import type { BodyData, CostumeItem, PortraitItem, PoseGroup, PoseItem } from '@/types/gallery'
+import type { BodyData, CostumeItem, FaceData, PortraitItem, PoseGroup, PoseItem } from '@/types/gallery'
 
 export const ANGLES = ['正面', '俯视', '仰视', '侧面', '斜侧'] as const
 
@@ -115,5 +115,15 @@ export const bodyQuery = queryOptions({
     const res = await fetch('/data/body-zh.json')
     if (!res.ok) throw new Error(`加载身材数据失败: HTTP ${res.status}`)
     return (await res.json()) as BodyData
+  },
+})
+
+export const faceQuery = queryOptions({
+  queryKey: ['gallery', 'face'],
+  staleTime: Infinity,
+  queryFn: async () => {
+    const res = await fetch('/data/face-zh.json')
+    if (!res.ok) throw new Error(`加载表情数据失败: HTTP ${res.status}`)
+    return (await res.json()) as FaceData
   },
 })

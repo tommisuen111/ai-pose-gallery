@@ -1,0 +1,1442 @@
+{
+  "来源": {
+    "标题": "【AIイラスト】Stable Diffusion 表情プロンプト大全｜作例200超！！",
+    "网址": "https://noplog.com/blog/2025/09/16/stable-diffusion-facial-expression-prompts/",
+    "作者": "のぷ（noplog）",
+    "说明": "表情分类、示例图与提示词整理自该文章，中文翻译与本地镜像由本项目维护。"
+  },
+  "更新": "2026-11-10",
+  "体系": [
+    {
+      "名称": "微笑与喜悦",
+      "分类": [
+        {
+          "id": "smile-basic",
+          "名称": "基础微笑",
+          "简介": "从若隐若现的微笑到温和的笑容，基础微笑的层层递进。",
+          "示例": [
+            {
+              "提示词": "slight smile",
+              "缩略图": "thumbs/face/1010101_sd_smile_thumb.webp",
+              "原图": "img/face/1010101_sd_smile.webp"
+            },
+            {
+              "提示词": "soft smile",
+              "缩略图": "thumbs/face/1010102_sd_smile_thumb.webp",
+              "原图": "img/face/1010102_sd_smile.webp"
+            },
+            {
+              "提示词": "subtle smile",
+              "缩略图": "thumbs/face/1010103_sd_smile_thumb.webp",
+              "原图": "img/face/1010103_sd_smile.webp"
+            },
+            {
+              "提示词": "half smile",
+              "缩略图": "thumbs/face/1010104_sd_smile_thumb.webp",
+              "原图": "img/face/1010104_sd_smile.webp"
+            },
+            {
+              "提示词": "gentle smile",
+              "缩略图": "thumbs/face/1010105_sd_smile_thumb.webp",
+              "原图": "img/face/1010105_sd_smile.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "slight smile", "中文": "若隐若现的微笑" },
+            { "分组": "基础提示词", "提示词": "soft smile", "中文": "温柔的微笑" },
+            { "分组": "基础提示词", "提示词": "subtle smile", "中文": "微妙的微笑" },
+            { "分组": "基础提示词", "提示词": "half smile", "中文": "半笑" },
+            { "分组": "基础提示词", "提示词": "gentle smile", "中文": "温和的微笑" },
+            { "分组": "辅助提示词", "提示词": "closed mouth", "中文": "闭嘴" },
+            { "分组": "辅助提示词", "提示词": "eyes closed", "中文": "闭眼" },
+            { "分组": "辅助提示词", "提示词": "eyes half-closed", "中文": "半闭的眼睛" },
+            { "分组": "辅助提示词", "提示词": "relaxed expression", "中文": "放松的表情" },
+            { "分组": "辅助提示词", "提示词": "no visible teeth", "中文": "不露牙齿" },
+            { "分组": "辅助提示词", "提示词": "lips pressed together", "中文": "嘴唇紧闭" },
+            { "分组": "辅助提示词", "提示词": "dimples", "中文": "酒窝" },
+            { "分组": "辅助提示词", "提示词": "flushed cheeks", "中文": "红扑扑的脸颊" }
+          ]
+        },
+        {
+          "id": "smile-normal",
+          "名称": "自然笑容",
+          "简介": "明快、迷人、满足等自然愉悦的笑容变化。",
+          "示例": [
+            {
+              "提示词": "happy smile",
+              "缩略图": "thumbs/face/1010201_sd_normal-smile_thumb.webp",
+              "原图": "img/face/1010201_sd_normal-smile.webp"
+            },
+            {
+              "提示词": "cheerful smile",
+              "缩略图": "thumbs/face/1010202_sd_normal-smile_thumb.webp",
+              "原图": "img/face/1010202_sd_normal-smile.webp"
+            },
+            {
+              "提示词": "charming smile",
+              "缩略图": "thumbs/face/1010203_sd_normal-smile_thumb.webp",
+              "原图": "img/face/1010203_sd_normal-smile.webp"
+            },
+            {
+              "提示词": "content smile",
+              "缩略图": "thumbs/face/1010204_sd_normal-smile_thumb.webp",
+              "原图": "img/face/1010204_sd_normal-smile.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "happy smile", "中文": "开心的笑容" },
+            { "分组": "基础提示词", "提示词": "cheerful smile", "中文": "愉快的笑容" },
+            { "分组": "基础提示词", "提示词": "charming smile", "中文": "迷人的笑容" },
+            { "分组": "基础提示词", "提示词": "content smile", "中文": "满足的笑容" },
+            { "分组": "辅助提示词", "提示词": "joyful expression", "中文": "喜悦的表情" },
+            { "分组": "辅助提示词", "提示词": "happy expression", "中文": "快乐的表情" },
+            { "分组": "辅助提示词", "提示词": "open mouth", "中文": "张嘴" },
+            { "分组": "辅助提示词", "提示词": "mouth corners raised", "中文": "嘴角上扬" },
+            { "分组": "辅助提示词", "提示词": "tilted head", "中文": "歪头" }
+          ]
+        },
+        {
+          "id": "smile-big",
+          "名称": "大笑",
+          "简介": "大笑、灿烂、欣喜若狂等强烈喜悦的表达。",
+          "示例": [
+            {
+              "提示词": "big smile",
+              "缩略图": "thumbs/face/1010301_sd_big-smile_thumb.webp",
+              "原图": "img/face/1010301_sd_big-smile.webp"
+            },
+            {
+              "提示词": "beaming smile",
+              "缩略图": "thumbs/face/1010302_sd_big-smile_thumb.webp",
+              "原图": "img/face/1010302_sd_big-smile.webp"
+            },
+            {
+              "提示词": "bright smile",
+              "缩略图": "thumbs/face/1010303_sd_big-smile_thumb.webp",
+              "原图": "img/face/1010303_sd_big-smile.webp"
+            },
+            {
+              "提示词": "overjoyed",
+              "缩略图": "thumbs/face/1010304_sd_big-smile_thumb.webp",
+              "原图": "img/face/1010304_sd_big-smile.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "big smile", "中文": "大笑" },
+            { "分组": "基础提示词", "提示词": "beaming smile", "中文": "灿烂的笑容" },
+            { "分组": "基础提示词", "提示词": "bright smile", "中文": "明亮的笑容" },
+            { "分组": "基础提示词", "提示词": "overjoyed", "中文": "欣喜若狂" },
+            { "分组": "辅助提示词", "提示词": "laughing with open mouth", "中文": "张嘴大笑" },
+            { "分组": "辅助提示词", "提示词": "showing teeth", "中文": "露出牙齿" },
+            { "分组": "辅助提示词", "提示词": "eyes closed", "中文": "笑得眯起眼睛" },
+            { "分组": "辅助提示词", "提示词": "squinting eyes", "中文": "眯着眼睛" }
+          ]
+        },
+        {
+          "id": "smile-unique",
+          "名称": "独特微笑",
+          "简介": "邪魅、狡黠、害羞、坏笑等极具个性的微笑变体。",
+          "示例": [
+            {
+              "提示词": "evil smile",
+              "缩略图": "thumbs/face/1010401_sd_unique-smile_thumb.webp",
+              "原图": "img/face/1010401_sd_unique-smile.webp"
+            },
+            {
+              "提示词": "cunning smile",
+              "缩略图": "thumbs/face/1010402_sd_unique-smile_thumb.webp",
+              "原图": "img/face/1010402_sd_unique-smile.webp"
+            },
+            {
+              "提示词": "sheepish smile",
+              "缩略图": "thumbs/face/1010403_sd_unique-smile_thumb.webp",
+              "原图": "img/face/1010403_sd_unique-smile.webp"
+            },
+            {
+              "提示词": "wide grin",
+              "缩略图": "thumbs/face/1010404_sd_unique-smile_thumb.webp",
+              "原图": "img/face/1010404_sd_unique-smile.webp"
+            },
+            {
+              "提示词": "slight grin",
+              "缩略图": "thumbs/face/1010405_sd_unique-smile_thumb.webp",
+              "原图": "img/face/1010405_sd_unique-smile.webp"
+            },
+            {
+              "提示词": "giggling smile",
+              "缩略图": "thumbs/face/1010406_sd_unique-smile_thumb.webp",
+              "原图": "img/face/1010406_sd_unique-smile.webp"
+            },
+            {
+              "提示词": "devious smile",
+              "缩略图": "thumbs/face/1010407_sd_unique-smile_thumb.webp",
+              "原图": "img/face/1010407_sd_unique-smile.webp"
+            },
+            {
+              "提示词": "subtle smirk",
+              "缩略图": "thumbs/face/1010408_sd_unique-smile_thumb.webp",
+              "原图": "img/face/1010408_sd_unique-smile.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "evil smile", "中文": "邪恶的微笑" },
+            { "分组": "基础提示词", "提示词": "cunning smile", "中文": "狡猾的微笑" },
+            { "分组": "基础提示词", "提示词": "sheepish smile", "中文": "害羞/尴尬的微笑" },
+            { "分组": "基础提示词", "提示词": "wide grin", "中文": "咧嘴大笑" },
+            { "分组": "基础提示词", "提示词": "slight grin", "中文": "轻微的咧嘴笑" },
+            { "分组": "基础提示词", "提示词": "giggling smile", "中文": "咯咯笑" },
+            { "分组": "基础提示词", "提示词": "devious smile", "中文": "奸诈的微笑" },
+            { "分组": "基础提示词", "提示词": "subtle smirk", "中文": "微妙的冷笑" },
+            { "分组": "辅助提示词", "提示词": "wide eyes", "中文": "睁大眼睛" },
+            { "分组": "辅助提示词", "提示词": "looking down with a smile", "中文": "微笑中低头" },
+            { "分组": "辅助提示词", "提示词": "slightly averted gaze", "中文": "稍微避开视线" },
+            { "分组": "辅助提示词", "提示词": "intense blushing", "中文": "严重脸红" },
+            { "分组": "辅助提示词", "提示词": "embarrassed expression", "中文": "尴尬的表情" },
+            { "分组": "辅助提示词", "提示词": "nervous expression", "中文": "紧张的表情" }
+          ]
+        }
+      ]
+    },
+    {
+      "名称": "怒气与不满",
+      "分类": [
+        {
+          "id": "anger-mild",
+          "名称": "轻微愠怒",
+          "简介": "烦躁、不快、轻蔑、厌恶、闷闷不乐等低强度负面情绪。",
+          "示例": [
+            {
+              "提示词": "irritated",
+              "缩略图": "thumbs/face/1020101_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1020101_sd_mild-anger.webp"
+            },
+            {
+              "提示词": "uncomfortable",
+              "缩略图": "thumbs/face/1020102_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1020102_sd_mild-anger.webp"
+            },
+            {
+              "提示词": "disdainful",
+              "缩略图": "thumbs/face/1020103_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1020103_sd_mild-anger.webp"
+            },
+            {
+              "提示词": "sickened",
+              "缩略图": "thumbs/face/1020104_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1020104_sd_mild-anger.webp"
+            },
+            {
+              "提示词": "sulky",
+              "缩略图": "thumbs/face/1020105_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1020105_sd_mild-anger.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "irritated", "中文": "烦躁" },
+            { "分组": "基础提示词", "提示词": "uncomfortable", "中文": "不自在" },
+            { "分组": "基础提示词", "提示词": "disdainful", "中文": "轻蔑" },
+            { "分组": "基础提示词", "提示词": "sickened", "中文": "厌恶/反胃" },
+            { "分组": "基础提示词", "提示词": "sulky", "中文": "闷闷不乐" },
+            { "分组": "辅助提示词", "提示词": "glaring", "中文": "瞪视" },
+            { "分组": "辅助提示词", "提示词": "pouting", "中文": "撅嘴" },
+            { "分组": "辅助提示词", "提示词": "furrowed eyebrows", "中文": "皱眉" },
+            { "分组": "辅助提示词", "提示词": "eyes narrowed", "中文": "眯起眼睛" },
+            { "分组": "辅助提示词", "提示词": "tight-lipped", "中文": "紧闭双唇" },
+            { "分组": "辅助提示词", "提示词": "fierce look", "中文": "凶狠的神情" },
+            { "分组": "辅助提示词", "提示词": "intense gaze", "中文": "锐利的目光" },
+            { "分组": "辅助提示词", "提示词": "raised lip", "中文": "上唇上扬" },
+            { "分组": "辅助提示词", "提示词": "cold stare", "中文": "冷冰冰的盯视" }
+          ]
+        },
+        {
+          "id": "anger",
+          "名称": "愤怒",
+          "简介": "生气、恼火、愤慨、不悦、暴怒等中等强度愤怒表达。",
+          "示例": [
+            {
+              "提示词": "angry",
+              "缩略图": "thumbs/face/1020201_sd_anger_thumb.webp",
+              "原图": "img/face/1020201_sd_anger.webp"
+            },
+            {
+              "提示词": "annoyed",
+              "缩略图": "thumbs/face/1020202_sd_anger_thumb.webp",
+              "原图": "img/face/1020202_sd_anger.webp"
+            },
+            {
+              "提示词": "indignant",
+              "缩略图": "thumbs/face/1020203_sd_anger_thumb.webp",
+              "原图": "img/face/1020203_sd_anger.webp"
+            },
+            {
+              "提示词": "displeased",
+              "缩略图": "thumbs/face/1020204_sd_anger_thumb.webp",
+              "原图": "img/face/1020204_sd_anger.webp"
+            },
+            {
+              "提示词": "furious",
+              "缩略图": "thumbs/face/1020205_sd_anger_thumb.webp",
+              "原图": "img/face/1020205_sd_anger.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "angry", "中文": "愤怒" },
+            { "分组": "基础提示词", "提示词": "annoyed", "中文": "恼火" },
+            { "分组": "基础提示词", "提示词": "indignant", "中文": "愤慨" },
+            { "分组": "基础提示词", "提示词": "displeased", "中文": "不悦" },
+            { "分组": "基础提示词", "提示词": "furious", "中文": "暴怒" },
+            { "分组": "辅助提示词", "提示词": "glaring", "中文": "瞪视" },
+            { "分组": "辅助提示词", "提示词": "gritting teeth", "中文": "咬牙切齿" },
+            { "分组": "辅助提示词", "提示词": "clenched jaw", "中文": "紧咬牙关" },
+            { "分组": "辅助提示词", "提示词": "tight smile", "中文": "勉强的笑容" },
+            { "分组": "辅助提示词", "提示词": "fierce eyes", "中文": "凶狠的眼睛" },
+            { "分组": "辅助提示词", "提示词": "stern look", "中文": "严厉的神情" }
+          ]
+        },
+        {
+          "id": "anger-rage",
+          "名称": "暴怒",
+          "简介": "愤怒表情、暴怒、暴跳如雷、怒不可遏、浑身颤抖、威胁、皱眉等极度愤怒状态。",
+          "示例": [
+            {
+              "提示词": "angry expression",
+              "缩略图": "thumbs/face/1020301_sd_rage_thumb.webp",
+              "原图": "img/face/1020301_sd_rage.webp"
+            },
+            {
+              "提示词": "enraged",
+              "缩略图": "thumbs/face/1020302_sd_rage_thumb.webp",
+              "原图": "img/face/1020302_sd_rage.webp"
+            },
+            {
+              "提示词": "fit of rage",
+              "缩略图": "thumbs/face/1020303_sd_rage_thumb.webp",
+              "原图": "img/face/1020303_sd_rage.webp"
+            },
+            {
+              "提示词": "in a towering rage",
+              "缩略图": "thumbs/face/1020304_sd_rage_thumb.webp",
+              "原图": "img/face/1020304_sd_rage.webp"
+            },
+            {
+              "提示词": "trembling with rage",
+              "缩略图": "thumbs/face/1020305_sd_rage_thumb.webp",
+              "原图": "img/face/1020305_sd_rage.webp"
+            },
+            {
+              "提示词": "shaking with rage",
+              "缩略图": "thumbs/face/1020306_sd_rage_thumb.webp",
+              "原图": "img/face/1020306_sd_rage.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "angry expression", "中文": "愤怒的表情" },
+            { "分组": "基础提示词", "提示词": "enraged", "中文": "暴怒" },
+            { "分组": "基础提示词", "提示词": "fit of rage", "中文": "暴跳如雷" },
+            { "分组": "基础提示词", "提示词": "in a towering rage", "中文": "怒不可遏" },
+            { "分组": "基础提示词", "提示词": "trembling with rage", "中文": "怒发冲冠/浑身颤抖" },
+            { "分组": "基础提示词", "提示词": "shaking with rage", "中文": "气得发抖" },
+            { "分组": "基础提示词", "提示词": "threatening", "中文": "威胁" },
+            { "分组": "基础提示词", "提示词": "scowling", "中文": "皱眉/面露不悦" },
+            { "分组": "辅助提示词", "提示词": "yelling", "中文": "大吼大叫" },
+            { "分组": "辅助提示词", "提示词": "angry mouth", "中文": "愤怒的嘴型" },
+            { "分组": "辅助提示词", "提示词": "flushed face", "中文": "面红耳赤" },
+            { "分组": "辅助提示词", "提示词": "red face", "中文": "满脸通红" },
+            { "分组": "辅助提示词", "提示词": "burning eyes", "中文": "怒火中烧的眼睛" },
+            { "分组": "辅助提示词", "提示词": "furrowed brow", "中文": "紧锁眉头" },
+            { "分组": "辅助提示词", "提示词": "hostile aura", "中文": "敌意十足的气场" }
+          ]
+        }
+      ]
+    },
+    {
+      "名称": "悲伤与哀伤",
+      "分类": [
+        {
+          "id": "sadness-mild",
+          "名称": "淡淡忧伤",
+          "简介": "悲伤、忧郁、沮丧、沉思、若有所思等低强度悲伤情绪。",
+          "示例": [
+            {
+              "提示词": "sad",
+              "缩略图": "thumbs/face/1030101_sd_sadness-mild_thumb.webp",
+              "原图": "img/face/1030101_sd_sadness-mild.webp"
+            },
+            {
+              "提示词": "melancholic",
+              "缩略图": "thumbs/face/1030102_sd_sadness-mild_thumb.webp",
+              "原图": "img/face/1030102_sd_sadness-mild.webp"
+            },
+            {
+              "提示词": "downcast",
+              "缩略图": "thumbs/face/1030103_sd_sadness-mild_thumb.webp",
+              "原图": "img/face/1030103_sd_sadness-mild.webp"
+            },
+            {
+              "提示词": "pensive",
+              "缩略图": "thumbs/face/1030104_sd_sadness-mild_thumb.webp",
+              "原图": "img/face/1030104_sd_sadness-mild.webp"
+            },
+            {
+              "提示词": "wistful",
+              "缩略图": "thumbs/face/1030105_sd_sadness-mild_thumb.webp",
+              "原图": "img/face/1030105_sd_sadness-mild.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "sad", "中文": "悲伤" },
+            { "分组": "基础提示词", "提示词": "melancholic", "中文": "忧郁" },
+            { "分组": "基础提示词", "提示词": "downcast", "中文": "沮丧/低落" },
+            { "分组": "基础提示词", "提示词": "pensive", "中文": "沉思/若有所思" },
+            { "分组": "基础提示词", "提示词": "wistful", "中文": "惆怅/神往" },
+            { "分组": "辅助提示词", "提示词": "glossy eyes", "中文": "泪光闪烁" },
+            { "分组": "辅助提示词", "提示词": "teardrop", "中文": "泪珠" },
+            { "分组": "辅助提示词", "提示词": "tearful eyes", "中文": "含泪的眼睛" },
+            { "分组": "辅助提示词", "提示词": "silent tears", "中文": "无声流泪" },
+            { "分组": "辅助提示词", "提示词": "single tear", "中文": "单行泪" },
+            { "分组": "辅助提示词", "提示词": "sad eyes", "中文": "悲伤的眼睛" },
+            { "分组": "辅助提示词", "提示词": "eyes downcast", "中文": "低垂的目光" },
+            { "分组": "辅助提示词", "提示词": "quivering lips", "中文": "颤抖的嘴唇" },
+            { "分组": "辅助提示词", "提示词": "trembling lips", "中文": "发抖的嘴唇" }
+          ]
+        },
+        {
+          "id": "sadness",
+          "名称": "悲伤流泪",
+          "简介": "啜泣、阴郁、失望、悲伤、痛苦、悲痛欲绝等中等强度悲伤表达。",
+          "示例": [
+            {
+              "提示词": "weeping",
+              "缩略图": "thumbs/face/1030201_sd_sadness_thumb.webp",
+              "原图": "img/face/1030201_sd_sadness.webp"
+            },
+            {
+              "提示词": "glum",
+              "缩略图": "thumbs/face/1030202_sd_sadness_thumb.webp",
+              "原图": "img/face/1030202_sd_sadness.webp"
+            },
+            {
+              "提示词": "disappointed",
+              "缩略图": "thumbs/face/1030203_sd_sadness_thumb.webp",
+              "原图": "img/face/1030203_sd_sadness.webp"
+            },
+            {
+              "提示词": "sorrowful",
+              "缩略图": "thumbs/face/1030204_sd_sadness_thumb.webp",
+              "原图": "img/face/1030204_sd_sadness.webp"
+            },
+            {
+              "提示词": "distressed",
+              "缩略图": "thumbs/face/1030205_sd_sadness_thumb.webp",
+              "原图": "img/face/1030205_sd_sadness.webp"
+            },
+            {
+              "提示词": "grief-stricken",
+              "缩略图": "thumbs/face/1030206_sd_sadness_thumb.webp",
+              "原图": "img/face/1030206_sd_sadness.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "weeping", "中文": "啜泣/流泪" },
+            { "分组": "基础提示词", "提示词": "glum", "中文": "阴郁/闷闷不乐" },
+            { "分组": "基础提示词", "提示词": "disappointed", "中文": "失望" },
+            { "分组": "基础提示词", "提示词": "sorrowful", "中文": "悲伤" },
+            { "分组": "基础提示词", "提示词": "distressed", "中文": "痛苦/苦恼" },
+            { "分组": "基础提示词", "提示词": "grief-stricken", "中文": "悲痛欲绝" },
+            { "分组": "辅助提示词", "提示词": "tears welling up", "中文": "泪水在眼眶打转" },
+            { "分组": "辅助提示词", "提示词": "wet cheeks", "中文": "泪湿双颊" },
+            { "分组": "辅助提示词", "提示词": "stream of tears", "中文": "泪如泉涌" },
+            { "分组": "辅助提示词", "提示词": "tears running down face", "中文": "泪流满面" },
+            { "分组": "辅助提示词", "提示词": "vacant eyes", "中文": "空洞的眼睛" },
+            { "分组": "辅助提示词", "提示词": "drawn face", "中文": "憔悴的脸" },
+            { "分组": "辅助提示词", "提示词": "quiet crying", "中文": "无声哭泣" }
+          ]
+        },
+        {
+          "id": "sadness-deep",
+          "名称": "深度绝望",
+          "简介": "苦恼、崩溃、痛哭、戏剧性哭泣、无法控制地抽泣等极度悲伤状态。",
+          "示例": [
+            {
+              "提示词": "anguished",
+              "缩略图": "thumbs/face/1030301_sd_deep-sorrow_thumb.webp",
+              "原图": "img/face/1030301_sd_deep-sorrow.webp"
+            },
+            {
+              "提示词": "devastated",
+              "缩略图": "thumbs/face/1030302_sd_deep-sorrow_thumb.webp",
+              "原图": "img/face/1030302_sd_deep-sorrow.webp"
+            },
+            {
+              "提示词": "crying",
+              "缩略图": "thumbs/face/1030303_sd_deep-sorrow_thumb.webp",
+              "原图": "img/face/1030303_sd_deep-sorrow.webp"
+            },
+            {
+              "提示词": "dramatic crying",
+              "缩略图": "thumbs/face/1030304_sd_deep-sorrow_thumb.webp",
+              "原图": "img/face/1030304_sd_deep-sorrow.webp"
+            },
+            {
+              "提示词": "sobbing uncontrollably",
+              "缩略图": "thumbs/face/1030305_sd_deep-sorrow_thumb.webp",
+              "原图": "img/face/1030305_sd_deep-sorrow.webp"
+            },
+            {
+              "提示词": "crying uncontrollably",
+              "缩略图": "thumbs/face/1030306_sd_deep-sorrow_thumb.webp",
+              "原图": "img/face/1030306_sd_deep-sorrow.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "anguished", "中文": "极度痛苦" },
+            { "分组": "基础提示词", "提示词": "devastated", "中文": "崩溃/彻底击垮" },
+            { "分组": "基础提示词", "提示词": "crying", "中文": "哭泣" },
+            { "分组": "基础提示词", "提示词": "dramatic crying", "中文": "戏剧性哭泣" },
+            { "分组": "基础提示词", "提示词": "sobbing uncontrollably", "中文": "无法控制地抽泣" },
+            { "分组": "基础提示词", "提示词": "crying uncontrollably", "中文": "无法控制地哭泣" },
+            { "分组": "辅助提示词", "提示词": "running nose", "中文": "流鼻涕" },
+            { "分组": "辅助提示词", "提示词": "red eyes", "中文": "红肿的眼睛" },
+            { "分组": "辅助提示词", "提示词": "reddened nose", "中文": "红鼻子" },
+            { "分组": "辅助提示词", "提示词": "open mouth", "中文": "张大嘴巴" },
+            { "分组": "辅助提示词", "提示词": "puffy eyes", "中文": "哭肿的眼睛" }
+          ]
+        }
+      ]
+    },
+    {
+      "名称": "惊讶与震惊",
+      "分类": [
+        {
+          "id": "surprise-slight",
+          "名称": "轻微惊讶",
+          "简介": "惊讶、吃惊、惊奇、惊叹、惊奇等轻微到中等惊讶表达。",
+          "示例": [
+            {
+              "提示词": "surprised",
+              "缩略图": "thumbs/face/1040101_sd_slight-surprise_thumb.webp",
+              "原图": "img/face/1040101_sd_slight-surprise.webp"
+            },
+            {
+              "提示词": "startled",
+              "缩略图": "thumbs/face/1040102_sd_slight-surprise_thumb.webp",
+              "原图": "img/face/1040102_sd_slight-surprise.webp"
+            },
+            {
+              "提示词": "amazed",
+              "缩略图": "thumbs/face/1040103_sd_slight-surprise_thumb.webp",
+              "原图": "img/face/1040103_sd_slight-surprise.webp"
+            },
+            {
+              "提示词": "awestruck",
+              "缩略图": "thumbs/face/1040104_sd_slight-surprise_thumb.webp",
+              "原图": "img/face/1040104_sd_slight-surprise.webp"
+            },
+            {
+              "提示词": "wonder",
+              "缩略图": "thumbs/face/1040105_sd_slight-surprise_thumb.webp",
+              "原图": "img/face/1040105_sd_slight-surprise.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "surprised", "中文": "惊讶" },
+            { "分组": "基础提示词", "提示词": "startled", "中文": "吃一惊/吓一跳" },
+            { "分组": "基础提示词", "提示词": "amazed", "中文": "惊奇/惊叹" },
+            { "分组": "基础提示词", "提示词": "awestruck", "中文": "惊愕/敬畏" },
+            { "分组": "基础提示词", "提示词": "wonder", "中文": "惊奇/好奇" },
+            { "分组": "辅助提示词", "提示词": "wide eyes", "中文": "瞪大眼睛" },
+            { "分组": "辅助提示词", "提示词": "raised eyebrows", "中文": "扬起眉毛" },
+            { "分组": "辅助提示词", "提示词": "open mouth", "中文": "张大嘴巴" },
+            { "分组": "辅助提示词", "提示词": "gasping", "中文": "倒抽一口气" },
+            { "分组": "辅助提示词", "提示词": "hand on mouth", "中文": "捂住嘴" }
+          ]
+        },
+        {
+          "id": "surprise",
+          "名称": "惊讶震惊",
+          "简介": "震惊、惊愕、目瞪口呆、难以置信等强烈惊讶表达。",
+          "示例": [
+            {
+              "提示词": "shocked",
+              "缩略图": "thumbs/face/1040201_sd_surprise_thumb.webp",
+              "原图": "img/face/1040201_sd_surprise.webp"
+            },
+            {
+              "提示词": "astonished",
+              "缩略图": "thumbs/face/1040202_sd_surprise_thumb.webp",
+              "原图": "img/face/1040202_sd_surprise.webp"
+            },
+            {
+              "提示词": "stunned",
+              "缩略图": "thumbs/face/1040203_sd_surprise_thumb.webp",
+              "原图": "img/face/1040203_sd_surprise.webp"
+            },
+            {
+              "提示词": "dumbfounded",
+              "缩略图": "thumbs/face/1040204_sd_surprise_thumb.webp",
+              "原图": "img/face/1040204_sd_surprise.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "shocked", "中文": "震惊" },
+            { "分组": "基础提示词", "提示词": "astonished", "中文": "惊愕" },
+            { "分组": "基础提示词", "提示词": "stunned", "中文": "目瞪口呆/发愣" },
+            { "分组": "基础提示词", "提示词": "dumbfounded", "中文": "惊呆了/不知所措" },
+            { "分组": "辅助提示词", "提示词": "wide eyes", "中文": "瞪大眼睛" },
+            { "分组": "辅助提示词", "提示词": "raised eyebrows", "中文": "高高扬起的眉毛" },
+            { "分组": "辅助提示词", "提示词": "open mouth", "中文": "张大嘴巴" },
+            { "分组": "辅助提示词", "提示词": "jaw dropped", "中文": "下巴掉下来/张大嘴" },
+            { "分组": "辅助提示词", "提示词": "frozen", "中文": "僵住/石化" }
+          ]
+        },
+        {
+          "id": "surprise-shock",
+          "名称": "极度震惊",
+          "简介": "恐怖、惊骇、石化、创伤等极度震惊创伤性反应。",
+          "示例": [
+            {
+              "提示词": "horrified",
+              "缩略图": "thumbs/face/1040301_sd_shock_thumb.webp",
+              "原图": "img/face/1040301_sd_shock.webp"
+            },
+            {
+              "提示词": "terrified",
+              "缩略图": "thumbs/face/1040302_sd_shock_thumb.webp",
+              "原图": "img/face/1040302_sd_shock.webp"
+            },
+            {
+              "提示词": "petrified",
+              "缩略图": "thumbs/face/1040303_sd_shock_thumb.webp",
+              "原图": "img/face/1040303_sd_shock.webp"
+            },
+            {
+              "提示词": "trauma",
+              "缩略图": "thumbs/face/1040304_sd_shock_thumb.webp",
+              "原图": "img/face/1040304_sd_shock.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "horrified", "中文": "恐怖/惊骇" },
+            { "分组": "基础提示词", "提示词": "terrified", "中文": "极度恐惧" },
+            { "分组": "基础提示词", "提示词": "petrified", "中文": "吓僵了/石化" },
+            { "分组": "基础提示词", "提示词": "trauma", "中文": "创伤/心理阴影" },
+            { "分组": "辅助提示词", "提示词": "wide eyes", "中文": "极度睁大的眼睛" },
+            { "分组": "辅助提示词", "提示词": "pale face", "中文": "面如土色" },
+            { "分组": "辅助提示词", "提示词": "cold sweat", "中文": "冷汗直流" },
+            { "分组": "辅助提示词", "提示词": "trembling", "中文": "浑身发抖" },
+            { "分组": "辅助提示词", "提示词": "scream", "中文": "尖叫" }
+          ]
+        },
+        {
+          "id": "surprise-unique",
+          "名称": "独特惊讶",
+          "简介": "困惑、迷惑、费解等带有疑惑色彩的惊讶变体。",
+          "示例": [
+            {
+              "提示词": "confused",
+              "缩略图": "thumbs/face/1040401_sd_unique-surprise_thumb.webp",
+              "原图": "img/face/1040401_sd_unique-surprise.webp"
+            },
+            {
+              "提示词": "bewildered",
+              "缩略图": "thumbs/face/1040402_sd_unique-surprise_thumb.webp",
+              "原图": "img/face/1040402_sd_unique-surprise.webp"
+            },
+            {
+              "提示词": "perplexed",
+              "缩略图": "thumbs/face/1040403_sd_unique-surprise_thumb.webp",
+              "原图": "img/face/1040403_sd_unique-surprise.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "confused", "中文": "困惑" },
+            { "分组": "基础提示词", "提示词": "bewildered", "中文": "迷惑/不知所措" },
+            { "分组": "基础提示词", "提示词": "perplexed", "中文": "费解/困惑" },
+            { "分组": "辅助提示词", "提示词": "tilted head", "中文": "歪头" },
+            { "分组": "辅助提示词", "提示词": "furrowed brow", "中文": "皱眉" },
+            { "分组": "辅助提示词", "提示词": "questioning look", "中文": "疑惑的眼神" }
+          ]
+        }
+      ]
+    },
+    {
+      "名称": "恐惧与焦虑",
+      "分类": [
+        {
+          "id": "fear",
+          "名称": "恐惧",
+          "简介": "害怕、恐惧、受惊、惊恐、恐惧至极等恐惧情绪递进。",
+          "示例": [
+            {
+              "提示词": "afraid",
+              "缩略图": "thumbs/face/1070101_sd_fear_thumb.webp",
+              "原图": "img/face/1070101_sd_fear.webp"
+            },
+            {
+              "提示词": "scared",
+              "缩略图": "thumbs/face/1070102_sd_fear_thumb.webp",
+              "原图": "img/face/1070102_sd_fear.webp"
+            },
+            {
+              "提示词": "frightened",
+              "缩略图": "thumbs/face/1070103_sd_fear_thumb.webp",
+              "原图": "img/face/1070103_sd_fear.webp"
+            },
+            {
+              "提示词": "fearful",
+              "缩略图": "thumbs/face/1070104_sd_fear_thumb.webp",
+              "原图": "img/face/1070104_sd_fear.webp"
+            },
+            {
+              "提示词": "terrified",
+              "缩略图": "thumbs/face/1070105_sd_fear_thumb.webp",
+              "原图": "img/face/1070105_sd_fear.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "afraid", "中文": "害怕" },
+            { "分组": "基础提示词", "提示词": "scared", "中文": "吓怕了" },
+            { "分组": "基础提示词", "提示词": "frightened", "中文": "受惊/恐惧" },
+            { "分组": "基础提示词", "提示词": "fearful", "中文": "恐惧/提心吊胆" },
+            { "分组": "基础提示词", "提示词": "terrified", "中文": "极度恐惧" },
+            { "分组": "辅助提示词", "提示词": "wide eyes", "中文": "瞪大眼睛" },
+            { "分组": "辅助提示词", "提示词": "pale", "中文": "面色苍白" },
+            { "分组": "辅助提示词", "提示词": "frozen", "中文": "吓呆了/僵住" },
+            { "分组": "辅助提示词", "提示词": "screaming", "中文": "尖叫" },
+            { "分组": "辅助提示词", "提示词": "shaking", "中文": "发抖" }
+          ]
+        },
+        {
+          "id": "fear-terror",
+          "名称": "极度恐惧",
+          "简介": "恐怖、惊恐、恐惧症等极度恐惧的生理心理反应。",
+          "示例": [
+            {
+              "提示词": "horror",
+              "缩略图": "thumbs/face/1070201_sd_terror_thumb.webp",
+              "原图": "img/face/1070201_sd_terror.webp"
+            },
+            {
+              "提示词": "panic",
+              "缩略图": "thumbs/face/1070202_sd_terror_thumb.webp",
+              "原图": "img/face/1070202_sd_terror.webp"
+            },
+            {
+              "提示词": "dread",
+              "缩略图": "thumbs/face/1070203_sd_terror_thumb.webp",
+              "原图": "img/face/1070203_sd_terror.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "horror", "中文": "恐怖/战栗" },
+            { "分组": "基础提示词", "提示词": "panic", "中文": "惊恐/恐慌" },
+            { "分组": "基础提示词", "提示词": "dread", "中文": "极度恐惧/畏惧" },
+            { "分组": "辅助提示词", "提示词": "wide eyes", "中文": "惊恐地睁大眼" },
+            { "分组": "辅助提示词", "提示词": "mouth open", "中文": "张大嘴" },
+            { "分组": "辅助提示词", "提示词": "pale", "中文": "惨白的脸色" },
+            { "分组": "辅助提示词", "提示词": "cold sweat", "中文": "冷汗" },
+            { "分组": "辅助提示词", "提示词": "paralysis", "中文": "瘫痪/动弹不得" }
+          ]
+        },
+        {
+          "id": "anxiety",
+          "名称": "焦虑不安",
+          "简介": "焦虑、不安、担忧、紧张等焦虑相关情绪。",
+          "示例": [
+            {
+              "提示词": "anxious",
+              "缩略图": "thumbs/face/1060201_sd_anxious_thumb.webp",
+              "原图": "img/face/1060201_sd_anxious.webp"
+            },
+            {
+              "提示词": "nervous",
+              "缩略图": "thumbs/face/1060202_sd_anxious_thumb.webp",
+              "原图": "img/face/1060202_sd_anxious.webp"
+            },
+            {
+              "提示词": "worried",
+              "缩略图": "thumbs/face/1060203_sd_anxious_thumb.webp",
+              "原图": "img/face/1060203_sd_anxious.webp"
+            },
+            {
+              "提示词": "uneasy",
+              "缩略图": "thumbs/face/1060204_sd_anxious_thumb.webp",
+              "原图": "img/face/1060204_sd_anxious.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "anxious", "中文": "焦虑/忧虑" },
+            { "分组": "基础提示词", "提示词": "nervous", "中文": "紧张/不安" },
+            { "分组": "基础提示词", "提示词": "worried", "中文": "担心/担忧" },
+            { "分组": "基础提示词", "提示词": "uneasy", "中文": "不安/坐立难安" },
+            { "分组": "辅助提示词", "提示词": "biting lip", "中文": "咬嘴唇" },
+            { "分组": "辅助提示词", "提示词": "sweating", "中文": "出汗" },
+            { "分组": "辅助提示词", "提示词": "trembling", "中文": "发抖" },
+            { "分组": "辅助提示词", "提示词": "darting eyes", "中文": "游移的目光" }
+          ]
+        }
+      ]
+    },
+    {
+      "名称": "厌恶与轻蔑",
+      "分类": [
+        {
+          "id": "disgust",
+          "名称": "厌恶",
+          "简介": "厌恶、反感、嫌恶、作呕等厌恶情绪递进。",
+          "示例": [
+            {
+              "提示词": "disgusted",
+              "缩略图": "thumbs/face/1080101_sd_disgust_thumb.webp",
+              "原图": "img/face/1080101_sd_disgust.webp"
+            },
+            {
+              "提示词": "revolted",
+              "缩略图": "thumbs/face/1080102_sd_disgust_thumb.webp",
+              "原图": "img/face/1080102_sd_disgust.webp"
+            },
+            {
+              "提示词": "repulsed",
+              "缩略图": "thumbs/face/1080103_sd_disgust_thumb.webp",
+              "原图": "img/face/1080103_sd_disgust.webp"
+            },
+            {
+              "提示词": "nauseated",
+              "缩略图": "thumbs/face/1080104_sd_disgust_thumb.webp",
+              "原图": "img/face/1080104_sd_disgust.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "disgusted", "中文": "厌恶" },
+            { "分组": "基础提示词", "提示词": "revolted", "中文": "极度厌恶/反感" },
+            { "分组": "基础提示词", "提示词": "repulsed", "中文": "嫌恶/排斥" },
+            { "分组": "基础提示词", "提示词": "nauseated", "中文": "作呕/反胃" },
+            { "分组": "辅助提示词", "提示词": "wrinkled nose", "中文": "皱鼻子" },
+            { "分组": "辅助提示词", "提示词": "curled lip", "中文": "撇嘴/上唇上翘" },
+            { "分组": "辅助提示词", "提示词": "gagging", "中文": "干呕" },
+            { "分组": "辅助提示词", "提示词": "turning away", "中文": "别过脸去" }
+          ]
+        },
+        {
+          "id": "contempt",
+          "名称": "轻蔑厌恶",
+          "简介": "严厉、皱眉、沮丧、不悦、厌恶表情、轻蔑眼神等轻蔑厌恶复合表达。",
+          "示例": [
+            {
+              "提示词": "scowl",
+              "缩略图": "thumbs/face/1080201_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1080201_sd_contempt.webp"
+            },
+            {
+              "提示词": "frown",
+              "缩略图": "thumbs/face/1080202_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1080202_sd_contempt.webp"
+            },
+            {
+              "提示词": "frustrated",
+              "缩略图": "thumbs/face/1080203_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1080203_sd_contempt.webp"
+            },
+            {
+              "提示词": "grouchy",
+              "缩略图": "thumbs/face/1080204_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1080204_sd_contempt.webp"
+            },
+            {
+              "提示词": "repulsed",
+              "缩略图": "thumbs/face/1080205_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1080205_sd_contempt.webp"
+            },
+            {
+              "提示词": "unamused",
+              "缩略图": "thumbs/face/1080206_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1080206_sd_contempt.webp"
+            },
+            {
+              "提示词": "disgusted expression",
+              "缩略图": "thumbs/face/1080207_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1080207_sd_contempt.webp"
+            },
+            {
+              "提示词": "contemptuous look",
+              "缩略图": "thumbs/face/1080208_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1080208_sd_contempt.webp"
+            },
+            {
+              "提示词": "disapproving look",
+              "缩略图": "thumbs/face/1080209_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1080209_sd_contempt.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "scowl", "中文": "严厉的脸/皱眉" },
+            { "分组": "基础提示词", "提示词": "frown", "中文": "皱眉/蹙眉" },
+            { "分组": "基础提示词", "提示词": "frustrated", "中文": "沮丧/懊恼" },
+            { "分组": "基础提示词", "提示词": "grouchy", "中文": "脾气坏/不高兴" },
+            { "分组": "基础提示词", "提示词": "repulsed", "中文": "嫌恶/反感" },
+            { "分组": "基础提示词", "提示词": "unamused", "中文": "不觉得好笑/面无表情" },
+            { "分组": "基础提示词", "提示词": "disgusted expression", "中文": "厌恶的表情" },
+            { "分组": "基础提示词", "提示词": "contemptuous look", "中文": "轻蔑的眼神" },
+            { "分组": "基础提示词", "提示词": "disapproving look", "中文": "不赞同的眼神" },
+            { "分组": "辅助提示词", "提示词": "avoiding eye contact", "中文": "避开视线" },
+            { "分组": "辅助提示词", "提示词": "furrowed brow", "中文": "锁眉" },
+            { "分组": "辅助提示词", "提示词": "pout", "中文": "撅嘴" },
+            { "分组": "辅助提示词", "提示词": "raised lip", "中文": "上唇上扬" },
+            { "分组": "辅助提示词", "提示词": "sour face", "中文": "酸溜溜的脸/苦瓜脸" },
+            { "分组": "辅助提示词", "提示词": "feeling nauseous", "中文": "感觉恶心" },
+            { "分组": "辅助提示词", "提示词": "speechless with disgust", "中文": "厌恶得说不出话" }
+          ]
+        }
+      ]
+    },
+    {
+      "名称": "羞涩与尴尬",
+      "分类": [
+        {
+          "id": "embarrassment",
+          "名称": "羞涩尴尬",
+          "简介": "尴尬、害羞、腼腆、局促不安等羞涩尴尬情绪。",
+          "示例": [
+            {
+              "提示词": "embarrassed",
+              "缩略图": "thumbs/face/1050101_sd_embarrassed_thumb.webp",
+              "原图": "img/face/1050101_sd_embarrassed.webp"
+            },
+            {
+              "提示词": "shy",
+              "缩略图": "thumbs/face/1050102_sd_embarrassed_thumb.webp",
+              "原图": "img/face/1050102_sd_embarrassed.webp"
+            },
+            {
+              "提示词": "bashful",
+              "缩略图": "thumbs/face/1050103_sd_embarrassed_thumb.webp",
+              "原图": "img/face/1050103_sd_embarrassed.webp"
+            },
+            {
+              "提示词": "flustered",
+              "缩略图": "thumbs/face/1050104_sd_embarrassed_thumb.webp",
+              "原图": "img/face/1050104_sd_embarrassed.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "embarrassed", "中文": "尴尬/不好意思" },
+            { "分组": "基础提示词", "提示词": "shy", "中文": "害羞" },
+            { "分组": "基础提示词", "提示词": "bashful", "中文": "腼腆/羞怯" },
+            { "分组": "基础提示词", "提示词": "flustered", "中文": "慌乱/局促不安" },
+            { "分组": "辅助提示词", "提示词": "blushing", "中文": "脸红" },
+            { "分组": "辅助提示词", "提示词": "avoiding eye contact", "中文": "不敢对视" },
+            { "分组": "辅助提示词", "提示词": "fidgeting", "中文": "坐立不安/手足无措" },
+            { "分组": "辅助提示词", "提示词": "looking down", "中文": "低头" }
+          ]
+        }
+      ]
+    },
+    {
+      "名称": "无表情与冷静",
+      "分类": [
+        {
+          "id": "neutral",
+          "名称": "无表情",
+          "简介": "无感情、无表情、无动于衷、中性表情、无情绪、无表情、静止的脸、空白的脸等完全中性的面部状态。",
+          "示例": [
+            {
+              "提示词": "emotionless",
+              "缩略图": "thumbs/face/1090101_sd_neutral_thumb.webp",
+              "原图": "img/face/1090101_sd_neutral.webp"
+            },
+            {
+              "提示词": "expressionless",
+              "缩略图": "thumbs/face/1090102_sd_neutral_thumb.webp",
+              "原图": "img/face/1090102_sd_neutral.webp"
+            },
+            {
+              "提示词": "impassive",
+              "缩略图": "thumbs/face/1090103_sd_neutral_thumb.webp",
+              "原图": "img/face/1090103_sd_neutral.webp"
+            },
+            {
+              "提示词": "neutral expression",
+              "缩略图": "thumbs/face/1090104_sd_neutral_thumb.webp",
+              "原图": "img/face/1090104_sd_neutral.webp"
+            },
+            {
+              "提示词": "no emotion",
+              "缩略图": "thumbs/face/1090105_sd_neutral_thumb.webp",
+              "原图": "img/face/1090105_sd_neutral.webp"
+            },
+            {
+              "提示词": "no expression",
+              "缩略图": "thumbs/face/1090106_sd_neutral_thumb.webp",
+              "原图": "img/face/1090106_sd_neutral.webp"
+            },
+            {
+              "提示词": "still face",
+              "缩略图": "thumbs/face/1090107_sd_neutral_thumb.webp",
+              "原图": "img/face/1090107_sd_neutral.webp"
+            },
+            {
+              "提示词": "blank face",
+              "缩略图": "thumbs/face/1090108_sd_neutral_thumb.webp",
+              "原图": "img/face/1090108_sd_neutral.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "emotionless", "中文": "无感情/冷漠" },
+            { "分组": "基础提示词", "提示词": "expressionless", "中文": "无表情/面无表情" },
+            { "分组": "基础提示词", "提示词": "impassive", "中文": "无动于衷/不动声色" },
+            { "分组": "基础提示词", "提示词": "neutral expression", "中文": "中性表情" },
+            { "分组": "基础提示词", "提示词": "no emotion", "中文": "没有情绪" },
+            { "分组": "基础提示词", "提示词": "no expression", "中文": "没有表情" },
+            { "分组": "基础提示词", "提示词": "still face", "中文": "静止的脸/面部静止" },
+            { "分组": "基础提示词", "提示词": "blank face", "中文": "空白的脸/一片空白" },
+            { "分组": "辅助提示词", "提示词": "blank stare", "中文": "茫然的凝视" },
+            { "分组": "辅助提示词", "提示词": "relaxed facial muscles", "中文": "面部肌肉放松" },
+            { "分组": "辅助提示词", "提示词": "closed mouth", "中文": "闭着嘴" },
+            { "分组": "辅助提示词", "提示词": "dull eyes", "中文": "无神的眼睛" },
+            { "分组": "辅助提示词", "提示词": "empty eyes", "中文": "空洞的眼睛" },
+            { "分组": "辅助提示词", "提示词": "looking straight", "中文": "直视前方" },
+            { "分组": "辅助提示词", "提示词": "staring", "中文": "盯着看/凝视" }
+          ]
+        },
+        {
+          "id": "composed",
+          "名称": "冷静沉着",
+          "简介": "冷静控制的神情、镇定的表情、看不出情绪、无表情的脸等冷静克制的面部状态。",
+          "示例": [
+            {
+              "提示词": "calm and controlled look",
+              "缩略图": "thumbs/face/1090201_sd_composed_thumb.webp",
+              "原图": "img/face/1090201_sd_composed.webp"
+            },
+            {
+              "提示词": "composed expression",
+              "缩略图": "thumbs/face/1090202_sd_composed_thumb.webp",
+              "原图": "img/face/1090202_sd_composed.webp"
+            },
+            {
+              "提示词": "no visible emotion",
+              "缩略图": "thumbs/face/1090203_sd_composed_thumb.webp",
+              "原图": "img/face/1090203_sd_composed.webp"
+            },
+            {
+              "提示词": "expressionless face",
+              "缩略图": "thumbs/face/1090204_sd_composed_thumb.webp",
+              "原图": "img/face/1090204_sd_composed.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "calm and controlled look", "中文": "冷静克制的神情" },
+            { "分组": "基础提示词", "提示词": "composed expression", "中文": "镇定自若的表情" },
+            { "分组": "基础提示词", "提示词": "no visible emotion", "中文": "看不出情绪" },
+            { "分组": "基础提示词", "提示词": "expressionless face", "中文": "无表情的脸" },
+            { "分组": "辅助提示词", "提示词": "glaring", "中文": "瞪视" },
+            { "分组": "辅助提示词", "提示词": "lips pressed together", "中文": "紧抿双唇" },
+            { "分组": "辅助提示词", "提示词": "narrowed eyes", "中文": "眯起眼睛" },
+            { "分组": "辅助提示词", "提示词": "piercing look", "中文": "锐利的眼神" },
+            { "分组": "辅助提示词", "提示词": "vacant stare", "中文": "空洞的凝视" }
+          ]
+        },
+        {
+          "id": "indifferent",
+          "名称": "漠不关心",
+          "简介": "无聊的表情、超然、疏离、平淡的表情、漠然的神情、无精打采、无兴趣的表情等冷漠疏离状态。",
+          "示例": [
+            {
+              "提示词": "bored expression",
+              "缩略图": "thumbs/face/1090301_sd_indifferent_thumb.webp",
+              "原图": "img/face/1090301_sd_indifferent.webp"
+            },
+            {
+              "提示词": "detached",
+              "缩略图": "thumbs/face/1090302_sd_indifferent_thumb.webp",
+              "原图": "img/face/1090302_sd_indifferent.webp"
+            },
+            {
+              "提示词": "disengaged",
+              "缩略图": "thumbs/face/1090303_sd_indifferent_thumb.webp",
+              "原图": "img/face/1090303_sd_indifferent.webp"
+            },
+            {
+              "提示词": "flat expression",
+              "缩略图": "thumbs/face/1090304_sd_indifferent_thumb.webp",
+              "原图": "img/face/1090304_sd_indifferent.webp"
+            },
+            {
+              "提示词": "indifferent look",
+              "缩略图": "thumbs/face/1090305_sd_indifferent_thumb.webp",
+              "原图": "img/face/1090305_sd_indifferent.webp"
+            },
+            {
+              "提示词": "listless",
+              "缩略图": "thumbs/face/1090306_sd_indifferent_thumb.webp",
+              "原图": "img/face/1090306_sd_indifferent.webp"
+            },
+            {
+              "提示词": "uninterested expression",
+              "缩略图": "thumbs/face/1090307_sd_indifferent_thumb.webp",
+              "原图": "img/face/1090307_sd_indifferent.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "bored expression", "中文": "无聊的表情" },
+            { "分组": "基础提示词", "提示词": "detached", "中文": "超然/疏离" },
+            { "分组": "基础提示词", "提示词": "disengaged", "中文": "不投入/疏离" },
+            { "分组": "基础提示词", "提示词": "flat expression", "中文": "平淡的表情/面部扁平化" },
+            { "分组": "基础提示词", "提示词": "indifferent look", "中文": "漠然的神情" },
+            { "分组": "基础提示词", "提示词": "listless", "中文": "无精打采/没精神" },
+            { "分组": "基础提示词", "提示词": "uninterested expression", "中文": "毫无兴趣的表情" },
+            { "分组": "辅助提示词", "提示词": "averted gaze", "中文": "移开视线" },
+            { "分组": "辅助提示词", "提示词": "detached gaze", "中文": "超然的目光" },
+            { "分组": "辅助提示词", "提示词": "empty look", "中文": "空洞的眼神" },
+            { "分组": "辅助提示词", "提示词": "looking away disinterestedly", "中文": "无兴趣地看向别处" },
+            { "分组": "辅助提示词", "提示词": "tilting head slightly", "中文": "微微歪头" },
+            { "分组": "辅助提示词", "提示词": "listless mood", "中文": "无精打采的神情" }
+          ]
+        }
+      ]
+    },
+    {
+      "名称": "困惑与思考",
+      "分类": [
+        {
+          "id": "confusion",
+          "名称": "困惑迷茫",
+          "简介": "困惑、不安、困惑的表情、略微困惑、烦恼、担忧、困惑的神情等困惑相关表达。",
+          "示例": [
+            {
+              "提示词": "bewildered",
+              "缩略图": "thumbs/face/1100101_sd_uneasy_thumb.webp",
+              "原图": "img/face/1100101_sd_confusion.webp"
+            },
+            {
+              "提示词": "disconcerted",
+              "缩略图": "thumbs/face/1100102_sd_uneasy_thumb.webp",
+              "原图": "img/face/1100102_sd_confusion.webp"
+            },
+            {
+              "提示词": "puzzled expression",
+              "缩略图": "thumbs/face/1100103_sd_uneasy_thumb.webp",
+              "原图": "img/face/1100103_sd_confusion.webp"
+            },
+            {
+              "提示词": "slightly confused",
+              "缩略图": "thumbs/face/1100104_sd_uneasy_thumb.webp",
+              "原图": "img/face/1100104_sd_confusion.webp"
+            },
+            {
+              "提示词": "troubled",
+              "缩略图": "thumbs/face/1100105_sd_uneasy_thumb.webp",
+              "原图": "img/face/1100105_sd_confusion.webp"
+            },
+            {
+              "提示词": "worried",
+              "缩略图": "thumbs/face/1100106_sd_uneasy_thumb.webp",
+              "原图": "img/face/1100106_sd_confusion.webp"
+            },
+            {
+              "提示词": "confused look",
+              "缩略图": "thumbs/face/1100107_sd_uneasy_thumb.webp",
+              "原图": "img/face/1100107_sd_confusion.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "bewildered", "中文": "困惑/不知所措" },
+            { "分组": "基础提示词", "提示词": "disconcerted", "中文": "不安/困窘" },
+            { "分组": "基础提示词", "提示词": "puzzled expression", "中文": "困惑的表情" },
+            { "分组": "基础提示词", "提示词": "slightly confused", "中文": "略微困惑" },
+            { "分组": "基础提示词", "提示词": "troubled", "中文": "烦恼/忧虑" },
+            { "分组": "基础提示词", "提示词": "worried", "中文": "担心/担忧" },
+            { "分组": "基础提示词", "提示词": "confused look", "中文": "困惑的眼神" },
+            { "分组": "辅助提示词", "提示词": "furrowed brow", "中文": "蹙眉" },
+            { "分组": "辅助提示词", "提示词": "on the verge of tears", "中文": "眼泪在眼眶打转" },
+            { "分组": "辅助提示词", "提示词": "look away", "中文": "避开视线/看向别处" },
+            { "分组": "辅助提示词", "提示词": "trembling lips", "中文": "嘴唇颤抖" },
+            { "分组": "辅助提示词", "提示词": "worried eyes", "中文": "担忧的眼神" }
+          ]
+        },
+        {
+          "id": "disoriented",
+          "名称": "混乱失措",
+          "简介": "困惑、迷失方向、痛苦不堪、快晕倒、手足无措、震惊状态、困惑不已、口齿不清、茫然自失等极度混乱状态。",
+          "示例": [
+            {
+              "提示词": "confused",
+              "缩略图": "thumbs/face/1100201_sd_agitated_thumb.webp",
+              "原图": "img/face/1100201_sd_disoriented.webp"
+            },
+            {
+              "提示词": "disoriented",
+              "缩略图": "thumbs/face/1100202_sd_agitated_thumb.webp",
+              "原图": "img/face/1100202_sd_disoriented.webp"
+            },
+            {
+              "提示词": "distraught",
+              "缩略图": "thumbs/face/1100203_sd_agitated_thumb.webp",
+              "原图": "img/face/1100203_sd_disoriented.webp"
+            },
+            {
+              "提示词": "feeling faint",
+              "缩略图": "thumbs/face/1100204_sd_agitated_thumb.webp",
+              "原图": "img/face/1100204_sd_disoriented.webp"
+            },
+            {
+              "提示词": "flustered",
+              "缩略图": "thumbs/face/1100205_sd_agitated_thumb.webp",
+              "原图": "img/face/1100205_sd_disoriented.webp"
+            },
+            {
+              "提示词": "in a state of shock",
+              "缩略图": "thumbs/face/1100206_sd_agitated_thumb.webp",
+              "原图": "img/face/1100206_sd_disoriented.webp"
+            },
+            {
+              "提示词": "perplexed",
+              "缩略图": "thumbs/face/1100207_sd_agitated_thumb.webp",
+              "原图": "img/face/1100207_sd_disoriented.webp"
+            },
+            {
+              "提示词": "stuttering",
+              "缩略图": "thumbs/face/1100208_sd_agitated_thumb.webp",
+              "原图": "img/face/1100208_sd_disoriented.webp"
+            },
+            {
+              "提示词": "stunned",
+              "缩略图": "thumbs/face/1100209_sd_agitated_thumb.webp",
+              "原图": "img/face/1100209_sd_disoriented.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "confused", "中文": "困惑/混乱" },
+            { "分组": "基础提示词", "提示词": "disoriented", "中文": "迷失方向/失去判断力" },
+            { "分组": "基础提示词", "提示词": "distraught", "中文": "痛苦不堪/精神崩溃" },
+            { "分组": "基础提示词", "提示词": "feeling faint", "中文": "头晕眼花/快晕倒" },
+            { "分组": "基础提示词", "提示词": "flustered", "中文": "手足无措/慌乱" },
+            { "分组": "基础提示词", "提示词": "in a state of shock", "中文": "处于震惊状态" },
+            { "分组": "基础提示词", "提示词": "perplexed", "中文": "困惑不已/百思不解" },
+            { "分组": "基础提示词", "提示词": "stuttering", "中文": "口齿不清/结结巴巴" },
+            { "分组": "基础提示词", "提示词": "stunned", "中文": "茫然自失/目瞪口呆" },
+            { "分组": "辅助提示词", "提示词": "darting eyes", "中文": "四处乱看的眼睛" },
+            { "分组": "辅助提示词", "提示词": "looking around anxiously", "中文": "焦急地四处张望" },
+            { "分组": "辅助提示词", "提示词": "open mouth", "中文": "张着嘴" },
+            { "分组": "辅助提示词", "提示词": "scratching head", "中文": "挠头" },
+            { "分组": "辅助提示词", "提示词": "wide eyes", "中文": "瞪大眼睛" },
+            { "分组": "辅助提示词", "提示词": "worried look", "中文": "担忧的神情" },
+            { "分组": "辅助提示词", "提示词": "fumbling", "中文": "手忙脚乱/笨手笨脚" },
+            { "分组": "辅助提示词", "提示词": "silent scream", "中文": "无声尖叫" }
+          ]
+        },
+        {
+          "id": "thoughtful",
+          "名称": "深思熟虑",
+          "简介": "沉思的心情、深思、陷入沉思、若有所思、深思熟虑的表情等思考状态。",
+          "示例": [
+            {
+              "提示词": "contemplative mood",
+              "缩略图": "thumbs/face/1110201_sd_thoughtful_thumb.webp",
+              "原图": "img/face/1110201_sd_thoughtful.webp"
+            },
+            {
+              "提示词": "deep in thought",
+              "缩略图": "thumbs/face/1110202_sd_thoughtful_thumb.webp",
+              "原图": "img/face/1110202_sd_thoughtful.webp"
+            },
+            {
+              "提示词": "lost in thought",
+              "缩略图": "thumbs/face/1110203_sd_thoughtful_thumb.webp",
+              "原图": "img/face/1110203_sd_thoughtful.webp"
+            },
+            {
+              "提示词": "pensive",
+              "缩略图": "thumbs/face/1110204_sd_thoughtful_thumb.webp",
+              "原图": "img/face/1110204_sd_thoughtful.webp"
+            },
+            {
+              "提示词": "thoughtful expression",
+              "缩略图": "thumbs/face/1110205_sd_thoughtful_thumb.webp",
+              "原图": "img/face/1110205_sd_thoughtful.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "contemplative mood", "中文": "沉思的心境" },
+            { "分组": "基础提示词", "提示词": "deep in thought", "中文": "深思/专注思考" },
+            { "分组": "基础提示词", "提示词": "lost in thought", "中文": "陷入沉思/出神" },
+            { "分组": "基础提示词", "提示词": "pensive", "中文": "若有所思/沉思" },
+            { "分组": "基础提示词", "提示词": "thoughtful expression", "中文": "深思熟虑的表情" },
+            { "分组": "辅助提示词", "提示词": "distant look", "中文": "遥远的眼神/发呆" },
+            { "分组": "辅助提示词", "提示词": "hand resting on chin", "中文": "托着下巴" },
+            { "分组": "辅助提示词", "提示词": "slightly frowning", "中文": "微微皱眉" },
+            { "分组": "辅助提示词", "提示词": "vacant eyes", "中文": "发呆的眼睛/虚无的眼神" }
+          ]
+        }
+      ]
+    },
+    {
+      "名称": "专注与决心",
+      "分类": [
+        {
+          "id": "serious",
+          "名称": "严肃认真",
+          "简介": "高度专注、严肃的表情、严厉的表情等严肃专注状态。",
+          "示例": [
+            {
+              "提示词": "intense focus",
+              "缩略图": "thumbs/face/1110101_sd_serious_thumb.webp",
+              "原图": "img/face/1110101_sd_serious.webp"
+            },
+            {
+              "提示词": "serious expression",
+              "缩略图": "thumbs/face/1110102_sd_serious_thumb.webp",
+              "原图": "img/face/1110102_sd_serious.webp"
+            },
+            {
+              "提示词": "stern expression",
+              "缩略图": "thumbs/face/1110103_sd_serious_thumb.webp",
+              "原图": "img/face/1110103_sd_serious.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "intense focus", "中文": "高度专注/全神贯注" },
+            { "分组": "基础提示词", "提示词": "serious expression", "中文": "严肃的表情" },
+            { "分组": "基础提示词", "提示词": "stern expression", "中文": "严厉/庄严的表情" },
+            { "分组": "辅助提示词", "提示词": "intense gaze", "中文": "炯炯目光/锐利注视" },
+            { "分组": "辅助提示词", "提示词": "intense stare", "中文": "紧盯/死盯" },
+            { "分组": "辅助提示词", "提示词": "closed mouth", "中文": "闭嘴" },
+            { "分组": "辅助提示词", "提示词": "tight-lipped", "中文": "紧闭双唇/一字嘴" }
+          ]
+        },
+        {
+          "id": "focused",
+          "名称": "专注坚定",
+          "简介": "专注的表情、坚定的神情、专注的表情等专注坚定状态。",
+          "示例": [
+            {
+              "提示词": "concentrated expression",
+              "缩略图": "thumbs/face/1110301_sd_focused_thumb.webp",
+              "原图": "img/face/1110301_sd_focused.webp"
+            },
+            {
+              "提示词": "determined look",
+              "缩略图": "thumbs/face/1110302_sd_focused_thumb.webp",
+              "原图": "img/face/1110302_sd_focused.webp"
+            },
+            {
+              "提示词": "focused expression",
+              "缩略图": "thumbs/face/1110303_sd_focused_thumb.webp",
+              "原图": "img/face/1110303_sd_focused.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "concentrated expression", "中文": "专注的表情" },
+            { "分组": "基础提示词", "提示词": "determined look", "中文": "坚定的神情/目光坚定" },
+            { "分组": "基础提示词", "提示词": "focused expression", "中文": "专注的表情" },
+            { "分组": "辅助提示词", "提示词": "locked-in gaze", "中文": "锁定目光/目不转睛" },
+            { "分组": "辅助提示词", "提示词": "raised eyebrows", "中文": "扬眉/眉头上扬" },
+            { "分组": "辅助提示词", "提示词": "tight-lipped", "中文": "紧抿双唇" }
+          ]
+        },
+        {
+          "id": "confident",
+          "名称": "自信从容",
+          "简介": "自信的表情等自信状态。",
+          "示例": [
+            {
+              "提示词": "confident expression",
+              "缩略图": "thumbs/face/1110401_sd_confident_thumb.webp",
+              "原图": "img/face/1110401_sd_confident.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "confident expression", "中文": "自信的表情/胸有成竹" },
+            { "分组": "辅助提示词", "提示词": "resolute gaze", "中文": "坚毅的目光" },
+            { "分组": "辅助提示词", "提示词": "calculated confident stare", "中文": "精心计算的自信凝视" },
+            { "分组": "辅助提示词", "提示词": "confident gaze", "中文": "自信的眼神" },
+            { "分组": "辅助提示词", "提示词": "slightly smile", "中文": "浅浅一笑/自信微笑" }
+          ]
+        },
+        {
+          "id": "insecure",
+          "名称": "缺乏自信",
+          "简介": "焦虑、缺乏自信的表情、勉强的微笑、勉强的笑容等不自信状态。",
+          "示例": [
+            {
+              "提示词": "anxious",
+              "缩略图": "thumbs/face/1110501_sd_insecure_thumb.webp",
+              "原图": "img/face/1110501_sd_insecure.webp"
+            },
+            {
+              "提示词": "insecure expression",
+              "缩略图": "thumbs/face/1110502_sd_insecure_thumb.webp",
+              "原图": "img/face/1110502_sd_insecure.webp"
+            },
+            {
+              "提示词": "strained smile",
+              "缩略图": "thumbs/face/1110503_sd_insecure_thumb.webp",
+              "原图": "img/face/1110503_sd_insecure.webp"
+            },
+            {
+              "提示词": "forced smile",
+              "缩略图": "thumbs/face/1110504_sd_insecure_thumb.webp",
+              "原图": "img/face/1110504_sd_insecure.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "anxious", "中文": "焦虑/不安" },
+            { "分组": "基础提示词", "提示词": "insecure expression", "中文": "缺乏自信的表情" },
+            { "分组": "基础提示词", "提示词": "strained smile", "中文": "勉强的微笑/僵硬的笑" },
+            { "分组": "基础提示词", "提示词": "forced smile", "中文": "强颜欢笑/假笑" },
+            { "分组": "辅助提示词", "提示词": "a half-hidden face", "中文": "半遮半掩的脸" },
+            { "分组": "辅助提示词", "提示词": "biting lip", "中文": "咬嘴唇" },
+            { "分组": "辅助提示词", "提示词": "blushing cheeks", "中文": "脸颊发红" },
+            { "分组": "辅助提示词", "提示词": "downcast eyes", "中文": "低垂眼帘/不敢直视" },
+            { "分组": "辅助提示词", "提示词": "rubbing neck", "中文": "摸脖子/搓后颈" },
+            { "分组": "辅助提示词", "提示词": "uncertain gaze", "中文": "游移不定的目光" }
+          ]
+        },
+        {
+          "id": "determined",
+          "名称": "坚定决绝",
+          "简介": "坚定的表情、僵硬的表情等决绝状态。",
+          "示例": [
+            {
+              "提示词": "determined expression",
+              "缩略图": "thumbs/face/1110601_sd_determined_thumb.webp",
+              "原图": "img/face/1110601_sd_determined.webp"
+            },
+            {
+              "提示词": "set expression",
+              "缩略图": "thumbs/face/1110602_sd_determined_thumb.webp",
+              "原图": "img/face/1110602_sd_determined.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "determined expression", "中文": "坚定的表情/下定决心" },
+            { "分组": "基础提示词", "提示词": "set expression", "中文": "僵硬/坚定的表情" },
+            { "分组": "辅助提示词", "提示词": "sacrificial resolve", "中文": "视死如归/舍生取义的决心" },
+            { "分组": "辅助提示词", "提示词": "raised eyebrows", "中文": "挑眉/扬眉" },
+            { "分组": "辅助提示词", "提示词": "tight-lipped", "中文": "紧闭双唇" }
+          ]
+        },
+        {
+          "id": "dignified",
+          "名称": "威严庄重",
+          "简介": "威严的表情等威严状态。",
+          "示例": [
+            {
+              "提示词": "dignified expression",
+              "缩略图": "thumbs/face/1110701_sd_dignified_thumb.webp",
+              "原图": "img/face/1110701_sd_dignified.webp"
+            }
+          ],
+          "词条": [
+            { "分组": "基础提示词", "提示词": "dignified expression", "中文": "威严的表情/堂堂正正" },
+            { "分组": "辅助提示词", "提示词": "tight-lipped", "中文": "紧抿双唇" },
+            { "分组": "辅助提示词", "提示词": "unblinking stare", "中文": "不眨眼的凝视/目不转睛" },
+            { "分组": "辅助提示词", "提示词": "Stately", "中文": "威严的/堂皇的/庄重的" },
+            { "分组": "辅助提示词", "提示词": "calm pressure", "中文": "静气凛然/从容施压" },
+            { "分组": "辅助提示词", "提示词": "stern resolve", "中文": "严肃的决心/刚毅果断" }
+          ]
+        }
+      ]
+    }
+  ]
+}

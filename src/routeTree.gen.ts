@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BodyRouteImport } from './routes/body'
 import { Route as CostumesRouteImport } from './routes/costumes'
+import { Route as FaceRouteImport } from './routes/face'
 import { Route as GuideRouteImport } from './routes/guide'
 import { Route as PortraitsRouteImport } from './routes/portraits'
 import { Route as PosesRouteImport } from './routes/poses'
@@ -31,6 +32,11 @@ const BodyRoute = BodyRouteImport.update({
 const CostumesRoute = CostumesRouteImport.update({
   id: '/costumes',
   path: '/costumes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaceRoute = FaceRouteImport.update({
+  id: '/face',
+  path: '/face',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GuideRoute = GuideRouteImport.update({
@@ -63,6 +69,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/body': typeof BodyRoute
   '/costumes': typeof CostumesRoute
+  '/face': typeof FaceRoute
   '/guide': typeof GuideRoute
   '/portraits': typeof PortraitsRoute
   '/poses': typeof PosesRoute
@@ -73,6 +80,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/body': typeof BodyRoute
   '/costumes': typeof CostumesRoute
+  '/face': typeof FaceRoute
   '/guide': typeof GuideRoute
   '/portraits': typeof PortraitsRoute
   '/poses': typeof PosesRoute
@@ -84,6 +92,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/body': typeof BodyRoute
   '/costumes': typeof CostumesRoute
+  '/face': typeof FaceRoute
   '/guide': typeof GuideRoute
   '/portraits': typeof PortraitsRoute
   '/poses': typeof PosesRoute
@@ -96,6 +105,7 @@ export interface FileRouteTypes {
     | '/'
     | '/body'
     | '/costumes'
+    | '/face'
     | '/guide'
     | '/portraits'
     | '/poses'
@@ -106,6 +116,7 @@ export interface FileRouteTypes {
     | '/'
     | '/body'
     | '/costumes'
+    | '/face'
     | '/guide'
     | '/portraits'
     | '/poses'
@@ -116,6 +127,7 @@ export interface FileRouteTypes {
     | '/'
     | '/body'
     | '/costumes'
+    | '/face'
     | '/guide'
     | '/portraits'
     | '/poses'
@@ -127,6 +139,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BodyRoute: typeof BodyRoute
   CostumesRoute: typeof CostumesRoute
+  FaceRoute: typeof FaceRoute
   GuideRoute: typeof GuideRoute
   PortraitsRoute: typeof PortraitsRoute
   PosesRoute: typeof PosesRoute
@@ -155,6 +168,13 @@ declare module '@tanstack/react-router' {
       path: '/costumes'
       fullPath: '/costumes'
       preLoaderRoute: typeof CostumesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/face': {
+      id: '/face'
+      path: '/face'
+      fullPath: '/face'
+      preLoaderRoute: typeof FaceRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/guide': {
@@ -199,6 +219,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BodyRoute: BodyRoute,
   CostumesRoute: CostumesRoute,
+  FaceRoute: FaceRoute,
   GuideRoute: GuideRoute,
   PortraitsRoute: PortraitsRoute,
   PosesRoute: PosesRoute,
