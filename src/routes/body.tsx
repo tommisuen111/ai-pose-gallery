@@ -43,9 +43,10 @@ async function copyText(text: string, message: string) {
 
 function BodyPage() {
   const { data } = useSuspenseQuery(bodyQuery)
+  const { addBodyTags } = useStudio()
   const [section, setSection] = useState('')
   const [query, setQuery] = useState('')
-  const [viewer, setViewer] = useState<{ example: BodyExample; title: string } | null>(null)
+  const [viewer, setViewer] = useState<{ example: BodyExample; title: string; addToRecipe: () => void } | null>(null)
 
   const q = query.trim().toLowerCase()
   const totalEntries = useMemo(
@@ -154,7 +155,7 @@ function BodyPage() {
                     key={c.id}
                     category={c}
                     systemName={s.名称}
-                    onOpen={(example) => setViewer({ example, title: c.名称 })}
+                    onOpen={(example) => setViewer({ example, title: c.名称, addToRecipe: () => addBodyTags([example.提示词]) })}
                   />
                 ))}
               </div>
@@ -192,6 +193,14 @@ function BodyPage() {
                     <CopyIcon className="size-3.5" />
                     复制提示词
                   </Button>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={viewer.addToRecipe}
+                  >
+                    <PlusIcon className="size-3.5" />
+                    加入配方
+                  </Button>
                   <Button variant="outline" size="sm" asChild>
                     <a href={`/${viewer.example.原图}`} download>
                       <DownloadIcon className="size-3.5" />
@@ -225,9 +234,6 @@ function BodyCard({ category, onOpen, systemName }: { category: BodyCategory; on
   const addSingleToRecipe = (entry: BodyEntry) => {
     addBodyTags([entry.提示词])
   }
-  const addExampleToRecipe = (example: BodyExample) => {
-    addBodyTags([example.提示词])
-  }
 
   return (
     <div className="flex flex-col overflow-hidden rounded-[20px] bg-muted">
@@ -258,36 +264,20 @@ function BodyCard({ category, onOpen, systemName }: { category: BodyCategory; on
       {category.示例.length > 0 && (
         <div className="flex gap-2 overflow-x-auto px-4 py-3">
           {category.示例.map((example, i) => (
-            <div
+            <button
               key={example.原图}
-              className="group relative shrink-0 flex flex-col"
+              type="button"
+              onClick={() => onOpen(example)}
+              className="group relative shrink-0 cursor-zoom-in overflow-hidden rounded-xl bg-background"
+              title={example.提示词}
             >
-              <button
-                type="button"
-                onClick={() => onOpen(example)}
-                className="cursor-zoom-in overflow-hidden rounded-xl bg-background"
-                title={example.提示词}
-              >
-                <img
-                  src={`/${example.缩略图}`}
-                  alt={`${category.名称} 例图 ${i + 1}`}
-                  loading="lazy"
-                  className="h-28 w-[84px] object-cover object-top transition group-hover:scale-105"
-                />
-              </button>
-              <Button
-                variant="outline"
-                size="sm"
-                className="mt-1.5 w-[84px] shrink-0 text-[10px]"
-                onClick={(e) => {
-                  e.stopPropagation()
-                  addExampleToRecipe(example)
-                }}
-              >
-                <PlusIcon className="size-3" />
-                加入配方
-              </Button>
-            </div>
+              <img
+                src={`/${example.缩略图}`}
+                alt={`${category.名称} 例图 ${i + 1}`}
+                loading="lazy"
+                className="h-28 w-[84px] object-cover object-top transition group-hover:scale-105"
+              />
+            </button>
           ))}
         </div>
       )}
