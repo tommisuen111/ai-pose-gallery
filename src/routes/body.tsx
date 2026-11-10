@@ -1,6 +1,6 @@
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { createFileRoute } from '@tanstack/react-router'
-import { CopyIcon, DownloadIcon, RotateCcwIcon, SearchIcon } from 'lucide-react'
+import { CopyIcon, DownloadIcon, RotateCcwIcon, SearchIcon, PlusIcon } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import { bodyQuery } from '@/api/gallery'
 import { EmptyState } from '@/components/common/EmptyState'
@@ -12,6 +12,7 @@ import { Input } from '@/components/ui/input'
 import { Skeleton } from '@/components/ui/skeleton'
 import { toast } from '@/lib/notifications'
 import { cn } from '@/lib/utils'
+import { useStudio } from '@/store/studioStore'
 import type { BodyCategory, BodyEntry, BodyExample } from '@/types/gallery'
 
 export const Route = createFileRoute('/body')({
@@ -208,7 +209,19 @@ function BodyPage() {
 
 function BodyCard({ category, onOpen }: { category: BodyCategory; onOpen: (example: BodyExample) => void }) {
   const groups = groupEntries(category.词条)
+  const { addBodyTags } = useStudio()
   const copyAll = () => void copyText(category.词条.map((e) => e.提示词).join(', '), `已复制「${category.名称}」全部提示词`)
+  const addAllToRecipe = () => {
+    const tags = category.词条.map((e) => e.提示词)
+    addBodyTags(tags)
+  }
+  const addGroupToRecipe = (items: BodyEntry[]) => {
+    const tags = items.map((e) => e.提示词)
+    addBodyTags(tags)
+  }
+  const addSingleToRecipe = (entry: BodyEntry) => {
+    addBodyTags([entry.提示词])
+  }
 
   return (
     <div className="flex flex-col overflow-hidden rounded-[20px] bg-muted">
@@ -222,10 +235,16 @@ function BodyCard({ category, onOpen }: { category: BodyCategory; onOpen: (examp
           </h3>
           <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{category.简介}</p>
         </div>
-        <Button variant="ghost" size="sm" onClick={copyAll} className="shrink-0">
-          <CopyIcon className="size-3.5" />
-          全部
-        </Button>
+        <div className="flex items-center gap-1.5 shrink-0">
+          <Button variant="ghost" size="sm" onClick={copyAll} className="shrink-0">
+            <CopyIcon className="size-3.5" />
+            全部复制
+          </Button>
+          <Button variant="outline" size="sm" onClick={addAllToRecipe} className="shrink-0">
+            <PlusIcon className="size-3.5" />
+            全部加入配方
+          </Button>
+        </div>
       </div>
 
       {category.示例.length > 0 && (
@@ -254,16 +273,27 @@ function BodyCard({ category, onOpen }: { category: BodyCategory; onOpen: (examp
           <div key={`${category.id}-${group.名称}`} className="border-b last:border-b-0">
             <div className="flex items-center gap-2 bg-muted/40 px-3 py-1.5">
               <span className="text-[11px] font-semibold text-muted-foreground">{group.名称}</span>
-              <button
-                type="button"
-                onClick={() =>
-                  void copyText(group.items.map((e) => e.提示词).join(', '), `已复制「${group.名称}」提示词`)
-                }
-                className="ml-auto shrink-0 text-muted-foreground transition hover:text-foreground"
-                aria-label={`复制${group.名称}提示词`}
-              >
-                <CopyIcon className="size-3" />
-              </button>
+              <div className="flex items-center gap-1 ml-auto">
+                <button
+                  type="button"
+                  onClick={() =>
+                    void copyText(group.items.map((e) => e.提示词).join(', '), `已复制「${group.名称}」提示词`)
+                  }
+                  className="shrink-0 text-muted-foreground transition hover:text-foreground"
+                  aria-label={`复制${group.名称}提示词`}
+                >
+                  <CopyIcon className="size-3" />
+                </button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="h-6 px-2 text-[11px] shrink-0"
+                  onClick={() => addGroupToRecipe(group.items)}
+                >
+                  <PlusIcon className="size-3" />
+                  加入配方
+                </Button>
+              </div>
             </div>
             {group.items.map((entry) => (
               <div
@@ -276,14 +306,25 @@ function BodyCard({ category, onOpen }: { category: BodyCategory; onOpen: (examp
                 <span className="w-28 shrink-0 truncate text-right text-[11px] text-muted-foreground sm:w-40 sm:text-xs">
                   {entry.中文}
                 </span>
-                <button
-                  type="button"
-                  onClick={() => void copyText(entry.提示词, `已复制：${entry.中文}`)}
-                  className="shrink-0 text-muted-foreground transition hover:text-foreground"
-                  aria-label={`复制 ${entry.提示词}`}
-                >
-                  <CopyIcon className="size-3" />
-                </button>
+                <div className="flex items-center gap-1 shrink-0">
+                  <button
+                    type="button"
+                    onClick={() => void copyText(entry.提示词, `已复制：${entry.中文}`)}
+                    className="shrink-0 text-muted-foreground transition hover:text-foreground"
+                    aria-label={`复制 ${entry.提示词}`}
+                  >
+                    <CopyIcon className="size-3" />
+                  </button>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="h-6 px-2 text-[11px] shrink-0"
+                    onClick={() => addSingleToRecipe(entry)}
+                  >
+                    <PlusIcon className="size-3" />
+                    加入
+                  </Button>
+                </div>
               </div>
             ))}
           </div>

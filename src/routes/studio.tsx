@@ -43,6 +43,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Switch } from '@/components/ui/switch'
 import { Textarea } from '@/components/ui/textarea'
 import {
+  applyBodyPrompt,
   autoDetectComfyMappings,
   buildRecipePrompt,
   type ComfyCheckResult,
@@ -97,6 +98,9 @@ function StudioPage() {
     setCostume,
     setPose,
     toggleRecipePoseDepth,
+    addBodyTags,
+    removeBodyTag,
+    clearBodyTags,
     addExtraImage,
     removeExtraImage,
     updateExtraImageName,
@@ -132,7 +136,9 @@ function StudioPage() {
 
   const activeWorkflowImages = activeProvider === 'comfyui' && recipe.workflowImagesIdentity === workflowIdentity(apiConfig.comfyuiParams.workflowJson) ? Object.values(recipe.workflowImages || {}) : []
   const defaultPrompt = buildRecipePrompt(recipe, apiConfig.stylePreset, activeWorkflowImages)
-  const prompt = customPrompt ?? defaultPrompt
+  const prompt = applyBodyPrompt(customPrompt ?? defaultPrompt, recipe)
+  const bodyTags = recipe.bodyTags ?? []
+  const [bodyInput, setBodyInput] = useState('')
   const [showAdvanced, setShowAdvanced] = useState(false)
   const [extraUrlInput, setExtraUrlInput] = useState('')
   const [showUrlInput, setShowUrlInput] = useState(false)
@@ -397,8 +403,7 @@ function StudioPage() {
     }
   }
 
-  const handleGenerate = () => {
-    if (activeProvider === 'comfyui') {
+  const handleGenerate = () => {    if (activeProvider === 'comfyui') {
       const cp = apiConfig.comfyuiParams
       const workflowImages = recipe.workflowImagesIdentity === workflowIdentity(cp.workflowJson) ? recipe.workflowImages || {} : {}
       const selected = [recipe.portrait ? cp.portraitNodeId : '', recipe.costume ? cp.costumeNodeId : '', recipe.pose ? cp.poseNodeId : '', ...Object.keys(workflowImages)].filter((id) => id && id !== 'none')
@@ -770,9 +775,87 @@ function StudioPage() {
             </div>
           </Section>
 
-          {/* 2. 协议、模型与可折叠高级参数 */}
+          {/* 2. 人物角色身材 */}
           <Section
-            title="2. 模型与参数"
+            title="2. 人物角色身材"
+            className="@lg/section:grid-cols-1"
+            actions={
+              bodyTags.length > 0 && (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={clearBodyTags}
+                  className="text-destructive hover:text-destructive"
+                >
+                  <Trash2Icon className="size-3.5" />
+                  清空标签
+                </Button>
+              )
+            }
+          >
+            <div className="space-y-3">
+              {/* 已加入的身材标签显示区 */}
+              {bodyTags.length > 0 && (
+                <div className="flex flex-wrap gap-2">
+                  {bodyTags.map((tag, idx) => (
+                    <span
+                      key={`${tag}-${idx}`}
+                      className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary"
+                    >
+                      {tag}
+                      <button
+                        type="button"
+                        onClick={() => removeBodyTag(tag)}
+                        className="flex size-4 items-center justify-center rounded-full hover:bg-primary/20"
+                        aria-label={`移除 ${tag}`}
+                      >
+                        <XIcon className="size-3" />
+                      </button>
+                    </span>
+                  ))}
+                </div>
+              )}
+
+              {/* 手动输入身材提示词 */}
+              <div className="flex gap-2">
+                <Input
+                  value={bodyInput}
+                  onChange={(e) => setBodyInput(e.target.value)}
+                  placeholder="输入身材提示词（英文，如 slender, athletic, curvy...），按 Enter 或点击加入"
+                  className="flex-1 bg-background text-xs"
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' && bodyInput.trim()) {
+                      e.preventDefault()
+                      addBodyTags([bodyInput.trim()])
+                      setBodyInput('')
+                    }
+                  }}
+                />
+                <Button
+                  size="sm"
+                  onClick={() => {
+                    if (bodyInput.trim()) {
+                      addBodyTags([bodyInput.trim()])
+                      setBodyInput('')
+                    }
+                  }}
+                  disabled={!bodyInput.trim()}
+                >
+                  加入
+                </Button>
+              </div>
+
+              {bodyTags.length === 0 && !bodyInput && (
+                <p className="text-xs text-muted-foreground">
+                  从「身材比例库」点击「加入配方」，或在此手动输入身材提示词。多个标签将自动汇总到总提示词中。
+                </p>
+              )}
+            </div>
+          </Section>
+
+          {/* 3. 协议、模型与可折叠高级参数 */}
+          <Section
+            title="3. 模型与参数"
             actions={
               <Button variant="ghost" size="sm" onClick={() => setShowAdvanced((v) => !v)}>
                 <SlidersHorizontalIcon className="size-3.5" />
@@ -1406,9 +1489,9 @@ function StudioPage() {
             )}
           </Section>
 
-          {/* 3. 提示词与生成按钮 */}
+          {/* 4. 提示词与生成按钮 */}
           <Section
-            title="3. 提示词 (Prompt)"
+            title="4. 提示词 (Prompt)"
             className="@lg/section:grid-cols-1"
             actions={
               <div className="flex items-center gap-1.5">

@@ -116,6 +116,8 @@ export interface RecipeState {
   portrait: PortraitItem | null
   costume: CostumeItem | null
   pose: PoseItem | null
+  /** 已加入配方的人物体型/身材提示词（可多个，自动汇总到总提示词） */
+  bodyTags?: string[]
   workflowImages?: Record<string, ExtraReferenceImage>
   workflowImagesIdentity?: string
   extraImages?: ExtraReferenceImage[]
