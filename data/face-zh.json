@@ -824,48 +824,48 @@
           "示例": [
             {
               "提示词": "scowl",
-              "缩略图": "thumbs/face/1080201_sd_mild-anger_thumb.webp",
-              "原图": "img/face/1080201_sd_contempt.webp"
+              "缩略图": "thumbs/face/1020101_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1020101_sd_mild-anger.webp"
             },
             {
               "提示词": "frown",
-              "缩略图": "thumbs/face/1080202_sd_mild-anger_thumb.webp",
-              "原图": "img/face/1080202_sd_contempt.webp"
+              "缩略图": "thumbs/face/1020102_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1020102_sd_mild-anger.webp"
             },
             {
               "提示词": "frustrated",
-              "缩略图": "thumbs/face/1080203_sd_mild-anger_thumb.webp",
-              "原图": "img/face/1080203_sd_contempt.webp"
+              "缩略图": "thumbs/face/1020103_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1020103_sd_mild-anger.webp"
             },
             {
               "提示词": "grouchy",
-              "缩略图": "thumbs/face/1080204_sd_mild-anger_thumb.webp",
-              "原图": "img/face/1080204_sd_contempt.webp"
+              "缩略图": "thumbs/face/1020104_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1020104_sd_mild-anger.webp"
             },
             {
               "提示词": "repulsed",
-              "缩略图": "thumbs/face/1080205_sd_mild-anger_thumb.webp",
-              "原图": "img/face/1080205_sd_contempt.webp"
+              "缩略图": "thumbs/face/1020105_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1020105_sd_mild-anger.webp"
             },
             {
               "提示词": "unamused",
-              "缩略图": "thumbs/face/1080206_sd_mild-anger_thumb.webp",
-              "原图": "img/face/1080206_sd_contempt.webp"
+              "缩略图": "thumbs/face/1020106_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1020106_sd_mild-anger.webp"
             },
             {
               "提示词": "disgusted expression",
-              "缩略图": "thumbs/face/1080207_sd_mild-anger_thumb.webp",
-              "原图": "img/face/1080207_sd_contempt.webp"
+              "缩略图": "thumbs/face/1020107_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1020107_sd_mild-anger.webp"
             },
             {
               "提示词": "contemptuous look",
-              "缩略图": "thumbs/face/1080208_sd_mild-anger_thumb.webp",
-              "原图": "img/face/1080208_sd_contempt.webp"
+              "缩略图": "thumbs/face/1020108_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1020108_sd_mild-anger.webp"
             },
             {
               "提示词": "disapproving look",
-              "缩略图": "thumbs/face/1080209_sd_mild-anger_thumb.webp",
-              "原图": "img/face/1080209_sd_contempt.webp"
+              "缩略图": "thumbs/face/1020109_sd_mild-anger_thumb.webp",
+              "原图": "img/face/1020109_sd_mild-anger.webp"
             }
           ],
           "词条": [
@@ -1106,37 +1106,32 @@
             {
               "提示词": "bewildered",
               "缩略图": "thumbs/face/1100101_sd_uneasy_thumb.webp",
-              "原图": "img/face/1100101_sd_confusion.webp"
+              "原图": "img/face/1100101_sd_uneasy.webp"
             },
             {
               "提示词": "disconcerted",
               "缩略图": "thumbs/face/1100102_sd_uneasy_thumb.webp",
-              "原图": "img/face/1100102_sd_confusion.webp"
+              "原图": "img/face/1100102_sd_uneasy.webp"
             },
             {
               "提示词": "puzzled expression",
               "缩略图": "thumbs/face/1100103_sd_uneasy_thumb.webp",
-              "原图": "img/face/1100103_sd_confusion.webp"
+              "原图": "img/face/1100103_sd_uneasy.webp"
             },
             {
               "提示词": "slightly confused",
               "缩略图": "thumbs/face/1100104_sd_uneasy_thumb.webp",
-              "原图": "img/face/1100104_sd_confusion.webp"
+              "原图": "img/face/1100104_sd_uneasy.webp"
             },
             {
               "提示词": "troubled",
               "缩略图": "thumbs/face/1100105_sd_uneasy_thumb.webp",
-              "原图": "img/face/1100105_sd_confusion.webp"
+              "原图": "img/face/1100105_sd_uneasy.webp"
             },
             {
               "提示词": "worried",
               "缩略图": "thumbs/face/1100106_sd_uneasy_thumb.webp",
-              "原图": "img/face/1100106_sd_confusion.webp"
-            },
-            {
-              "提示词": "confused look",
-              "缩略图": "thumbs/face/1100107_sd_uneasy_thumb.webp",
-              "原图": "img/face/1100107_sd_confusion.webp"
+              "原图": "img/face/1100106_sd_uneasy.webp"
             }
           ],
           "词条": [
@@ -1162,47 +1157,32 @@
             {
               "提示词": "confused",
               "缩略图": "thumbs/face/1100201_sd_agitated_thumb.webp",
-              "原图": "img/face/1100201_sd_disoriented.webp"
+              "原图": "img/face/1100201_sd_agitated.webp"
             },
             {
               "提示词": "disoriented",
               "缩略图": "thumbs/face/1100202_sd_agitated_thumb.webp",
-              "原图": "img/face/1100202_sd_disoriented.webp"
+              "原图": "img/face/1100202_sd_agitated.webp"
             },
             {
               "提示词": "distraught",
               "缩略图": "thumbs/face/1100203_sd_agitated_thumb.webp",
-              "原图": "img/face/1100203_sd_disoriented.webp"
+              "原图": "img/face/1100203_sd_agitated.webp"
             },
             {
               "提示词": "feeling faint",
               "缩略图": "thumbs/face/1100204_sd_agitated_thumb.webp",
-              "原图": "img/face/1100204_sd_disoriented.webp"
+              "原图": "img/face/1100204_sd_agitated.webp"
             },
             {
               "提示词": "flustered",
               "缩略图": "thumbs/face/1100205_sd_agitated_thumb.webp",
-              "原图": "img/face/1100205_sd_disoriented.webp"
+              "原图": "img/face/1100205_sd_agitated.webp"
             },
             {
               "提示词": "in a state of shock",
               "缩略图": "thumbs/face/1100206_sd_agitated_thumb.webp",
-              "原图": "img/face/1100206_sd_disoriented.webp"
-            },
-            {
-              "提示词": "perplexed",
-              "缩略图": "thumbs/face/1100207_sd_agitated_thumb.webp",
-              "原图": "img/face/1100207_sd_disoriented.webp"
-            },
-            {
-              "提示词": "stuttering",
-              "缩略图": "thumbs/face/1100208_sd_agitated_thumb.webp",
-              "原图": "img/face/1100208_sd_disoriented.webp"
-            },
-            {
-              "提示词": "stunned",
-              "缩略图": "thumbs/face/1100209_sd_agitated_thumb.webp",
-              "原图": "img/face/1100209_sd_disoriented.webp"
+              "原图": "img/face/1100206_sd_agitated.webp"
             }
           ],
           "词条": [
