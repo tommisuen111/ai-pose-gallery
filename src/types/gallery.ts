@@ -155,6 +155,8 @@ export interface RecipeState {
   pose: PoseItem | null
   /** 已加入配方的人物体型/身材提示词（可多个，自动汇总到总提示词） */
   bodyTags?: string[]
+  /** 已加入配方的人物表情提示词，排在身材标签之后 */
+  faceTags?: string[]
   workflowImages?: Record<string, ExtraReferenceImage>
   workflowImagesIdentity?: string
   extraImages?: ExtraReferenceImage[]

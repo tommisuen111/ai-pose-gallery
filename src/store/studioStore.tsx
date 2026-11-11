@@ -16,6 +16,7 @@ import { idbRead, idbWrite } from '@/lib/idbStorage'
 import { parseParameterWorkflow, workflowIdentity } from '@/lib/comfyWorkflowParameters'
 import { durableImage, snapshotGeneration } from '@/lib/generationSnapshot'
 import { recipeBackup } from '@/lib/recipeImages'
+import { addTags, removeTag, toggleTag } from '@/lib/recipeTags'
 import { randomSlot, type RandomScope, type ReferencePools, type ReferenceSlot } from '@/lib/randomRecipe'
 import {
   applyBodyPrompt,
@@ -60,10 +61,6 @@ const COMFY_CONFIG_VERSION = 3
 
 const shouldEnableProxyByDefault = (provider?: ImageProviderId) =>
   provider === 'qwen' || provider === 'doubao'
-
-function normalizeBodyTags(tags: string[]): string[] {
-  return [...new Set(tags.map((tag) => tag.trim()).filter(Boolean))]
-}
 
 const DEFAULT_API_CONFIG: ApiConfig = {
   activeProvider: 'gemini',
@@ -238,6 +235,10 @@ interface StudioContextValue {
   addBodyTags: (tags: string[]) => void
   removeBodyTag: (tag: string) => void
   clearBodyTags: () => void
+  toggleFaceTag: (tag: string) => void
+  addFaceTags: (tags: string[]) => void
+  removeFaceTag: (tag: string) => void
+  clearFaceTags: () => void
   addExtraImage: (item: { name: string; url: string }) => void
   removeExtraImage: (id: string) => void
   updateExtraImageName: (id: string, name: string) => void
@@ -263,17 +264,18 @@ export function StudioProvider({ children }: { children: ReactNode }) {
   const [recipe, setRecipe] = useState<RecipeState>(() => {
     try {
       const raw = localStorage.getItem(RECIPE_KEY)
-      if (!raw) return { portrait: null, costume: null, pose: null, bodyTags: [], extraImages: [] }
+      if (!raw) return { portrait: null, costume: null, pose: null, bodyTags: [], faceTags: [], extraImages: [] }
       const parsed = JSON.parse(raw)
       return {
         portrait: parsed.portrait ?? null,
         costume: parsed.costume ?? null,
         pose: parsed.pose ?? null,
         bodyTags: Array.isArray(parsed.bodyTags) ? parsed.bodyTags : [],
+        faceTags: Array.isArray(parsed.faceTags) ? parsed.faceTags : [],
         extraImages: Array.isArray(parsed.extraImages) ? parsed.extraImages : [],
       }
     } catch {
-      return { portrait: null, costume: null, pose: null, bodyTags: [], extraImages: [] }
+      return { portrait: null, costume: null, pose: null, bodyTags: [], faceTags: [], extraImages: [] }
     }
   })
 
@@ -353,6 +355,7 @@ export function StudioProvider({ children }: { children: ReactNode }) {
           costume: savedRecipe.costume ?? null,
           pose: savedRecipe.pose ?? null,
           bodyTags: Array.isArray(savedRecipe.bodyTags) ? savedRecipe.bodyTags : [],
+          faceTags: Array.isArray(savedRecipe.faceTags) ? savedRecipe.faceTags : [],
           workflowImages: savedRecipe.workflowImages ?? {},
           workflowImagesIdentity: savedRecipe.workflowImagesIdentity,
           extraImages: Array.isArray(savedRecipe.extraImages) ? savedRecipe.extraImages : [],
@@ -459,46 +462,71 @@ export function StudioProvider({ children }: { children: ReactNode }) {
   }
 
   const addBodyTags = (tags: string[]) => {
-    const incoming = normalizeBodyTags(tags)
-    if (!incoming.length) return
-    const existing = recipe.bodyTags ?? []
-    const added = incoming.filter((tag) => !existing.includes(tag))
+    const { tags: next, added } = addTags(recipe.bodyTags, tags)
     if (!added.length) {
-      toast.info('这些身材标签已在配方中')
+      if (tags.some((tag) => tag.trim())) toast.info('这些身材标签已在配方中')
       return
     }
-    setRecipe((r) => ({ ...r, bodyTags: normalizeBodyTags([...(r.bodyTags ?? []), ...added]) }))
+    setRecipe((r) => ({ ...r, bodyTags: addTags(r.bodyTags, added).tags }))
     toast.success(
       added.length === 1
         ? `已加入身材配方：${added[0]}`
-        : `已加入 ${added.length} 个身材标签（共 ${existing.length + added.length} 项）`
+        : `已加入 ${added.length} 个身材标签（共 ${next.length} 项）`
     )
   }
 
   const toggleBodyTag = (tag: string) => {
     const clean = tag.trim()
     if (!clean) return
-    const existing = recipe.bodyTags ?? []
-    const selected = existing.includes(clean)
-    setRecipe((r) => ({
-      ...r,
-      bodyTags: selected
-        ? (r.bodyTags ?? []).filter((item) => item !== clean)
-        : normalizeBodyTags([...(r.bodyTags ?? []), clean]),
-    }))
+    const { tags, selected } = toggleTag(recipe.bodyTags, clean)
+    setRecipe((r) => ({ ...r, bodyTags: tags }))
     toast.success(selected ? `已从配方移除：${clean}` : `已加入身材配方：${clean}`)
   }
 
   const removeBodyTag = (tag: string) => {
     const clean = tag.trim()
     if (!clean) return
-    setRecipe((r) => ({ ...r, bodyTags: (r.bodyTags ?? []).filter((item) => item !== clean) }))
+    setRecipe((r) => ({ ...r, bodyTags: removeTag(r.bodyTags, clean) }))
   }
 
   const clearBodyTags = () => {
     if (!(recipe.bodyTags ?? []).length) return
     setRecipe((r) => ({ ...r, bodyTags: [] }))
     toast.success('已清空身材标签')
+  }
+
+  const addFaceTags = (tags: string[]) => {
+    const { tags: next, added } = addTags(recipe.faceTags, tags)
+    if (!added.length) {
+      if (tags.some((tag) => tag.trim())) toast.info('这些表情标签已在配方中')
+      return
+    }
+    setRecipe((r) => ({ ...r, faceTags: addTags(r.faceTags, added).tags }))
+    toast.success(
+      added.length === 1
+        ? `已加入表情配方：${added[0]}`
+        : `已加入 ${added.length} 个表情标签（共 ${next.length} 项）`
+    )
+  }
+
+  const toggleFaceTag = (tag: string) => {
+    const clean = tag.trim()
+    if (!clean) return
+    const { tags, selected } = toggleTag(recipe.faceTags, clean)
+    setRecipe((r) => ({ ...r, faceTags: tags }))
+    toast.success(selected ? `已从配方移除：${clean}` : `已加入表情配方：${clean}`)
+  }
+
+  const removeFaceTag = (tag: string) => {
+    const clean = tag.trim()
+    if (!clean) return
+    setRecipe((r) => ({ ...r, faceTags: removeTag(r.faceTags, clean) }))
+  }
+
+  const clearFaceTags = () => {
+    if (!(recipe.faceTags ?? []).length) return
+    setRecipe((r) => ({ ...r, faceTags: [] }))
+    toast.success('已清空表情标签')
   }
 
   const addExtraImage = (item: { name: string; url: string }) => {
@@ -557,7 +585,7 @@ export function StudioProvider({ children }: { children: ReactNode }) {
   }, [activeComfyParams, idbHydrated])
 
   const clearRecipe = () => {
-    setRecipe({ portrait: null, costume: null, pose: null, bodyTags: [], extraImages: [] })
+    setRecipe({ portrait: null, costume: null, pose: null, bodyTags: [], faceTags: [], extraImages: [] })
     toast.success('已清空配方')
   }
 
@@ -811,6 +839,10 @@ export function StudioProvider({ children }: { children: ReactNode }) {
         addBodyTags,
         removeBodyTag,
         clearBodyTags,
+        toggleFaceTag,
+        addFaceTags,
+        removeFaceTag,
+        clearFaceTags,
         addExtraImage,
         removeExtraImage,
         updateExtraImageName,

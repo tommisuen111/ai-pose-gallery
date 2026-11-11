@@ -1,6 +1,7 @@
 import type { ApiConfig, ExtraReferenceImage, ImageProviderId, RecipeState } from '@/types/gallery'
 import { applyWorkflowOverrides, getWorkflowImages, validateReferenceCombinations, workflowIdentity, type ComfyObjectInfo } from '@/lib/comfyWorkflowParameters'
 import { poseImagePath, referenceImageUrl } from '@/lib/recipeImages'
+import { recipeTagLines } from '@/lib/recipePrompt'
 import qwen2509ThreeImageWorkflow from '@/workflows/qwen_image_edit_2509_3img.api.json'
 
 export interface ProviderModelOption {
@@ -152,26 +153,7 @@ export const STYLE_PRESETS: Record<string, { label: string; prompt: string }> = 
 // 用自然语言逐项描述（人物 / 服装 / 姿势），实测比堆砌要点更能让多图编辑模型还原服装、避免照搬人体模型线条
 const PHOTO_STYLES = new Set(['realistic', 'fashion', 'film'])
 
-export function bodyPromptLine(recipe: RecipeState): string {
-  const tags = (recipe.bodyTags ?? []).map((tag) => tag.trim()).filter(Boolean)
-  if (!tags.length) return ''
-  return `• 身材：人物的体型与比例需符合以下特征：${tags.join(', ')}。保持各特征之间协调，不改变参考图中人物的脸型、五官与身份。`
-}
-
-/** 把身材标签汇总进提示词；重复调用只会保留最新的一组身材描述。 */
-export function applyBodyPrompt(prompt: string, recipe: RecipeState): string {
-  const line = bodyPromptLine(recipe)
-  const cleaned = prompt
-    .split('\n')
-    .filter((row) => !row.startsWith('• 身材：'))
-    .join('\n')
-    .trimEnd()
-  if (!line) return cleaned
-  const watermark = '画面中没有任何文字、标志或水印。'
-  const at = cleaned.lastIndexOf(watermark)
-  if (at >= 0) return `${cleaned.slice(0, at).trimEnd()}\n${line}\n${cleaned.slice(at)}`
-  return cleaned ? `${cleaned}\n${line}` : line
-}
+export { applyBodyPrompt, bodyPromptLine, facePromptLine } from '@/lib/recipePrompt'
 
 export function buildRecipePrompt(recipe: RecipeState, stylePreset = 'realistic', workflowImages: ExtraReferenceImage[] = []): string {
   const styleInfo = STYLE_PRESETS[stylePreset] ?? STYLE_PRESETS.realistic
@@ -235,8 +217,7 @@ export function buildRecipePrompt(recipe: RecipeState, stylePreset = 'realistic'
     idx++
   }
 
-  const bodyLine = bodyPromptLine(recipe)
-  if (bodyLine) clauses.push(bodyLine)
+  clauses.push(...recipeTagLines(recipe))
 
   if (clauses.length === 0) {
     return '请先选择人像/服装/姿势或上传附加参考图。'

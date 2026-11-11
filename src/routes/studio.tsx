@@ -20,8 +20,10 @@ import {
   PersonStandingIcon,
   ScanSearchIcon,
   RotateCcwIcon,
+  RulerIcon,
   ShirtIcon,
   SlidersHorizontalIcon,
+  SmileIcon,
   SparklesIcon,
   Trash2Icon,
   UserRoundIcon,
@@ -101,6 +103,9 @@ function StudioPage() {
     addBodyTags,
     removeBodyTag,
     clearBodyTags,
+    addFaceTags,
+    removeFaceTag,
+    clearFaceTags,
     addExtraImage,
     removeExtraImage,
     updateExtraImageName,
@@ -138,7 +143,9 @@ function StudioPage() {
   const defaultPrompt = buildRecipePrompt(recipe, apiConfig.stylePreset, activeWorkflowImages)
   const prompt = applyBodyPrompt(customPrompt ?? defaultPrompt, recipe)
   const bodyTags = recipe.bodyTags ?? []
+  const faceTags = recipe.faceTags ?? []
   const [bodyInput, setBodyInput] = useState('')
+  const [faceInput, setFaceInput] = useState('')
   const [showAdvanced, setShowAdvanced] = useState(false)
   const [extraUrlInput, setExtraUrlInput] = useState('')
   const [showUrlInput, setShowUrlInput] = useState(false)
@@ -779,6 +786,7 @@ function StudioPage() {
           <Section
             title="2. 人物角色身材"
             className="@lg/section:grid-cols-1"
+            headingExtra={<LibraryLink to="/body" label="身材比例库" />}
             actions={
               bodyTags.length > 0 && (
                 <Button
@@ -793,69 +801,52 @@ function StudioPage() {
               )
             }
           >
-            <div className="space-y-3">
-              {/* 已加入的身材标签显示区 */}
-              {bodyTags.length > 0 && (
-                <div className="flex flex-wrap gap-2">
-                  {bodyTags.map((tag, idx) => (
-                    <span
-                      key={`${tag}-${idx}`}
-                      className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary"
-                    >
-                      {tag}
-                      <button
-                        type="button"
-                        onClick={() => removeBodyTag(tag)}
-                        className="flex size-4 items-center justify-center rounded-full hover:bg-primary/20"
-                        aria-label={`移除 ${tag}`}
-                      >
-                        <XIcon className="size-3" />
-                      </button>
-                    </span>
-                  ))}
-                </div>
-              )}
-
-              {/* 手动输入身材提示词 */}
-              <div className="flex gap-2">
-                <Input
-                  value={bodyInput}
-                  onChange={(e) => setBodyInput(e.target.value)}
-                  placeholder="输入身材提示词（英文，如 slender, athletic, curvy...），按 Enter 或点击加入"
-                  className="flex-1 bg-background text-xs"
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' && bodyInput.trim()) {
-                      e.preventDefault()
-                      addBodyTags([bodyInput.trim()])
-                      setBodyInput('')
-                    }
-                  }}
-                />
-                <Button
-                  size="sm"
-                  onClick={() => {
-                    if (bodyInput.trim()) {
-                      addBodyTags([bodyInput.trim()])
-                      setBodyInput('')
-                    }
-                  }}
-                  disabled={!bodyInput.trim()}
-                >
-                  加入
-                </Button>
-              </div>
-
-              {bodyTags.length === 0 && !bodyInput && (
-                <p className="text-xs text-muted-foreground">
-                  从「身材比例库」点击「加入配方」，或在此手动输入身材提示词。多个标签将自动汇总到总提示词中。
-                </p>
-              )}
-            </div>
+            <TagPromptFields
+              tags={bodyTags}
+              input={bodyInput}
+              onInput={setBodyInput}
+              onAdd={(value) => addBodyTags([value])}
+              onRemove={removeBodyTag}
+              placeholder="输入身材提示词（英文，如 slender, athletic, curvy...），按 Enter 或点击加入"
+              inputLabel="身材提示词"
+              emptyHint="从「身材比例库」点击「加入配方」，或在此手动输入身材提示词。多个标签将自动汇总到总提示词中。"
+            />
           </Section>
 
-          {/* 3. 协议、模型与可折叠高级参数 */}
+          {/* 3. 人物表情 */}
           <Section
-            title="3. 模型与参数"
+            title="3. 人物表情"
+            className="@lg/section:grid-cols-1"
+            headingExtra={<LibraryLink to="/face" label="人物表情库" />}
+            actions={
+              faceTags.length > 0 && (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={clearFaceTags}
+                  className="text-destructive hover:text-destructive"
+                >
+                  <Trash2Icon className="size-3.5" />
+                  清空标签
+                </Button>
+              )
+            }
+          >
+            <TagPromptFields
+              tags={faceTags}
+              input={faceInput}
+              onInput={setFaceInput}
+              onAdd={(value) => addFaceTags([value])}
+              onRemove={removeFaceTag}
+              placeholder="输入表情提示词（英文，如 soft smile, angry expression...），按 Enter 或点击加入"
+              inputLabel="表情提示词"
+              emptyHint="从「人物表情库」点击「加入配方」，或在此手动输入表情提示词。表情会排在身材描述之后，并写入总提示词。"
+            />
+          </Section>
+
+          {/* 4. 协议、模型与可折叠高级参数 */}
+          <Section
+            title="4. 模型与参数"
             actions={
               <Button variant="ghost" size="sm" onClick={() => setShowAdvanced((v) => !v)}>
                 <SlidersHorizontalIcon className="size-3.5" />
@@ -1489,9 +1480,9 @@ function StudioPage() {
             )}
           </Section>
 
-          {/* 4. 提示词与生成按钮 */}
+          {/* 5. 提示词与生成按钮 */}
           <Section
-            title="4. 提示词 (Prompt)"
+            title="5. 提示词 (Prompt)"
             className="@lg/section:grid-cols-1"
             actions={
               <div className="flex items-center gap-1.5">
@@ -1763,5 +1754,88 @@ function StudioPage() {
         </DialogContent>
       </Dialog>
     </>
+  )
+}
+
+function LibraryLink({ to, label }: { to: '/body' | '/face'; label: string }) {
+  return (
+    <Button variant="outline" size="sm" className="h-8 max-w-full shrink-0 px-2.5" asChild>
+      <Link to={to} aria-label={`前往${label}，当前合成配方会保留`}>
+        {to === '/body' ? <RulerIcon className="size-3.5" /> : <SmileIcon className="size-3.5" />}
+        <span className="truncate">{label}</span>
+      </Link>
+    </Button>
+  )
+}
+
+function TagPromptFields({
+  tags,
+  input,
+  onInput,
+  onAdd,
+  onRemove,
+  placeholder,
+  inputLabel,
+  emptyHint,
+}: {
+  tags: string[]
+  input: string
+  onInput: (value: string) => void
+  onAdd: (value: string) => void
+  onRemove: (tag: string) => void
+  placeholder: string
+  inputLabel: string
+  emptyHint: string
+}) {
+  const commit = () => {
+    const value = input.trim()
+    if (!value) return
+    onAdd(value)
+    onInput('')
+  }
+  return (
+    <div className="space-y-3">
+      {tags.length > 0 && (
+        <div className="flex flex-wrap gap-2">
+          {tags.map((tag, idx) => (
+            <span
+              key={`${tag}-${idx}`}
+              className="inline-flex max-w-full items-center gap-1.5 rounded-full bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary"
+            >
+              <span className="min-w-0 break-all">{tag}</span>
+              <button
+                type="button"
+                onClick={() => onRemove(tag)}
+                className="flex size-4 shrink-0 items-center justify-center rounded-full hover:bg-primary/20"
+                aria-label={`移除 ${tag}`}
+              >
+                <XIcon className="size-3" />
+              </button>
+            </span>
+          ))}
+        </div>
+      )}
+
+      <div className="flex min-w-0 flex-col gap-2 sm:flex-row">
+        <Input
+          value={input}
+          aria-label={inputLabel}
+          onChange={(e) => onInput(e.target.value)}
+          placeholder={placeholder}
+          className="min-w-0 flex-1 bg-background text-xs"
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' && input.trim()) {
+              e.preventDefault()
+              commit()
+            }
+          }}
+        />
+        <Button size="sm" className="shrink-0" onClick={commit} disabled={!input.trim()}>
+          加入
+        </Button>
+      </div>
+
+      {tags.length === 0 && !input && <p className="text-xs text-muted-foreground">{emptyHint}</p>}
+    </div>
   )
 }
