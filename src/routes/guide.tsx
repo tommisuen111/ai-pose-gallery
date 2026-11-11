@@ -2,6 +2,10 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Section } from '@/components/common/FormSection'
 import { PageHeader } from '@/components/common/PageHeader'
 import { Badge } from '@/components/ui/badge'
+import { FACE_CATALOG_COUNTS } from '@/lib/faceCatalogCounts'
+
+const faceEntries = FACE_CATALOG_COUNTS.entries.toLocaleString('zh-CN')
+const faceUniquePrompts = FACE_CATALOG_COUNTS.uniquePrompts.toLocaleString('zh-CN')
 
 export const Route = createFileRoute('/guide')({
   staticData: { title: '使用指南与免责声明' },
@@ -13,7 +17,7 @@ function GuidePage() {
     <>
       <PageHeader title="使用指南与免责声明" />
 
-      <Section title="角色合成流程" className="@lg/section:grid-cols-2 @2xl/section:grid-cols-4">
+      <Section title="角色合成流程" className="@lg/section:grid-cols-2 @3xl/section:grid-cols-3 @6xl/section:grid-cols-5">
         <div className="rounded-2xl bg-background p-4">
           <Badge>1. 人像</Badge>
           <h3 className="mt-2 text-sm font-semibold">人像颜值库 (1,499)</h3>
@@ -42,7 +46,15 @@ function GuidePage() {
           <Badge>4. 体型</Badge>
           <h3 className="mt-2 text-sm font-semibold">身材比例库 (583)</h3>
           <p className="mt-1 text-xs text-muted-foreground">
-            26 个分类的身高、头身、曲线、肌肉与肤质提示词，中英对照并可一键复制，用于锁定角色的体型与比例。
+            26 个分类的身高、头身、曲线、肌肉与肤质提示词，中英对照并可一键复制。在合成台作为「人物角色身材」汇总到总提示词的身材行；标题旁的入口回到本库时，已选配方会保留。
+          </p>
+        </div>
+
+        <div className="rounded-2xl bg-background p-4">
+          <Badge>5. 表情</Badge>
+          <h3 className="mt-2 text-sm font-semibold">人物表情库 ({faceEntries})</h3>
+          <p className="mt-1 text-xs text-muted-foreground">
+            紧接身材之后。词库 {faceEntries} 条可浏览词条，对应 {faceUniquePrompts} 个不重复提示词；同一英文提示词出现在多个分类时按词条分别计数。可从本库加入配方，或在合成台手动输入。标签写入总提示词的表情行，并排在身材行之后。复制、导出工作流、生成与重置提示词都会带上当前表情；从合成台打开本库不会清空配方。
           </p>
         </div>
       </Section>
@@ -83,6 +95,12 @@ function GuidePage() {
             <strong className="text-foreground">• 体型提示词与例图来源：</strong>
             身材比例库的分类体系、示例图与英文提示词整理自{' '}
             <a className="underline hover:text-foreground" href="https://noplog.com/blog/2026/02/10/stable-diffusion-body-type-prompts/" target="_blank" rel="noopener noreferrer">のぷ（noplog）《Stable Diffusion 体型提示词大图鉴》</a>
+            ，中文译名与本仓库的展示代码由本项目维护；示例图版权归原作者，仅作学习参考，禁止打包转售。
+          </p>
+          <p>
+            <strong className="text-foreground">• 表情提示词与例图来源：</strong>
+            人物表情库的分类体系、示例图与英文提示词整理自{' '}
+            <a className="underline hover:text-foreground" href="https://noplog.com/blog/2025/09/16/stable-diffusion-facial-expression-prompts/" target="_blank" rel="noopener noreferrer">のぷ（noplog）《Stable Diffusion 表情提示词大全》</a>
             ，中文译名与本仓库的展示代码由本项目维护；示例图版权归原作者，仅作学习参考，禁止打包转售。
           </p>
           <p>

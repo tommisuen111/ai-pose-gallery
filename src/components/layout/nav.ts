@@ -1,4 +1,5 @@
 import type { LinkProps } from '@tanstack/react-router'
+import { FACE_CATALOG_COUNTS } from '@/lib/faceCatalogCounts'
 import {
   BookOpenIcon,
   KeyRoundIcon,
@@ -39,7 +40,7 @@ export const navGroups: NavGroup[] = [
       { title: '服装穿搭库', to: '/costumes', icon: ShirtIcon, badge: '3,224' },
       { title: '人像颜值库', to: '/portraits', icon: UserRoundIcon, badge: '1,499' },
       { title: '身材比例库', to: '/body', icon: RulerIcon, badge: '583' },
-      { title: '人物表情库', to: '/face', icon: SmileIcon, badge: '500+' },
+      { title: '人物表情库', to: '/face', icon: SmileIcon, badge: FACE_CATALOG_COUNTS.entries.toLocaleString('zh-CN') },
     ],
   },
   {

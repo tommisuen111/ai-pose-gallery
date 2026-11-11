@@ -3,6 +3,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { CopyIcon, DownloadIcon, RotateCcwIcon, SearchIcon, PlusIcon } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import { faceQuery } from '@/api/gallery'
+import { countFaceCatalog, countVisibleFaceEntries, visibleFaceSections } from '@/lib/faceCatalog'
 import { EmptyState } from '@/components/common/EmptyState'
 import { PageHeader } from '@/components/common/PageHeader'
 import { Badge } from '@/components/ui/badge'
@@ -43,47 +44,28 @@ async function copyText(text: string, message: string) {
 
 function FacePage() {
   const { data } = useSuspenseQuery(faceQuery)
-  const { addBodyTags } = useStudio()
+  const { addFaceTags } = useStudio()
   const [section, setSection] = useState('')
   const [query, setQuery] = useState('')
   const [viewer, setViewer] = useState<{ example: FaceExample; title: string; addToRecipe: () => void } | null>(null)
 
-  const q = query.trim().toLowerCase()
-  const totalEntries = useMemo(
-    () => data.体系.reduce((n, s) => n + s.分类.reduce((m, c) => m + c.词条.length, 0), 0),
-    [data]
+  const counts = useMemo(() => countFaceCatalog(data), [data])
+  const visibleSections = useMemo(() => visibleFaceSections(data, section, query), [data, section, query])
+  const visibleEntries = countVisibleFaceEntries(visibleSections)
+  const searchedSections = useMemo(() => visibleFaceSections(data, '', query), [data, query])
+  const searchedEntries = countVisibleFaceEntries(searchedSections)
+  const visibleBySection = useMemo(
+    () => new Map(searchedSections.map((item) => [item.名称, countVisibleFaceEntries([item])])),
+    [searchedSections],
   )
-  const totalExamples = useMemo(
-    () => data.体系.reduce((n, s) => n + s.分类.reduce((m, c) => m + c.示例.length, 0), 0),
-    [data]
-  )
-
-  const visibleSections = useMemo(() => {
-    return data.体系
-      .filter((s) => !section || s.名称 === section)
-      .map((s) => ({
-        名称: s.名称,
-        分类: s.分类.map((c) => ({
-          ...c,
-          词条: q
-            ? c.词条.filter((e) => `${e.分组} ${e.提示词} ${e.中文}`.toLowerCase().includes(q))
-            : c.词条,
-        })).filter((c) => {
-          if (!q) return true
-          if (c.词条.length) return true
-          return `${c.名称} ${c.简介}`.toLowerCase().includes(q)
-        }),
-      }))
-      .filter((s) => s.分类.length)
-  }, [data, section, q])
-
-  const matched = visibleSections.reduce((n, s) => n + s.分类.reduce((m, c) => m + c.词条.length, 0), 0)
+  const filtering = Boolean(section || query.trim())
+  const q = query.trim()
 
   return (
     <>
       <PageHeader
         title="人物表情库"
-        description={`${totalEntries} 条中英对照表情提示词 · ${totalExamples} 张例图 · 微笑/愤怒/悲伤/惊讶/恐惧/厌恶/羞涩/无表情/困惑/专注/自信`}
+        description={`词库 ${counts.entries.toLocaleString('zh-CN')} 条可浏览词条（${counts.uniquePrompts.toLocaleString('zh-CN')} 个不重复提示词）· ${counts.examples.toLocaleString('zh-CN')} 张例图 · 微笑/愤怒/悲伤/惊讶/恐惧/厌恶/羞涩/无表情/困惑/专注/自信`}
         actions={
           <Button
             variant="outline"
@@ -109,19 +91,20 @@ function FacePage() {
             section === '' ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'
           )}
         >
-          全部
+          全部 ({q ? `${searchedEntries}/${counts.entries}` : counts.entries})
         </button>
-        {data.体系.map((s) => (
+        {counts.sections.map((s) => (
           <button
-            key={s.名称}
+            key={s.name}
             type="button"
-            onClick={() => setSection(s.名称)}
+            onClick={() => setSection(s.name)}
+            aria-label={`${s.name}，词库 ${s.entries} 条`}
             className={cn(
               'shrink-0 rounded-full px-3.5 py-1.5 text-sm font-medium transition-colors',
-              section === s.名称 ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'
+              section === s.name ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'
             )}
           >
-            {s.名称} ({s.分类.length})
+            {s.name} ({q ? `${visibleBySection.get(s.name) ?? 0}/${s.entries}` : s.entries})
           </button>
         ))}
       </div>
@@ -137,12 +120,13 @@ function FacePage() {
             className="bg-background pl-9"
           />
         </div>
-        <div className="flex items-center gap-2 text-xs text-muted-foreground">
-          {q ? `匹配 ${matched} 条` : `共 ${totalEntries} 条`}
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground">
+          <span>词库 {counts.entries.toLocaleString('zh-CN')} 条</span>
+          {filtering && <span>当前显示 {visibleEntries.toLocaleString('zh-CN')} 条</span>}
         </div>
       </div>
 
-      {matched === 0 ? (
+      {visibleEntries === 0 ? (
         <EmptyState title="没有找到匹配的表情提示词" description="换个关键词，或清空搜索再看全部内容" />
       ) : (
         <div className="flex flex-col gap-6">
@@ -155,7 +139,7 @@ function FacePage() {
                     key={c.id}
                     category={c}
                     systemName={s.名称}
-                    onOpen={(example) => setViewer({ example, title: c.名称, addToRecipe: () => addBodyTags([example.提示词]) })}
+                    onOpen={(example) => setViewer({ example, title: c.名称, addToRecipe: () => addFaceTags([example.提示词]) })}
                   />
                 ))}
               </div>
@@ -219,20 +203,20 @@ function FacePage() {
 
 function FaceCard({ category, onOpen, systemName }: { category: FaceCategory; onOpen: (example: FaceExample) => void; systemName: string }) {
   const groups = groupEntries(category.词条)
-  const { addBodyTags } = useStudio()
+  const { addFaceTags } = useStudio()
   const isPracticalRecipe = systemName === '实战配方'
   
   const copyAll = () => void copyText(category.词条.map((e) => e.提示词).join(', '), `已复制「${category.名称}」全部提示词`)
   const addAllToRecipe = () => {
     const tags = category.词条.map((e) => e.提示词)
-    addBodyTags(tags)
+    addFaceTags(tags)
   }
   const addGroupToRecipe = (items: FaceEntry[]) => {
     const tags = items.map((e) => e.提示词)
-    addBodyTags(tags)
+    addFaceTags(tags)
   }
   const addSingleToRecipe = (entry: FaceEntry) => {
-    addBodyTags([entry.提示词])
+    addFaceTags([entry.提示词])
   }
 
   return (
