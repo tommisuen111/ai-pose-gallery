@@ -18,7 +18,7 @@ export function RecipeDock() {
   const count = [recipe.portrait, recipe.costume, recipe.pose].filter(Boolean).length + extraCount + workflowImages.length
 
   // 在合成台、设置页、指南页隐藏底部悬浮栏，避免与页面内组件重复
-  if (pathname.startsWith('/studio') || pathname.startsWith('/settings') || pathname.startsWith('/guide')) {
+  if (pathname.startsWith('/studio') || pathname.startsWith('/settings') || pathname.startsWith('/guide') || pathname.startsWith('/pose-generator')) {
     return null
   }
 

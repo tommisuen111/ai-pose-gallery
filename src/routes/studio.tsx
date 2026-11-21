@@ -13,6 +13,7 @@ import {
   DownloadIcon,
   FileUpIcon,
   ImagePlusIcon,
+  Move3dIcon,
   KeyRoundIcon,
   LayoutGridIcon,
   LinkIcon,
@@ -689,6 +690,12 @@ function StudioPage() {
                       </div>
                       <span className="truncate text-xs">+ 选姿势</span>
                     </Link>
+                    <Button type="button" variant="ghost" size="sm" asChild className="h-12 shrink-0 border-l px-2 text-xs">
+                      <Link to="/pose-generator" aria-label="用 3D 姿势生成器自由创建姿势">
+                        <Move3dIcon className="size-3.5" />
+                        3D 创建
+                      </Link>
+                    </Button>
                     <Button type="button" variant="ghost" size="sm" aria-label="上传姿势参考图" aria-describedby={showReferenceErrors && missingReferences.includes('姿势') ? 'reference-errors' : undefined} aria-busy={uploadingSlot === 'pose'} disabled={uploadingSlot !== null || randomizingSlot !== null} className="h-12 shrink-0 border-l px-2 text-xs" onClick={() => { uploadSlotRef.current = 'pose'; slotInputRef.current?.click() }}>
                       {uploadingSlot === 'pose' ? <LoaderCircleIcon className="size-3.5 animate-spin motion-reduce:animate-none" /> : <ImagePlusIcon className="size-3.5" />}
                       {uploadingSlot === 'pose' ? '处理中' : '上传'}

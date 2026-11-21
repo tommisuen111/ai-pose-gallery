@@ -4,6 +4,7 @@ import {
   BookOpenIcon,
   KeyRoundIcon,
   LayoutDashboardIcon,
+  Move3dIcon,
   PersonStandingIcon,
   RulerIcon,
   ShirtIcon,
@@ -31,6 +32,7 @@ export const navGroups: NavGroup[] = [
     items: [
       { title: '图库总览', to: '/', icon: LayoutDashboardIcon },
       { title: 'AI 角色合成台', to: '/studio', icon: SparklesIcon, badge: 'PRO' },
+      { title: '3D 姿势生成器', to: '/pose-generator', icon: Move3dIcon, badge: 'NEW' },
     ],
   },
   {

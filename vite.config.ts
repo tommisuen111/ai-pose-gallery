@@ -73,6 +73,8 @@ function localAssetsAndProxyPlugin(): Plugin {
       void handleProxy(req, res)
       return
     }
+    // 源码里 import 的 JSON（带 ?import 查询）交给 Vite 当模块处理，不能当静态文件返回
+    if (/[?&]import\b/.test(req.url || '')) return next()
     const decoded = decodeURIComponent(rawUrl)
     if (!prefixes.some((p) => decoded === p || decoded.startsWith(p))) {
       return next()
