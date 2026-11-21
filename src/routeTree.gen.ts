@@ -15,6 +15,7 @@ import { Route as CostumesRouteImport } from './routes/costumes'
 import { Route as FaceRouteImport } from './routes/face'
 import { Route as GuideRouteImport } from './routes/guide'
 import { Route as PortraitsRouteImport } from './routes/portraits'
+import { Route as PoseGeneratorRouteImport } from './routes/pose-generator'
 import { Route as PosesRouteImport } from './routes/poses'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as StudioRouteImport } from './routes/studio'
@@ -49,6 +50,11 @@ const PortraitsRoute = PortraitsRouteImport.update({
   path: '/portraits',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PoseGeneratorRoute = PoseGeneratorRouteImport.update({
+  id: '/pose-generator',
+  path: '/pose-generator',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PosesRoute = PosesRouteImport.update({
   id: '/poses',
   path: '/poses',
@@ -72,6 +78,7 @@ export interface FileRoutesByFullPath {
   '/face': typeof FaceRoute
   '/guide': typeof GuideRoute
   '/portraits': typeof PortraitsRoute
+  '/pose-generator': typeof PoseGeneratorRoute
   '/poses': typeof PosesRoute
   '/settings': typeof SettingsRoute
   '/studio': typeof StudioRoute
@@ -83,6 +90,7 @@ export interface FileRoutesByTo {
   '/face': typeof FaceRoute
   '/guide': typeof GuideRoute
   '/portraits': typeof PortraitsRoute
+  '/pose-generator': typeof PoseGeneratorRoute
   '/poses': typeof PosesRoute
   '/settings': typeof SettingsRoute
   '/studio': typeof StudioRoute
@@ -95,6 +103,7 @@ export interface FileRoutesById {
   '/face': typeof FaceRoute
   '/guide': typeof GuideRoute
   '/portraits': typeof PortraitsRoute
+  '/pose-generator': typeof PoseGeneratorRoute
   '/poses': typeof PosesRoute
   '/settings': typeof SettingsRoute
   '/studio': typeof StudioRoute
@@ -108,6 +117,7 @@ export interface FileRouteTypes {
     | '/face'
     | '/guide'
     | '/portraits'
+    | '/pose-generator'
     | '/poses'
     | '/settings'
     | '/studio'
@@ -119,6 +129,7 @@ export interface FileRouteTypes {
     | '/face'
     | '/guide'
     | '/portraits'
+    | '/pose-generator'
     | '/poses'
     | '/settings'
     | '/studio'
@@ -130,6 +141,7 @@ export interface FileRouteTypes {
     | '/face'
     | '/guide'
     | '/portraits'
+    | '/pose-generator'
     | '/poses'
     | '/settings'
     | '/studio'
@@ -142,6 +154,7 @@ export interface RootRouteChildren {
   FaceRoute: typeof FaceRoute
   GuideRoute: typeof GuideRoute
   PortraitsRoute: typeof PortraitsRoute
+  PoseGeneratorRoute: typeof PoseGeneratorRoute
   PosesRoute: typeof PosesRoute
   SettingsRoute: typeof SettingsRoute
   StudioRoute: typeof StudioRoute
@@ -191,6 +204,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PortraitsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/pose-generator': {
+      id: '/pose-generator'
+      path: '/pose-generator'
+      fullPath: '/pose-generator'
+      preLoaderRoute: typeof PoseGeneratorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/poses': {
       id: '/poses'
       path: '/poses'
@@ -222,6 +242,7 @@ const rootRouteChildren: RootRouteChildren = {
   FaceRoute: FaceRoute,
   GuideRoute: GuideRoute,
   PortraitsRoute: PortraitsRoute,
+  PoseGeneratorRoute: PoseGeneratorRoute,
   PosesRoute: PosesRoute,
   SettingsRoute: SettingsRoute,
   StudioRoute: StudioRoute,

@@ -1,6 +1,6 @@
 import { ZoomViewport } from '@/components/common/ZoomViewport'
 import { useSuspenseQuery } from '@tanstack/react-query'
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, Link } from '@tanstack/react-router'
 import {
   CheckIcon,
   ChevronLeftIcon,
@@ -8,6 +8,7 @@ import {
   CopyIcon,
   DownloadIcon,
   ExternalLinkIcon,
+  Move3dIcon,
   PlusIcon,
   RotateCcwIcon,
   SearchIcon,
@@ -355,6 +356,16 @@ function PosesPage() {
                     {picked ? <CheckIcon className="size-3" /> : <PlusIcon className="size-3" />}
                     {picked ? '已选' : '加入配方'}
                   </button>
+                  <Link
+                    to="/pose-generator"
+                    search={{ pose: item.id }}
+                    onClick={(e) => e.stopPropagation()}
+                    title="导入 3D 生成器微调姿势和视角"
+                    className="absolute right-2 bottom-2 flex items-center gap-1 rounded-lg bg-black/75 px-2 py-1 text-[11px] font-semibold text-white shadow transition hover:bg-primary"
+                  >
+                    <Move3dIcon className="size-3" />
+                    微调
+                  </Link>
                 </div>
 
                 <div className="px-1.5 pt-2.5 pb-1.5">
@@ -588,6 +599,12 @@ function PosesPage() {
                     <Button onClick={() => togglePose(it)} variant={picked ? 'secondary' : 'default'}>
                       {picked ? <CheckIcon className="size-4" /> : <PlusIcon className="size-4" />}
                       {picked ? '已在角色配方中（点击移除）' : `加入角色配方（${poseDepthMode ? '深度图' : '白模'}）`}
+                    </Button>
+                    <Button variant="outline" asChild>
+                      <Link to="/pose-generator" search={{ pose: it.id }}>
+                        <Move3dIcon className="size-4" />
+                        导入 3D 生成器微调
+                      </Link>
                     </Button>
                     <div className="grid grid-cols-2 gap-2">
                       <Button variant="outline" size="sm" asChild>
